@@ -8,6 +8,8 @@ The notebooks are already executed so the team can review them directly in GitHu
 - `02_executed_eda.ipynb`: main EDA charts and output tables.
 - `03_availability_and_next_steps.ipynb`: what is available, what is pending, and what we should do next.
 
+Before opening the notebooks, read `../docs/dataset-catalog.md` for the plain-English explanation of each dataset, source agency, county/geography, and local file path.
+
 Use any new notebooks for evidence, not as the only place where decisions live. If a notebook changes our direction, summarize the decision back in `docs/` or `reports/`.
 
 ## Rules I Want Us To Follow

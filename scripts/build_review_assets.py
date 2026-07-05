@@ -29,6 +29,190 @@ LIGHT = "#f8fafc"
 BORDER = "#cbd5e1"
 
 
+DATASET_CATALOG = [
+    {
+        "Dataset": "Contra Costa Assessor Parcels",
+        "Geography / county": "Contra Costa County, California",
+        "Kind of data": "Parcel geometry + assessor parcel identifiers/address fields",
+        "Source agency": "Contra Costa County GIS / Assessor",
+        "Local path": "data/raw/contra_costa/Parcels_Public_May2026.zip",
+        "Source URL": "https://gis.cccounty.us/Downloads/Assessor/Parcels_Public_May2026.zip",
+        "What to look for": "APN, parcel/address fields, parcel boundaries. This is the base property graph layer.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "Contra Costa City Limits",
+        "Geography / county": "Contra Costa County, California",
+        "Kind of data": "Municipal boundary polygons",
+        "Source agency": "Contra Costa County GIS / Planning",
+        "Local path": "data/raw/contra_costa/BND_DCD_City_Limits.zip",
+        "Source URL": "https://gis.cccounty.us/Downloads/Planning/BND_DCD_City_Limits.zip",
+        "What to look for": "City boundary polygons used to filter parcels to San Ramon and validate parcel city codes.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "Contra Costa LAFCO Sphere of Influence",
+        "Geography / county": "Contra Costa County, California",
+        "Kind of data": "Sphere-of-influence boundary polygons",
+        "Source agency": "Contra Costa County GIS / Planning",
+        "Local path": "data/raw/contra_costa/BND_LAFCO_City_SOI.zip",
+        "Source URL": "https://gis.cccounty.us/Downloads/Planning/BND_LAFCO_City_SOI.zip",
+        "What to look for": "Planning/jurisdiction context around city influence areas.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "Contra Costa General Plan Land Use",
+        "Geography / county": "Contra Costa County, California",
+        "Kind of data": "General-plan land-use polygons",
+        "Source agency": "Contra Costa County GIS / Planning",
+        "Local path": "data/raw/contra_costa/PLA_DCD_GPLanduseElement.zip",
+        "Source URL": "https://gis.cccounty.us/Downloads/Planning/PLA_DCD_GPLanduseElement.zip",
+        "What to look for": "Land-use designations that can support explainable context around property and neighborhood character.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "Contra Costa Urban Limit Line",
+        "Geography / county": "Contra Costa County, California",
+        "Kind of data": "Urban limit line polygons",
+        "Source agency": "Contra Costa County GIS / Planning",
+        "Local path": "data/raw/contra_costa/PLA_DCD_ULL.zip",
+        "Source URL": "https://gis.cccounty.us/Downloads/Planning/PLA_DCD_ULL.zip",
+        "What to look for": "Growth boundary context for development constraints or expansion signals.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "Contra Costa Zoning",
+        "Geography / county": "Contra Costa County, California",
+        "Kind of data": "Zoning polygons",
+        "Source agency": "Contra Costa County GIS / Planning",
+        "Local path": "data/raw/contra_costa/PLA_DCD_Zoning.zip",
+        "Source URL": "https://gis.cccounty.us/Downloads/Planning/PLA_DCD_Zoning.zip",
+        "What to look for": "Zoning classifications and overlays. We still need to verify incorporated San Ramon coverage.",
+        "Status": "Downloaded; coverage check needed",
+    },
+    {
+        "Dataset": "Census TIGER Tracts",
+        "Geography / county": "California statewide",
+        "Kind of data": "Census tract boundary shapefile",
+        "Source agency": "U.S. Census Bureau TIGER/Line",
+        "Local path": "data/raw/census/tl_2025_06_tract.zip",
+        "Source URL": "https://www2.census.gov/geo/tiger/TIGER2025/TRACT/tl_2025_06_tract.zip",
+        "What to look for": "Tract IDs and geometry for joining parcels to Census geography.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "Census TIGER Block Groups",
+        "Geography / county": "California statewide",
+        "Kind of data": "Census block-group boundary shapefile",
+        "Source agency": "U.S. Census Bureau TIGER/Line",
+        "Local path": "data/raw/census/tl_2025_06_bg.zip",
+        "Source URL": "https://www2.census.gov/geo/tiger/TIGER2025/BG/tl_2025_06_bg.zip",
+        "What to look for": "Block-group IDs and geometry for finer demographic joins once ACS variables are pulled.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "Census TIGER Places",
+        "Geography / county": "California statewide",
+        "Kind of data": "Incorporated place boundary shapefile",
+        "Source agency": "U.S. Census Bureau TIGER/Line",
+        "Local path": "data/raw/census/tl_2025_06_place.zip",
+        "Source URL": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_06_place.zip",
+        "What to look for": "Place boundaries for city-level geography checks.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "CDE Public Schools and Districts",
+        "Geography / county": "California statewide; includes Contra Costa and San Ramon rows",
+        "Kind of data": "School/district directory table",
+        "Source agency": "California Department of Education",
+        "Local path": "data/raw/schools/cde_public_schools_and_districts.txt",
+        "Source URL": "https://www.cde.ca.gov/schooldirectory/report?rid=dl1&tp=txt",
+        "What to look for": "School names, districts, locations, grade spans, status, and administrative metadata.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "CAL FIRE Local Responsibility Area Fire Hazard Zones",
+        "Geography / county": "Contra Costa County project bbox",
+        "Kind of data": "Wildfire hazard polygons",
+        "Source agency": "CAL FIRE / Office of the State Fire Marshal",
+        "Local path": "data/raw/risk/calfire_fhsz_lra_contra_costa_bbox.geojson",
+        "Source URL": "https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/FHSALRA25_v1_All/FeatureServer/0",
+        "What to look for": "Local responsibility area fire hazard classes: NonWildland, Moderate, High, Very High.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "CAL FIRE State Responsibility Area Fire Hazard Zones",
+        "Geography / county": "Contra Costa County project bbox",
+        "Kind of data": "Wildfire hazard polygons",
+        "Source agency": "CAL FIRE / Office of the State Fire Marshal",
+        "Local path": "data/raw/risk/calfire_fhsz_sra_contra_costa_bbox.geojson",
+        "Source URL": "https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/FHSZSRA_23_3/FeatureServer/0",
+        "What to look for": "State responsibility area fire hazard classes: Moderate, High, Very High.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "FEMA National Flood Hazard Layer Attributes",
+        "Geography / county": "Contra Costa County project bbox",
+        "Kind of data": "Flood hazard zone attributes",
+        "Source agency": "FEMA NFHL ArcGIS service",
+        "Local path": "data/raw/risk/fema_nfhl_flood_hazard_zones_contra_costa_bbox_attributes.geojson",
+        "Source URL": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28",
+        "What to look for": "Flood zone code, SFHA flag, base flood elevation fields. Geometry is omitted for this extract.",
+        "Status": "Downloaded attributes; parcel-level geometry join still pending",
+    },
+    {
+        "Dataset": "OpenStreetMap San Ramon POIs",
+        "Geography / county": "San Ramon / Contra Costa County bbox",
+        "Kind of data": "Amenities, shops, leisure, public-transport POIs",
+        "Source agency": "OpenStreetMap via Overpass API",
+        "Local path": "data/raw/osm/osm_san_ramon_pois.json",
+        "Source URL": "https://overpass-api.de/api/interpreter",
+        "What to look for": "Nearby amenities such as restaurants, parks, schools, shops, parking, and leisure features.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "San Francisco Building Permits",
+        "Geography / county": "City and County of San Francisco",
+        "Kind of data": "Building permit table with status, dates, cost, use, units, and point location",
+        "Source agency": "DataSF / San Francisco Department of Building Inspection",
+        "Local path": "data/raw/san_francisco/building_permits_selected_parts/",
+        "Source URL": "https://data.sfgov.org/resource/i98e-djp9.csv",
+        "What to look for": "1.29M permit records for a data-rich ingestion/explainability demo. Stored as split CSV parts.",
+        "Status": "Downloaded as split CSV parts",
+    },
+    {
+        "Dataset": "Comparable Sales",
+        "Geography / county": "Target metro, likely Contra Costa / San Ramon first",
+        "Kind of data": "Sale price, sale date, property attributes, APN/address match key",
+        "Source agency": "TBD: county records, MLS/partner feed, purchased data, or manually seeded records",
+        "Local path": "Not included yet",
+        "Source URL": "TBD",
+        "What to look for": "This is the missing valuation target. We need this before presenting production-grade valuation.",
+        "Status": "Pending",
+    },
+    {
+        "Dataset": "511 Bay Area Transit / GTFS",
+        "Geography / county": "Bay Area, including Contra Costa County",
+        "Kind of data": "Transit stops, routes, schedules, service calendars",
+        "Source agency": "511.org",
+        "Local path": "Not included yet",
+        "Source URL": "https://511.org/open-data/transit",
+        "What to look for": "Commute and transit-access features after an API token is available.",
+        "Status": "Pending API token",
+    },
+    {
+        "Dataset": "Census ACS 5-Year Variables",
+        "Geography / county": "United States; planned pull for Contra Costa/SF tracts and block groups",
+        "Kind of data": "Demographic and housing attributes",
+        "Source agency": "U.S. Census Bureau ACS API",
+        "Local path": "Not included yet",
+        "Source URL": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "What to look for": "Median income, commute, tenure, vacancy, housing cost, and related context variables.",
+        "Status": "Pending Census API key",
+    },
+]
+
+
 def read_csv(path: Path) -> pd.DataFrame:
     return pd.read_csv(path)
 
@@ -150,6 +334,47 @@ def flow_svg(path: Path) -> None:
         x += box_w + 62
     parts.append("</svg>")
     path.write_text("\n".join(parts) + "\n", encoding="utf-8")
+
+
+def dataset_catalog_df() -> pd.DataFrame:
+    return pd.DataFrame(DATASET_CATALOG)
+
+
+def make_dataset_catalog() -> pd.DataFrame:
+    catalog = dataset_catalog_df()
+    catalog_path = REPORTS / "dataset_catalog.csv"
+    catalog.to_csv(catalog_path, index=False)
+
+    lines = []
+    lines.append("# Dataset Catalog")
+    lines.append("")
+    lines.append("This is the plain-English guide to the data in the repo. For each dataset I list what it is, what geography it covers, where it came from, and how I expect us to use it for Project Lattice.")
+    lines.append("")
+    lines.append("## Quick Table")
+    lines.append("")
+    lines.append("| Dataset | Geography / county | Kind of data | Source agency | Status | Local path |")
+    lines.append("| --- | --- | --- | --- | --- | --- |")
+    for row in DATASET_CATALOG:
+        lines.append(
+            f"| {row['Dataset']} | {row['Geography / county']} | {row['Kind of data']} | "
+            f"{row['Source agency']} | {row['Status']} | `{row['Local path']}` |"
+        )
+    lines.append("")
+    lines.append("## Dataset Notes")
+    lines.append("")
+    for row in DATASET_CATALOG:
+        lines.append(f"### {row['Dataset']}")
+        lines.append("")
+        lines.append(f"- **Geography / county:** {row['Geography / county']}")
+        lines.append(f"- **Kind of data:** {row['Kind of data']}")
+        lines.append(f"- **Source agency:** {row['Source agency']}")
+        lines.append(f"- **Local path:** `{row['Local path']}`")
+        lines.append(f"- **Source URL:** {row['Source URL']}")
+        lines.append(f"- **What to look for:** {row['What to look for']}")
+        lines.append(f"- **Status:** {row['Status']}")
+        lines.append("")
+    (ROOT / "docs" / "dataset-catalog.md").write_text("\n".join(lines), encoding="utf-8")
+    return catalog
 
 
 def make_figures() -> dict[str, Path]:
@@ -274,10 +499,11 @@ This is the shortest path through the repo.
 
 | Step | File | Why |
 | --- | --- | --- |
-| 1 | `../notebooks/01_data_inventory.ipynb` | See what data is actually in the repo. |
-| 2 | `../notebooks/02_executed_eda.ipynb` | Review the key EDA charts and tables. |
-| 3 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who should review what. |
-| 4 | `../docs/project-lattice-data-handoff.md` | Read the team review instructions. |
+| 1 | `../docs/dataset-catalog.md` | Understand what each dataset is, what county/geography it covers, and where it came from. |
+| 2 | `../notebooks/01_data_inventory.ipynb` | See what data is actually in the repo. |
+| 3 | `../notebooks/02_executed_eda.ipynb` | Review the key EDA charts and tables. |
+| 4 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who should review what. |
+| 5 | `../docs/project-lattice-data-handoff.md` | Read the team review instructions. |
 
 Actual downloaded data files are organized under `../data/raw/`.
 
@@ -290,6 +516,7 @@ The data is strong enough for a sourced explanation/knowledge-graph demo. It is 
 
 def make_notebooks() -> None:
     NOTEBOOKS.mkdir(parents=True, exist_ok=True)
+    catalog = dataset_catalog_df()
     inventory = read_csv(REPORTS / "dataset_inventory.csv")
     blocked = read_csv(REPORTS / "blocked_or_deferred_sources.csv")
     city_counts = read_csv(REPORTS / "profiles" / "contra_costa_parcel_city_counts.csv")
@@ -319,24 +546,30 @@ def make_notebooks() -> None:
     write_notebook(
         NOTEBOOKS / "01_data_inventory.ipynb",
         [
-            md("# 01 Data Inventory\n\nI use this notebook as the quick proof that the raw data is actually here and organized."),
+            md("# 01 Data Inventory\n\nI use this notebook as the quick proof that the raw data is actually here and organized. Start with the catalog table so every file has context: county/geography, source, data type, and status."),
             md("![Review path](../reports/figures/review_path.svg)\n\n![Data readiness](../reports/figures/data_readiness.svg)"),
+            code(
+                "import pandas as pd\ncatalog = pd.read_csv('../reports/dataset_catalog.csv')\ncatalog[['Dataset', 'Geography / county', 'Kind of data', 'Source agency', 'Status', 'Local path']]",
+                catalog[["Dataset", "Geography / county", "Kind of data", "Source agency", "Status", "Local path"]],
+                count=1,
+            ),
+            md("## Downloaded And Pending Summary"),
             code(
                 "import pandas as pd\nsummary = pd.read_csv('../reports/notebook_tables/data_inventory_summary.csv')\nsummary",
                 summary,
-                count=1,
+                count=2,
             ),
             md("## Full File Inventory\n\nThis table is long, but it is useful for checking row counts and file locations."),
             code(
                 "inventory = pd.read_csv('../reports/dataset_inventory.csv')\ninventory[['path', 'kind', 'row_count', 'column_count']].head(30)",
                 inventory_view,
-                count=2,
+                count=3,
             ),
             md("## What Is Pending\n\nThese are the items we still need to assign or unlock."),
             code(
                 "blocked = pd.read_csv('../reports/blocked_or_deferred_sources.csv')\nblocked",
                 blocked,
-                count=3,
+                count=4,
             ),
         ],
     )
@@ -427,6 +660,7 @@ def make_notebooks() -> None:
 
 
 def main() -> None:
+    make_dataset_catalog()
     make_figures()
     make_visual_index()
     make_notebooks()

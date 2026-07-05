@@ -14,10 +14,11 @@ Open these in order:
 
 | Step | Open | What it shows |
 | --- | --- | --- |
-| 1 | `notebooks/01_data_inventory.ipynb` | What data files are already downloaded and where they live. |
-| 2 | `notebooks/02_executed_eda.ipynb` | The main EDA charts and tables, already executed. |
-| 3 | `notebooks/03_availability_and_next_steps.ipynb` | What is available, what is pending, and what we need to decide. |
-| 4 | `docs/project-lattice-data-handoff.md` | My written walkthrough for the team. |
+| 1 | `docs/dataset-catalog.md` | What each dataset is, what county/geography it covers, where it came from, and why it matters. |
+| 2 | `notebooks/01_data_inventory.ipynb` | What data files are already downloaded and where they live. |
+| 3 | `notebooks/02_executed_eda.ipynb` | The main EDA charts and tables, already executed. |
+| 4 | `notebooks/03_availability_and_next_steps.ipynb` | What is available, what is pending, and what we need to decide. |
+| 5 | `docs/project-lattice-data-handoff.md` | My written walkthrough for the team. |
 
 ## Data Readiness
 
@@ -42,22 +43,38 @@ project_brief/             Project deck export
 
 ## Data Included
 
-| Area | Status | Location |
-| --- | --- | --- |
-| Contra Costa parcels | Available | `data/raw/contra_costa/Parcels_Public_May2026.zip` |
-| City limits / zoning / land use | Available | `data/raw/contra_costa/` |
-| Census boundaries | Available | `data/raw/census/` |
-| Schools | Available | `data/raw/schools/` |
-| Wildfire and flood risk | Available | `data/raw/risk/` |
-| OSM San Ramon POIs | Available | `data/raw/osm/` |
-| SF permits | Available as split CSV parts | `data/raw/san_francisco/building_permits_selected_parts/` |
-| Comparable sales | Pending | Need legal source or seed set |
-| 511 transit | Pending | API token needed |
-| ACS variables | Pending | Census API key needed |
+The detailed dataset guide is here:
+
+`docs/dataset-catalog.md`
+
+It explains each dataset in plain English:
+
+- what county or geography it covers
+- what kind of data it is
+- where it was sourced from
+- where the file lives in the repo
+- what the team should look for
+- whether it is available or still pending
+
+Quick view:
+
+| Area | County / geography | Status | Location |
+| --- | --- | --- | --- |
+| Contra Costa parcels | Contra Costa County | Available | `data/raw/contra_costa/Parcels_Public_May2026.zip` |
+| City limits / zoning / land use | Contra Costa County | Available | `data/raw/contra_costa/` |
+| Census boundaries | California statewide | Available | `data/raw/census/` |
+| Schools | California statewide, with Contra Costa rows | Available | `data/raw/schools/` |
+| Wildfire and flood risk | Contra Costa project area | Available | `data/raw/risk/` |
+| OSM San Ramon POIs | San Ramon / Contra Costa bbox | Available | `data/raw/osm/` |
+| SF permits | City and County of San Francisco | Available as split CSV parts | `data/raw/san_francisco/building_permits_selected_parts/` |
+| Comparable sales | Target metro TBD | Pending | Need legal source or seed set |
+| 511 transit | Bay Area | Pending | API token needed |
+| ACS variables | Contra Costa/SF tracts and block groups | Pending | Census API key needed |
 
 ## Main EDA Files
 
 - `reports/visual_review.md`
+- `docs/dataset-catalog.md`
 - `reports/domain_eda_findings.md`
 - `reports/eda_summary.md`
 - `reports/download_manifest.csv`
