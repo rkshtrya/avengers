@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Domain EDA for the Project Lattice handoff.
+Domain EDA for the Project Lattice data review.
 
 This complements the lightweight schema inventory with product-oriented checks:
 parcel coverage, permit distributions, school coverage, risk category counts,

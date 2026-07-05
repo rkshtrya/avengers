@@ -19,7 +19,7 @@ Open these in order:
 | 3 | `notebooks/01_data_inventory.ipynb` | What data files are already downloaded and where they live. |
 | 4 | `notebooks/02_executed_eda.ipynb` | The main EDA charts and tables, already executed. |
 | 5 | `notebooks/03_availability_and_next_steps.ipynb` | What is available, what is pending, and what we need to decide. |
-| 6 | `docs/project-lattice-data-handoff.md` | My written walkthrough for the team. |
+| 6 | `docs/project-lattice-data-review.md` | My written walkthrough for the team. |
 
 ## Data Readiness
 

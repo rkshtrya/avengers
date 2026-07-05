@@ -1,4 +1,4 @@
-# Project Lattice Data Handoff
+# Project Lattice Data Review
 
 Prepared for team review on 2026-07-05.
 

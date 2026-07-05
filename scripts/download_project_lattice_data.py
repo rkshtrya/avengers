@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Download a practical Project Lattice data handoff package.
+Download a practical Project Lattice data review package.
 
 This script intentionally avoids non-stdlib dependencies so teammates can rerun
 it in a fresh environment. It downloads open, moderate-size datasets and creates
@@ -124,7 +124,7 @@ BLOCKED_OR_DEFERRED = [
     {
         "source_id": "geofabrik_california_full_pbf",
         "status": "deferred_large_file",
-        "reason": "Full California OSM PBF is about 1.3 GB. Handoff uses Overpass San Ramon POI extract instead.",
+        "reason": "Full California OSM PBF is about 1.3 GB. This repo uses an Overpass San Ramon POI extract instead.",
         "next_step": "Download only if team needs offline OSM processing: https://download.geofabrik.de/north-america/us/california.html",
     },
     {
@@ -207,7 +207,7 @@ def log(message: str) -> None:
 def urlretrieve(url: str, path: Path, timeout: int = 120) -> dict:
     path.parent.mkdir(parents=True, exist_ok=True)
     started = time.time()
-    req = urllib.request.Request(url, headers={"User-Agent": "ProjectLatticeDataHandoff/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "ProjectLatticeDataReview/1.0"})
     with urllib.request.urlopen(req, timeout=timeout) as response:
         status = getattr(response, "status", None)
         content_type = response.headers.get("content-type", "")
@@ -249,7 +249,7 @@ def download_direct(manifest: list[dict]) -> None:
 
 def arcgis_query(layer_url: str, params: dict, timeout: int = 120) -> dict:
     query_url = f"{layer_url.rstrip('/')}/query?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(query_url, headers={"User-Agent": "ProjectLatticeDataHandoff/1.0"})
+    req = urllib.request.Request(query_url, headers={"User-Agent": "ProjectLatticeDataReview/1.0"})
     with urllib.request.urlopen(req, timeout=timeout) as response:
         data = response.read()
     return json.loads(data.decode("utf-8"))
@@ -347,7 +347,7 @@ out center tags;
         log(f"overpass {item['source_id']}")
         try:
             data = urllib.parse.urlencode({"data": query}).encode("utf-8")
-            req = urllib.request.Request(endpoint, data=data, headers={"User-Agent": "ProjectLatticeDataHandoff/1.0"})
+            req = urllib.request.Request(endpoint, data=data, headers={"User-Agent": "ProjectLatticeDataReview/1.0"})
             with urllib.request.urlopen(req, timeout=180) as response:
                 raw = response.read()
             path.write_bytes(raw)

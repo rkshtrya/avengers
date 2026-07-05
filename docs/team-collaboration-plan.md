@@ -11,7 +11,7 @@ The goal for this phase is not to make the model look good. The goal is to decid
 ```text
 docs/
   project-lattice-data-sources.md   # Product understanding and source strategy
-  project-lattice-data-handoff.md   # What I downloaded and how to review it
+  project-lattice-data-review.md    # What I downloaded and how to review it
   team-collaboration-plan.md        # This workflow
 data/
   source_registry.csv               # Source list, priority, and EDA questions
@@ -32,7 +32,7 @@ notebooks/
 
 ## Team Workflow
 
-1. Start with `docs/project-lattice-data-handoff.md`.
+1. Start with `docs/project-lattice-data-review.md`.
 2. Use `data/source_registry.csv` as the operating checklist.
 3. Assign one owner per `P0` source or unresolved source gap.
 4. Each owner should answer the EDA questions already listed in the registry.

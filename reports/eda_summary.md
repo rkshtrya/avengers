@@ -47,7 +47,7 @@ I used the files in `data/raw` and `data/metadata` to check what we can actually
 | --- | --- | --- | --- |
 | `county_sales_records` | blocked | No verified free automated bulk comparable-sales source for San Ramon/Contra Costa yet. | Secure permitted comps source or seed 50-200 sale records manually. |
 | `bay_area_511_gtfs` | needs_api_key | 511 GTFS and transit APIs require a 511 API token. | Register at 511.org, set TRANSIT_511_API_KEY, then download regional operator_id=RG feed. |
-| `geofabrik_california_full_pbf` | deferred_large_file | Full California OSM PBF is about 1.3 GB. Handoff uses Overpass San Ramon POI extract instead. | Download only if team needs offline OSM processing: https://download.geofabrik.de/north-america/us/california.html |
+| `geofabrik_california_full_pbf` | deferred_large_file | Full California OSM PBF is about 1.3 GB. This repo uses an Overpass San Ramon POI extract instead. | Download only if team needs offline OSM processing: https://download.geofabrik.de/north-america/us/california.html |
 | `census_acs_5yr` | needs_api_key | Current Census API requests redirect to missing_key.html without a key. | Set CENSUS_API_KEY and pull selected ACS variables for Contra Costa/SF tracts and block groups. |
 | `cde_public_districts_txt` | manual_download_or_retry | The separate district-only endpoint returned an HTML bot-validation page in automated download. The combined schools/districts file is included. | Use the included CDE schools/districts file or manually download the district-only extract from the CDE directory page if needed. |
 

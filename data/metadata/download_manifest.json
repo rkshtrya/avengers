@@ -165,7 +165,7 @@
     {
       "source_id": "geofabrik_california_full_pbf",
       "status": "deferred_large_file",
-      "reason": "Full California OSM PBF is about 1.3 GB. Handoff uses Overpass San Ramon POI extract instead.",
+      "reason": "Full California OSM PBF is about 1.3 GB. This repo uses an Overpass San Ramon POI extract instead.",
       "next_step": "Download only if team needs offline OSM processing: https://download.geofabrik.de/north-america/us/california.html"
     },
     {
