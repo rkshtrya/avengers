@@ -668,7 +668,7 @@ def make_notebooks() -> None:
                 next_steps,
                 count=3,
             ),
-            md("## Team Decision Point\n\nWe can build the knowledge graph and explanation demo now. We can hold production-grade valuation claims until comparable sales are secured."),
+            md("## My Decision Point\n\nWe can build the knowledge graph and explanation demo now. I would hold production-grade valuation claims until comparable sales are secured."),
         ],
     )
 

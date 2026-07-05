@@ -14,7 +14,7 @@ Instead of stopping at "the value is X," we want the product to explain **why**:
 - which facts came from which source
 - what data is still missing before we can trust a valuation model
 
-The biggest takeaway right now:
+My current read:
 
 > We have enough public data to build the knowledge graph and explanation demo. Production-grade valuation still depends on comparable sales.
 
@@ -221,7 +221,7 @@ When reviewing any dataset, answer these questions:
 | --- | --- |
 | What geography does this cover? | We want to confirm whether it supports San Ramon, Contra Costa, SF, or all of California. |
 | What is the source agency? | Every claim in Lattice can point back to a source. |
-| What is the join key? | We need APN, address, geometry, tract ID, school ID, or coordinates to connect data. |
+| What is the join key? | APN, address, geometry, tract ID, school ID, or coordinates help us connect data. |
 | How many records are there? | Shows whether the dataset is big enough to be useful. |
 | What columns are missing? | Missing fields can block features. |
 | Is this public/context data or valuation target data? | Context explains a property; comparable sales train/validate valuation. |
@@ -307,7 +307,7 @@ More detail is here:
 
 ---
 
-## Tools We Need
+## Tools We Can Use
 
 For basic review:
 
@@ -360,7 +360,7 @@ python3 scripts/reconstruct_large_files.py
 
 ---
 
-## What We Should Do Next
+## What We Can Do Next
 
 1. Confirm whether San Ramon / Contra Costa is still the primary story geography.
 2. Use QGIS or GeoPandas to spatially filter Contra Costa parcels to San Ramon.
@@ -371,7 +371,7 @@ python3 scripts/reconstruct_large_files.py
 
 ---
 
-## Current Verdict
+## Current Read
 
 Project Lattice can move forward as an explainability and knowledge-graph demo now.
 

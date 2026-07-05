@@ -428,7 +428,7 @@ def write_report(results: dict) -> None:
     lines.append("Top leisure values:")
     lines.append(md_counter(osm["leisure"]))
     lines.append("")
-    lines.append("## Decisions We Recommend")
+    lines.append("## Decisions I Recommend")
     lines.append("")
     lines.append("1. Keep San Ramon/Contra Costa as the explainability/knowledge-graph target, because the public spatial context is good.")
     lines.append("2. Use San Francisco permits as the data-rich demo path if we need a fast proof that Lattice can ingest and explain real property-related events.")

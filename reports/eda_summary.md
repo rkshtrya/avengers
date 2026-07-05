@@ -2,7 +2,7 @@
 
 We used the files in `data/raw` and `data/metadata` to check what we can actually build on.
 
-## Our Read
+## My Read
 
 - This repo is strong enough for data-source review and first-pass EDA.
 - Public/contextual layers are available: parcels, zoning/planning, schools, permits, Census boundaries, flood risk, wildfire risk, and OSM POIs.
@@ -59,7 +59,7 @@ We used the files in `data/raw` and `data/metadata` to check what we can actuall
 4. **SF is still the easier data-first demo.** The SF permit extract has over one million records and good structured fields; in this repository it is stored as selected-column split CSV parts.
 5. **Comparable sales is still the critical path.** Without sale price/date/property attributes, Lattice can explain context and risk but cannot honestly claim production-grade valuation.
 
-## What We Can Do Next
+## What I Would Do Next
 
 1. Install geospatial tooling: `pip install geopandas pyogrio shapely duckdb duckdb-engine` or use QGIS/PostGIS.
 2. Read Contra Costa parcels and city limits, filter parcels to San Ramon, and compute parcel count plus address/APN completeness.
