@@ -1,95 +1,83 @@
-# Project Lattice Data Workspace
+# Project Lattice Data Review
 
-I put this repo together so we can review Project Lattice from the data up: what we already have, what is strong enough to build on, and what still needs a decision before we claim a real valuation product.
+I put this repo together so we can review Project Lattice from the data up.
 
-Project Lattice is an explainable property intelligence and valuation product. The point is not just to output a number; the point is to show why a property looks fairly priced, overpriced, undervalued, risky, or promising, with every claim tied back to source data.
+The main question for us: **can this data support an explainable real-estate valuation product?**
 
-## How I Want The Team To Review This
+My current answer: **yes for the knowledge graph and explanation demo; not yet for production valuation until we secure comparable sales.**
 
-Start here:
+## Start Here
 
-1. `docs/project-lattice-data-handoff.md`  
-   My summary of what is in the repo, what is missing, and how I want us to review it.
+![Review path](reports/figures/review_path.svg)
 
-2. `reports/domain_eda_findings.md`  
-   The most useful EDA readout. This connects the datasets back to the actual product: parcels, permits, schools, risks, amenities, and valuation readiness.
+Open these in order:
 
-3. `reports/eda_summary.md`  
-   A compact inventory of the downloaded files, row counts, fields, samples, and blocked sources.
+| Step | Open | What it shows |
+| --- | --- | --- |
+| 1 | `notebooks/01_data_inventory.ipynb` | What data files are already downloaded and where they live. |
+| 2 | `notebooks/02_executed_eda.ipynb` | The main EDA charts and tables, already executed. |
+| 3 | `notebooks/03_availability_and_next_steps.ipynb` | What is available, what is pending, and what we need to decide. |
+| 4 | `docs/project-lattice-data-handoff.md` | My written walkthrough for the team. |
 
-4. `reports/download_manifest.csv`  
-   The source URL and status behind each downloaded file.
+## Data Readiness
 
-5. `data/processed/samples/`  
-   Small samples we can inspect quickly before opening the full raw files.
+![Data readiness](reports/figures/data_readiness.svg)
 
-## Repo Layout
+## Biggest Datasets
+
+![Major dataset counts](reports/figures/major_record_counts.svg)
+
+## What Is In The Repo
 
 ```text
-data/
-  raw/                  Downloaded source datasets
-  processed/samples/    Small samples for quick review
-  metadata/             Source/service metadata
-  source_registry.csv   Source list, priority, and open EDA questions
-docs/                   Project notes and team review plan
-reports/                EDA summaries and profile outputs
-reports/profiles/       Count tables from the domain EDA
-scripts/                Download, EDA, and file reconstruction scripts
-project_brief/          Project deck export
-notebooks/              Notebook workspace notes
+data/raw/                  Actual downloaded source data, organized by source
+data/processed/samples/    Small samples for quick review
+data/metadata/             Source metadata
+reports/                   EDA summaries, charts, and profile tables
+notebooks/                 Executed notebooks for review
+docs/                      Team walkthrough and source plan
+scripts/                   Reproducible download + EDA scripts
+project_brief/             Project deck export
 ```
 
-## Data I Included
+## Data Included
 
-- Contra Costa parcels, city limits, zoning, general-plan land use, urban limit line, and LAFCO sphere of influence.
-- California Census TIGER boundaries for tracts, block groups, and places.
-- CDE public schools and districts.
-- CAL FIRE wildfire hazard severity zone extracts.
-- FEMA flood hazard zone attributes for the project area.
-- OpenStreetMap San Ramon POIs.
-- San Francisco building permit extract, stored as split CSV parts because the single CSV is too large for a normal GitHub file.
+| Area | Status | Location |
+| --- | --- | --- |
+| Contra Costa parcels | Available | `data/raw/contra_costa/Parcels_Public_May2026.zip` |
+| City limits / zoning / land use | Available | `data/raw/contra_costa/` |
+| Census boundaries | Available | `data/raw/census/` |
+| Schools | Available | `data/raw/schools/` |
+| Wildfire and flood risk | Available | `data/raw/risk/` |
+| OSM San Ramon POIs | Available | `data/raw/osm/` |
+| SF permits | Available as split CSV parts | `data/raw/san_francisco/building_permits_selected_parts/` |
+| Comparable sales | Pending | Need legal source or seed set |
+| 511 transit | Pending | API token needed |
+| ACS variables | Pending | Census API key needed |
 
-## Large SF Permit File
+## Main EDA Files
 
-The San Francisco permits extract is 519 MB as one CSV, so I split it into parts here:
+- `reports/visual_review.md`
+- `reports/domain_eda_findings.md`
+- `reports/eda_summary.md`
+- `reports/download_manifest.csv`
+- `reports/blocked_or_deferred_sources.csv`
 
-`data/raw/san_francisco/building_permits_selected_parts/`
+## Rebuild The Large SF Permit CSV
 
-To rebuild the original single CSV locally:
+The SF permit extract is 519 MB as one CSV, so I split it into GitHub-safe parts.
+
+To rebuild it locally:
 
 ```bash
 python3 scripts/reconstruct_large_files.py
 ```
 
-The rebuilt file is ignored by Git so we do not accidentally recommit a file over GitHub's normal limit.
-
 ## Reproduce The EDA
-
-Install dependencies:
 
 ```bash
 python3 -m pip install -r requirements.txt
-```
-
-Run:
-
-```bash
 python3 scripts/eda_project_lattice_data.py
 python3 scripts/profile_project_lattice_data.py
+python3 scripts/build_review_assets.py
 ```
-
-To refresh source downloads:
-
-```bash
-python3 scripts/download_project_lattice_data.py
-```
-
-Some sources still need credentials, manual download, or a business decision. See:
-
-`reports/blocked_or_deferred_sources.csv`
-
-## My Current Read
-
-We have enough public/contextual data to build the graph, run spatial joins, produce source-backed explanations, and make a credible demo.
-
-The blocker is still comparable sales. Before we claim production-grade valuation, we need a permitted comps source with sale price, sale date, property identity, and basic property characteristics.

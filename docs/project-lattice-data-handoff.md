@@ -12,19 +12,28 @@ This repo is ready for source review, schema review, early feature engineering, 
 
 Please review these in order:
 
-1. `reports/domain_eda_findings.md`  
+1. `notebooks/01_data_inventory.ipynb`  
+   Quick inventory of the downloaded data and where everything lives.
+
+2. `notebooks/02_executed_eda.ipynb`  
+   Visual EDA charts and tables, already executed.
+
+3. `notebooks/03_availability_and_next_steps.ipynb`  
+   What is available, what is pending, and what I need us to decide.
+
+4. `reports/domain_eda_findings.md`  
    My main EDA summary. This is where the data is mapped back to the product.
 
-2. `reports/eda_summary.md`  
+5. `reports/eda_summary.md`  
    Dataset inventory, row counts, sizes, sample paths, and blocked sources.
 
-3. `reports/download_manifest.csv`  
+6. `reports/download_manifest.csv`  
    Source URLs, file paths, status, notes, and sizes.
 
-4. `reports/blocked_or_deferred_sources.csv`  
+7. `reports/blocked_or_deferred_sources.csv`  
    Items that need an API key, manual download, licensing, or a product decision.
 
-5. `data/processed/samples/`  
+8. `data/processed/samples/`  
    Small samples so we can review quickly before loading full files.
 
 ## What I Downloaded

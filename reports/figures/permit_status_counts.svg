@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="535" viewBox="0 0 920 535">
+<rect width="920" height="535" fill="white"/>
+<text x="24" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334155">San Francisco permit status mix</text>
+<text x="24" y="94" font-family="Arial, sans-serif" font-size="15" fill="#334155">complete</text>
+<rect x="250" y="77" width="550.0" height="22" rx="4" fill="#2563eb"/>
+<text x="810.0" y="94" font-family="Arial, sans-serif" font-size="14" fill="#334155">740,442</text>
+<text x="24" y="136" font-family="Arial, sans-serif" font-size="15" fill="#334155">issued</text>
+<rect x="250" y="119" width="183.8" height="22" rx="4" fill="#2563eb"/>
+<text x="443.7916406686817" y="136" font-family="Arial, sans-serif" font-size="14" fill="#334155">247,431</text>
+<text x="24" y="178" font-family="Arial, sans-serif" font-size="15" fill="#334155">expired</text>
+<rect x="250" y="161" width="172.4" height="22" rx="4" fill="#2563eb"/>
+<text x="432.411208440364" y="178" font-family="Arial, sans-serif" font-size="14" fill="#334155">232,110</text>
+<text x="24" y="220" font-family="Arial, sans-serif" font-size="15" fill="#334155">cancelled</text>
+<rect x="250" y="203" width="32.1" height="22" rx="4" fill="#2563eb"/>
+<text x="292.08299907352637" y="220" font-family="Arial, sans-serif" font-size="14" fill="#334155">43,192</text>
+<text x="24" y="262" font-family="Arial, sans-serif" font-size="15" fill="#334155">filed</text>
+<rect x="250" y="245" width="8.4" height="22" rx="4" fill="#2563eb"/>
+<text x="268.4411743256055" y="262" font-family="Arial, sans-serif" font-size="14" fill="#334155">11,364</text>
+<text x="24" y="304" font-family="Arial, sans-serif" font-size="15" fill="#334155">withdrawn</text>
+<rect x="250" y="287" width="8.3" height="22" rx="4" fill="#2563eb"/>
+<text x="268.33421118737186" y="304" font-family="Arial, sans-serif" font-size="14" fill="#334155">11,220</text>
+<text x="24" y="346" font-family="Arial, sans-serif" font-size="15" fill="#334155">reinstated</text>
+<rect x="250" y="329" width="3.0" height="22" rx="4" fill="#2563eb"/>
+<text x="263" y="346" font-family="Arial, sans-serif" font-size="14" fill="#334155">1,496</text>
+<text x="24" y="388" font-family="Arial, sans-serif" font-size="15" fill="#334155">approved</text>
+<rect x="250" y="371" width="3.0" height="22" rx="4" fill="#2563eb"/>
+<text x="263" y="388" font-family="Arial, sans-serif" font-size="14" fill="#334155">1,175</text>
+<text x="24" y="430" font-family="Arial, sans-serif" font-size="15" fill="#334155">filing</text>
+<rect x="250" y="413" width="3.0" height="22" rx="4" fill="#2563eb"/>
+<text x="263" y="430" font-family="Arial, sans-serif" font-size="14" fill="#334155">1,097</text>
+<text x="24" y="472" font-family="Arial, sans-serif" font-size="15" fill="#334155">suspend</text>
+<rect x="250" y="455" width="3.0" height="22" rx="4" fill="#2563eb"/>
+<text x="263" y="472" font-family="Arial, sans-serif" font-size="14" fill="#334155">639</text>
+</svg>

@@ -1,14 +1,14 @@
 # Notebook Notes
 
-Use notebooks for evidence, not as the only place where decisions live. If a notebook changes our direction, summarize the decision back in `docs/` or `reports/`.
+The notebooks are already executed so the team can review them directly in GitHub.
 
-## Suggested Notebook Order
+## Open In This Order
 
-- `01_source_inventory.ipynb`
-- `02_spatial_join_quality.ipynb`
-- `03_comps_feasibility.ipynb`
-- `04_feature_eda.ipynb`
-- `05_demo_property_report.ipynb`
+- `01_data_inventory.ipynb`: what data is downloaded and where it lives.
+- `02_executed_eda.ipynb`: main EDA charts and output tables.
+- `03_availability_and_next_steps.ipynb`: what is available, what is pending, and what we should do next.
+
+Use any new notebooks for evidence, not as the only place where decisions live. If a notebook changes our direction, summarize the decision back in `docs/` or `reports/`.
 
 ## Rules I Want Us To Follow
 

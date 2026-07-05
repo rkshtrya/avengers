@@ -1,0 +1,6 @@
+Workstream,Status,Owner need,Next action
+Comparable sales,Pending,Owner needed,Find legal comps source or manually seed 50-200 sale records.
+511 transit,Pending,API key needed,Register for 511 token and pull GTFS regional feed.
+ACS variables,Pending,API key needed,Pull tract/block-group attributes after Census key is available.
+Parcel joins,Ready,Geospatial owner,"Join parcels to city, zoning, risk, schools, Census, and OSM."
+SF permit demo,Ready,Data/product owner,Use as fast ingestion/explanation proof point.

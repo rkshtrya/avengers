@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="240" viewBox="0 0 1040 240">
+<rect width="1040" height="240" fill="white"/>
+<text x="24" y="42" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#334155">Simple review path</text>
+<rect x="28" y="82" width="176" height="96" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+<circle cx="56" cy="112" r="16" fill="#2563eb"/>
+<text x="56" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="white">1</text>
+<text x="84" y="116" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#334155">Open README</text>
+<text x="48" y="152" font-family="Arial, sans-serif" font-size="14" fill="#64748b">2-minute orientation</text>
+<line x1="216" y1="130" x2="250" y2="130" stroke="#334155" stroke-width="2"/>
+<polygon points="250,130 240,124 240,136" fill="#334155"/>
+<rect x="266" y="82" width="176" height="96" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+<circle cx="294" cy="112" r="16" fill="#2563eb"/>
+<text x="294" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="white">2</text>
+<text x="322" y="116" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#334155">Notebook 01</text>
+<text x="286" y="152" font-family="Arial, sans-serif" font-size="14" fill="#64748b">What data exists</text>
+<line x1="454" y1="130" x2="488" y2="130" stroke="#334155" stroke-width="2"/>
+<polygon points="488,130 478,124 478,136" fill="#334155"/>
+<rect x="504" y="82" width="176" height="96" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+<circle cx="532" cy="112" r="16" fill="#2563eb"/>
+<text x="532" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="white">3</text>
+<text x="560" y="116" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#334155">Notebook 02</text>
+<text x="524" y="152" font-family="Arial, sans-serif" font-size="14" fill="#64748b">EDA and visuals</text>
+<line x1="692" y1="130" x2="726" y2="130" stroke="#334155" stroke-width="2"/>
+<polygon points="726,130 716,124 716,136" fill="#334155"/>
+<rect x="742" y="82" width="176" height="96" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+<circle cx="770" cy="112" r="16" fill="#2563eb"/>
+<text x="770" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="white">4</text>
+<text x="798" y="116" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#334155">Notebook 03</text>
+<text x="762" y="152" font-family="Arial, sans-serif" font-size="14" fill="#64748b">Gaps and next steps</text>
+<line x1="930" y1="130" x2="964" y2="130" stroke="#334155" stroke-width="2"/>
+<polygon points="964,130 954,124 954,136" fill="#334155"/>
+<rect x="980" y="82" width="176" height="96" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+<circle cx="1008" cy="112" r="16" fill="#2563eb"/>
+<text x="1008" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="white">5</text>
+<text x="1036" y="116" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#334155">Team decision</text>
+<text x="1000" y="152" font-family="Arial, sans-serif" font-size="14" fill="#64748b">Comps + MVP path</text>
+</svg>

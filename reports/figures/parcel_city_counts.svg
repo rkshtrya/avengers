@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="535" viewBox="0 0 920 535">
+<rect width="920" height="535" fill="white"/>
+<text x="24" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334155">Contra Costa parcel city counts</text>
+<text x="24" y="94" font-family="Arial, sans-serif" font-size="15" fill="#334155">CNCD</text>
+<rect x="250" y="77" width="550.0" height="22" rx="4" fill="#059669"/>
+<text x="810.0" y="94" font-family="Arial, sans-serif" font-size="14" fill="#334155">38,993</text>
+<text x="24" y="136" font-family="Arial, sans-serif" font-size="15" fill="#334155">ANT</text>
+<rect x="250" y="119" width="503.6" height="22" rx="4" fill="#059669"/>
+<text x="763.636550150027" y="136" font-family="Arial, sans-serif" font-size="14" fill="#334155">35,706</text>
+<text x="24" y="178" font-family="Arial, sans-serif" font-size="15" fill="#334155">RCHMD</text>
+<rect x="250" y="161" width="499.8" height="22" rx="4" fill="#059669"/>
+<text x="759.7717539045469" y="178" font-family="Arial, sans-serif" font-size="14" fill="#334155">35,432</text>
+<text x="24" y="220" font-family="Arial, sans-serif" font-size="15" fill="#334155">WALCR</text>
+<rect x="250" y="203" width="493.0" height="22" rx="4" fill="#059669"/>
+<text x="752.9589926397045" y="220" font-family="Arial, sans-serif" font-size="14" fill="#334155">34,949</text>
+<text x="24" y="262" font-family="Arial, sans-serif" font-size="15" fill="#334155">SNRMN</text>
+<rect x="250" y="245" width="391.5" height="22" rx="4" fill="#059669"/>
+<text x="651.5010386479624" y="262" font-family="Arial, sans-serif" font-size="14" fill="#334155">27,756</text>
+<text x="24" y="304" font-family="Arial, sans-serif" font-size="15" fill="#334155">BRTWD</text>
+<rect x="250" y="287" width="336.3" height="22" rx="4" fill="#059669"/>
+<text x="596.3219039314749" y="304" font-family="Arial, sans-serif" font-size="14" fill="#334155">23,844</text>
+<text x="24" y="346" font-family="Arial, sans-serif" font-size="15" fill="#334155">DAN</text>
+<rect x="250" y="329" width="313.7" height="22" rx="4" fill="#059669"/>
+<text x="573.6550150026928" y="346" font-family="Arial, sans-serif" font-size="14" fill="#334155">22,237</text>
+<text x="24" y="388" font-family="Arial, sans-serif" font-size="15" fill="#334155">PITTS</text>
+<rect x="250" y="371" width="293.2" height="22" rx="4" fill="#059669"/>
+<text x="553.2449413997384" y="388" font-family="Arial, sans-serif" font-size="14" fill="#334155">20,790</text>
+<text x="24" y="430" font-family="Arial, sans-serif" font-size="15" fill="#334155">MRTNZ</text>
+<rect x="250" y="413" width="242.1" height="22" rx="4" fill="#059669"/>
+<text x="502.0575487908086" y="430" font-family="Arial, sans-serif" font-size="14" fill="#334155">17,161</text>
+<text x="24" y="472" font-family="Arial, sans-serif" font-size="15" fill="#334155">OKLY</text>
+<rect x="250" y="455" width="224.8" height="22" rx="4" fill="#059669"/>
+<text x="484.7929115482266" y="472" font-family="Arial, sans-serif" font-size="14" fill="#334155">15,937</text>
+</svg>

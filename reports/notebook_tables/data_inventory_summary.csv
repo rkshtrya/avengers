@@ -1,0 +1,11 @@
+Area,Path,Current coverage,Status
+SF permits,data/raw/san_francisco/building_permits_selected_parts/,"1,291,589 rows",Available
+Contra Costa parcels,data/raw/contra_costa/Parcels_Public_May2026.zip,"387,835 parcels",Available
+Census boundaries,data/raw/census/,"tracts, block groups, places",Available
+Schools,data/raw/schools/cde_public_schools_and_districts.txt,"18,390 rows",Available
+Wildfire risk,data/raw/risk/calfire_*.geojson,LRA/SRA extracts,Available
+Flood risk,data/raw/risk/fema_*.geojson,"6,435 attribute rows",Available for review; geometry join pending
+Amenities,data/raw/osm/osm_san_ramon_pois.json,"7,026 elements",Available
+Comparable sales,not included,needed for valuation,Pending
+511 transit,not included,API token needed,Pending
+ACS variables,not included,Census API key needed,Pending

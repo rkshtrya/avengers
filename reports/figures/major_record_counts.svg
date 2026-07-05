@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="451" viewBox="0 0 920 451">
+<rect width="920" height="451" fill="white"/>
+<text x="24" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334155">Rows / features by major dataset</text>
+<text x="24" y="94" font-family="Arial, sans-serif" font-size="15" fill="#334155">SF permits</text>
+<rect x="250" y="77" width="550.0" height="22" rx="4" fill="#2563eb"/>
+<text x="810.0" y="94" font-family="Arial, sans-serif" font-size="14" fill="#334155">1,291,589</text>
+<text x="24" y="136" font-family="Arial, sans-serif" font-size="15" fill="#334155">Contra Costa parcels</text>
+<rect x="250" y="119" width="165.2" height="22" rx="4" fill="#2563eb"/>
+<text x="425.1525756258376" y="136" font-family="Arial, sans-serif" font-size="14" fill="#334155">387,835</text>
+<text x="24" y="178" font-family="Arial, sans-serif" font-size="15" fill="#334155">CDE schools</text>
+<rect x="250" y="161" width="7.8" height="22" rx="4" fill="#2563eb"/>
+<text x="267.8310515187107" y="178" font-family="Arial, sans-serif" font-size="14" fill="#334155">18,390</text>
+<text x="24" y="220" font-family="Arial, sans-serif" font-size="15" fill="#334155">OSM San Ramon POIs</text>
+<rect x="250" y="203" width="3.0" height="22" rx="4" fill="#2563eb"/>
+<text x="263" y="220" font-family="Arial, sans-serif" font-size="14" fill="#334155">7,026</text>
+<text x="24" y="262" font-family="Arial, sans-serif" font-size="15" fill="#334155">FEMA flood attrs</text>
+<rect x="250" y="245" width="3.0" height="22" rx="4" fill="#2563eb"/>
+<text x="263" y="262" font-family="Arial, sans-serif" font-size="14" fill="#334155">6,435</text>
+<text x="24" y="304" font-family="Arial, sans-serif" font-size="15" fill="#334155">Census block groups</text>
+<rect x="250" y="287" width="10.9" height="22" rx="4" fill="#2563eb"/>
+<text x="270.9042814703439" y="304" font-family="Arial, sans-serif" font-size="14" fill="#334155">25,607</text>
+<text x="24" y="346" font-family="Arial, sans-serif" font-size="15" fill="#334155">Census tracts</text>
+<rect x="250" y="329" width="3.9" height="22" rx="4" fill="#2563eb"/>
+<text x="263.8874208436275" y="346" font-family="Arial, sans-serif" font-size="14" fill="#334155">9,129</text>
+<text x="24" y="388" font-family="Arial, sans-serif" font-size="15" fill="#334155">Zoning polygons</text>
+<rect x="250" y="371" width="3.0" height="22" rx="4" fill="#2563eb"/>
+<text x="263" y="388" font-family="Arial, sans-serif" font-size="14" fill="#334155">1,259</text>
+</svg>
