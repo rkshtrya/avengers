@@ -16,11 +16,14 @@ This is the shortest path through the repo.
 
 | Step | File | Why |
 | --- | --- | --- |
-| 1 | `../docs/dataset-catalog.md` | Understand what each dataset is, what county/geography it covers, and where it came from. |
-| 2 | `../notebooks/01_data_inventory.ipynb` | See what data is actually in the repo. |
-| 3 | `../notebooks/02_executed_eda.ipynb` | Review the key EDA charts and tables. |
-| 4 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who should review what. |
-| 5 | `../docs/project-lattice-data-review.md` | Read the team review instructions. |
+| 1 | `../README.md` | Get the simple walkthrough first. |
+| 2 | `../DATA_FILES.md` | See the actual raw files uploaded to GitHub. |
+| 3 | `../docs/dataset-catalog.md` | Understand what each dataset is, what county/geography it covers, and where it came from. |
+| 4 | `../docs/knowledge-graph-plan.md` | See how the raw files become graph nodes, graph edges, and sourced claims. |
+| 5 | `../notebooks/01_data_inventory.ipynb` | See what data is actually in the repo. |
+| 6 | `../notebooks/02_executed_eda.ipynb` | Review the key EDA charts and tables. |
+| 7 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who should review what. |
+| 8 | `../docs/project-lattice-data-review.md` | Read the detailed team review instructions. |
 
 Actual downloaded data files are organized under `../data/raw/`.
 

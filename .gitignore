@@ -6,5 +6,5 @@ __pycache__/
 # Rebuilt from split parts; too large for normal GitHub commits.
 data/raw/san_francisco/building_permits_selected.csv
 
-# Local handoff archive.
-project-lattice-data-handoff-*.zip
+# Local review archive.
+project-lattice-data-review-*.zip

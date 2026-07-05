@@ -10,19 +10,25 @@ The goal for this phase is not to make the model look good. The goal is to decid
 
 ```text
 docs/
+  README.md                         # How to read the docs folder
+  dataset-catalog.md                # Plain-English guide to every dataset
+  knowledge-graph-plan.md           # How the data becomes graph nodes and edges
   project-lattice-data-sources.md   # Product understanding and source strategy
   project-lattice-data-review.md    # What I downloaded and how to review it
   team-collaboration-plan.md        # This workflow
 data/
+  README.md                         # How to read the data folder
   source_registry.csv               # Source list, priority, and EDA questions
   raw/                              # Downloaded source files already organized by folder
   processed/samples/                # Small review samples
   metadata/                         # Source/service metadata
 reports/
+  README.md                         # How to read the EDA outputs
   domain_eda_findings.md            # Main product-oriented EDA summary
   eda_summary.md                    # File inventory, row counts, and samples
   profiles/                         # Count tables from EDA
 scripts/
+  README.md
   download_project_lattice_data.py
   eda_project_lattice_data.py
   profile_project_lattice_data.py
