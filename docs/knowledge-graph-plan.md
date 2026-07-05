@@ -4,7 +4,7 @@ This page explains how the raw data becomes the Project Lattice knowledge graph.
 
 The simple idea:
 
-> A house should not be judged by one number. It should have a connected fact file that explains what is true about the property, what is nearby, what risks exist, and which source supports each claim.
+> A house can be understood through more than one number. It can have a connected fact file that explains what is true about the property, what is nearby, what risks exist, and which source supports each claim.
 
 ## What Is A Knowledge Graph?
 
@@ -55,7 +55,7 @@ The product goal is:
 
 > Given a property, explain whether it looks fairly priced, overpriced, undervalued, risky, or promising, and show the evidence behind the answer.
 
-For the first version, the graph should answer questions like:
+For the first version, the graph can answer questions like:
 
 | Question | How the graph helps |
 | --- | --- |
@@ -70,7 +70,7 @@ For the first version, the graph should answer questions like:
 
 ## First Data Path
 
-The first graph should start with Contra Costa / San Ramon because that matches the main story geography.
+The first graph can start with Contra Costa / San Ramon because that matches the main story geography.
 
 ```mermaid
 flowchart TD
@@ -81,7 +81,7 @@ flowchart TD
   E --> F["Add schools + amenities"]
   F --> G["Add flood + fire risk"]
   G --> H["Build property_features table"]
-  H --> I["Create graph nodes + edges"]
+  H --> KG["Create graph nodes + edges"]
   J["Comparable sales"] -. "missing right now" .-> H
 ```
 
@@ -93,7 +93,7 @@ Call it:
 
 `property_features`
 
-Each row should include:
+Each row can include:
 
 | Field group | Examples |
 | --- | --- |
@@ -116,7 +116,7 @@ Why start with this table?
 
 ## Graph Nodes
 
-These are the first node types I would create.
+These are the first node types we can create.
 
 | Node | What it means | Data source |
 | --- | --- | --- |
@@ -134,7 +134,7 @@ These are the first node types I would create.
 
 ## Graph Edges
 
-These are the first relationship types I would create.
+These are the first relationship types we can create.
 
 | Edge | Plain meaning |
 | --- | --- |
@@ -167,13 +167,13 @@ Every join needs a simple quality check.
 
 ## Provenance Rule
 
-Every graph claim should carry a source.
+Every graph claim can carry a source.
 
 Example claim:
 
 > Property 123 is inside a high fire hazard zone.
 
-That claim should store:
+That claim can store:
 
 | Field | Example |
 | --- | --- |

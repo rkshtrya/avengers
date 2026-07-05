@@ -6,7 +6,7 @@ Project Lattice is a real-estate intelligence product. The idea is simple:
 
 > Given a property, can we explain whether it looks fairly priced, overpriced, undervalued, risky, or promising, using real source data?
 
-I do not want the product to only say "the value is X." I want it to explain **why**:
+Instead of stopping at "the value is X," we want the product to explain **why**:
 
 - which parcel the property sits on
 - what city, tract, school area, and risk zones it belongs to
@@ -16,13 +16,13 @@ I do not want the product to only say "the value is X." I want it to explain **w
 
 The biggest takeaway right now:
 
-> We have enough public data to build the knowledge graph and explanation demo. We do not yet have enough data for production-grade valuation because comparable sales are still missing.
+> We have enough public data to build the knowledge graph and explanation demo. Production-grade valuation still depends on comparable sales.
 
 ---
 
 ## Background
 
-The product idea is not just "show me a home price."
+The product idea is not just "show a home price."
 
 The product idea is:
 
@@ -34,14 +34,14 @@ The product idea is:
 
 That is why this repo is organized around data first.
 
-Before building the final app, we need to know:
+Before building the final app, we want to answer:
 
 | Question | Why it matters |
 | --- | --- |
-| Do we have real property records? | Without parcels/APNs/addresses, we do not know what property we are talking about. |
+| Do we have real property records? | Parcels/APNs/addresses help us identify the property clearly. |
 | Do we have location context? | City, Census, zoning, and land-use layers tell us where the property sits. |
 | Do we have nearby signals? | Schools, amenities, permits, flood, and fire layers help explain risk and opportunity. |
-| Do we have source proof? | Every important claim should point back to a source file or source URL. |
+| Do we have source proof? | Every important claim can point back to a source file or source URL. |
 | Do we have comparable sales? | This is required before we can trust a valuation number. |
 
 The current repo answers most of the context questions. It does not yet solve comparable sales.
@@ -91,7 +91,7 @@ If you are opening this repo for the first time, follow this order.
 | 3 | `docs/dataset-catalog.md` | Plain-English explanation of each dataset: county/geography, source, type, and purpose. |
 | 4 | `notebooks/01_data_inventory.ipynb` | Executed notebook showing what data is present and what is pending. |
 | 5 | `notebooks/02_executed_eda.ipynb` | Executed notebook with the main EDA charts and tables. |
-| 6 | `notebooks/03_availability_and_next_steps.ipynb` | What is ready, what is blocked, and what we should do next. |
+| 6 | `notebooks/03_availability_and_next_steps.ipynb` | What is ready, what is blocked, and what we can do next. |
 | 7 | `docs/knowledge-graph-plan.md` | Easy walkthrough of how raw data becomes a graph. |
 | 8 | `docs/project-lattice-data-review.md` | More detailed team review notes. |
 
@@ -199,7 +199,7 @@ scripts/
 
 ## How To Look At The Data
 
-Do not start by opening the biggest files.
+The easiest review path is to start with the summary files before opening the biggest files.
 
 Start with the summary files:
 
@@ -219,8 +219,8 @@ When reviewing any dataset, answer these questions:
 
 | Question | Why it matters |
 | --- | --- |
-| What geography does this cover? | We need to know if it supports San Ramon, Contra Costa, SF, or all of California. |
-| What is the source agency? | Every claim in Lattice should point back to a source. |
+| What geography does this cover? | We want to confirm whether it supports San Ramon, Contra Costa, SF, or all of California. |
+| What is the source agency? | Every claim in Lattice can point back to a source. |
 | What is the join key? | We need APN, address, geometry, tract ID, school ID, or coordinates to connect data. |
 | How many records are there? | Shows whether the dataset is big enough to be useful. |
 | What columns are missing? | Missing fields can block features. |
@@ -273,7 +273,7 @@ graph TD
   M --> SM["Source Record"]
 ```
 
-The first version should create these nodes:
+The first version can create these nodes:
 
 | Node | Meaning | Current data source |
 | --- | --- | --- |
@@ -288,7 +288,7 @@ The first version should create these nodes:
 | `ComparableSale` | Actual sale evidence | Missing right now |
 | `SourceRecord` | Provenance for every claim | Source URLs and metadata |
 
-The first version should create these edges:
+The first version can create these edges:
 
 | Edge | Example |
 | --- | --- |
@@ -342,7 +342,7 @@ For pending data pulls:
 
 ## How To Reproduce The Analysis
 
-Run this from the repo root:
+To reproduce the analysis, we can run this from the repo root:
 
 ```bash
 python3 scripts/eda_project_lattice_data.py
@@ -367,7 +367,7 @@ python3 scripts/reconstruct_large_files.py
 3. Join parcels to city limits, zoning, land use, Census geography, schools, OSM POIs, FEMA flood zones, and CAL FIRE fire zones.
 4. Build a first `property_features` table.
 5. Decide how we will get comparable sales.
-6. Do not claim production valuation until comparable sales are solved.
+6. Keep production valuation claims paused until comparable sales are solved.
 
 ---
 

@@ -76,7 +76,7 @@ def dbf_schema_and_sample(dbf_bytes: bytes, sample_n: int = 5) -> dict:
     # dBASE III/IV header.
     if len(dbf_bytes) < 32:
         return {"error": "DBF too small"}
-    num_records = struct.unpack("<I", dbf_bytes[4:8])[0]
+    num_records = int.from_bytes(dbf_bytes[4:8], "little")
     header_len = struct.unpack("<H", dbf_bytes[8:10])[0]
     record_len = struct.unpack("<H", dbf_bytes[10:12])[0]
     fields = []
@@ -288,9 +288,9 @@ def write_markdown(summaries: list[dict]) -> None:
     lines = []
     lines.append("# Project Lattice EDA Summary")
     lines.append("")
-    lines.append("I used the files in `data/raw` and `data/metadata` to check what we can actually build on.")
+    lines.append("We used the files in `data/raw` and `data/metadata` to check what we can actually build on.")
     lines.append("")
-    lines.append("## My Read")
+    lines.append("## Our Read")
     lines.append("")
     lines.append("- This repo is strong enough for data-source review and first-pass EDA.")
     lines.append("- Public/contextual layers are available: parcels, zoning/planning, schools, permits, Census boundaries, flood risk, wildfire risk, and OSM POIs.")
@@ -322,11 +322,11 @@ def write_markdown(summaries: list[dict]) -> None:
     lines.append("")
     lines.append("1. **San Ramon/Contra Costa story path is feasible for the graph base.** Contra Costa publishes parcel, zoning, land-use, city-limit, and urban-limit-line shapefiles.")
     lines.append("2. **Risk layers are real and source-backed.** FEMA NFHL and CAL FIRE FHSZ services are queryable; this repo includes Contra Costa bbox extracts.")
-    lines.append("3. **School metadata is downloadable.** CDE public school/district files are included, but school-quality scoring should be derived carefully from public performance data rather than proprietary ratings.")
+    lines.append("3. **School metadata is downloadable.** CDE public school/district files are included, and school-quality scoring can be derived carefully from public performance data rather than proprietary ratings.")
     lines.append("4. **SF is still the easier data-first demo.** The SF permit extract has over one million records and good structured fields; in this repository it is stored as selected-column split CSV parts.")
     lines.append("5. **Comparable sales is still the critical path.** Without sale price/date/property attributes, Lattice can explain context and risk but cannot honestly claim production-grade valuation.")
     lines.append("")
-    lines.append("## What I Would Do Next")
+    lines.append("## What We Can Do Next")
     lines.append("")
     lines.append("1. Install geospatial tooling: `pip install geopandas pyogrio shapely duckdb duckdb-engine` or use QGIS/PostGIS.")
     lines.append("2. Read Contra Costa parcels and city limits, filter parcels to San Ramon, and compute parcel count plus address/APN completeness.")

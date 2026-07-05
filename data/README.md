@@ -28,7 +28,7 @@ data/
 
 | Folder | Meaning |
 | --- | --- |
-| `raw/` | Files downloaded from source agencies or public data services. These should stay close to the original source. |
+| `raw/` | Files downloaded from source agencies or public data services. These stay close to the original source. |
 | `processed/samples/` | Small sample files created so the team can inspect columns and values quickly. These are easier to open in GitHub. |
 | `metadata/` | Download manifests and service metadata. These help prove where files came from and what was available. |
 

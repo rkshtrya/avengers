@@ -2,7 +2,7 @@
 
 This folder contains the EDA outputs and visual review files.
 
-Use this folder after reading `../README.md` and `../docs/dataset-catalog.md`.
+This folder is most useful after reading `../README.md` and `../docs/dataset-catalog.md`.
 
 ## What To Open First
 

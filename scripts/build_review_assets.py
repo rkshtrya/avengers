@@ -89,7 +89,7 @@ DATASET_CATALOG = [
         "Source agency": "Contra Costa County GIS / Planning",
         "Local path": "data/raw/contra_costa/PLA_DCD_Zoning.zip",
         "Source URL": "https://gis.cccounty.us/Downloads/Planning/PLA_DCD_Zoning.zip",
-        "What to look for": "Zoning classifications and overlays. We still need to verify incorporated San Ramon coverage.",
+        "What to look for": "Zoning classifications and overlays. We can verify incorporated San Ramon coverage.",
         "Status": "Downloaded; coverage check needed",
     },
     {
@@ -360,7 +360,7 @@ def make_dataset_catalog() -> pd.DataFrame:
     lines = []
     lines.append("# Dataset Catalog")
     lines.append("")
-    lines.append("This is the plain-English guide to the data in the repo. For each dataset I list what it is, what geography it covers, where it came from, and how I expect us to use it for Project Lattice.")
+    lines.append("This is the plain-English guide to the data in the repo. For each dataset, we list what it is, what geography it covers, where it came from, and how we can use it for Project Lattice.")
     lines.append("")
     lines.append("## Quick Table")
     lines.append("")
@@ -522,7 +522,7 @@ This is the shortest path through the repo.
 | 4 | `../docs/knowledge-graph-plan.md` | See how the raw files become graph nodes, graph edges, and sourced claims. |
 | 5 | `../notebooks/01_data_inventory.ipynb` | See what data is actually in the repo. |
 | 6 | `../notebooks/02_executed_eda.ipynb` | Review the key EDA charts and tables. |
-| 7 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who should review what. |
+| 7 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who can review what. |
 | 8 | `../docs/project-lattice-data-review.md` | Read the detailed team review instructions. |
 
 Actual downloaded data files are organized under `../data/raw/`.
@@ -585,7 +585,7 @@ def make_notebooks() -> None:
                 inventory_view,
                 count=3,
             ),
-            md("## What Is Pending\n\nThese are the items we still need to assign or unlock."),
+            md("## What Is Pending\n\nThese are the items we can assign or unlock together."),
             code(
                 "blocked = pd.read_csv('../reports/blocked_or_deferred_sources.csv')\nblocked",
                 blocked,
@@ -597,7 +597,7 @@ def make_notebooks() -> None:
     write_notebook(
         NOTEBOOKS / "02_executed_eda.ipynb",
         [
-            md("# 02 Executed EDA\n\nThis notebook is the visual EDA pass. The outputs are already saved so reviewers do not need to rerun anything just to understand the data."),
+            md("# 02 Executed EDA\n\nThis notebook is the visual EDA pass. The outputs are already saved so reviewers can understand the data without rerunning anything first."),
             md("## Major Dataset Sizes\n\n![Rows by dataset](../reports/figures/major_record_counts.svg)"),
             md("## Contra Costa Parcel Concentration\n\n![Parcel city counts](../reports/figures/parcel_city_counts.svg)"),
             code(
@@ -649,7 +649,7 @@ def make_notebooks() -> None:
     write_notebook(
         NOTEBOOKS / "03_availability_and_next_steps.ipynb",
         [
-            md("# 03 Availability And Next Steps\n\nThis is the decision notebook: what we can build now, what is pending, and what I need the team to review."),
+            md("# 03 Availability And Next Steps\n\nThis is the decision notebook: what we can build now, what is pending, and what the team can review together."),
             md("![Data readiness](../reports/figures/data_readiness.svg)"),
             code(
                 "readiness = pd.DataFrame(...)\nreadiness",
@@ -668,7 +668,7 @@ def make_notebooks() -> None:
                 next_steps,
                 count=3,
             ),
-            md("## My Decision Point\n\nWe can build the knowledge graph and explanation demo now. We should not present the valuation model as production-grade until comparable sales are secured."),
+            md("## Team Decision Point\n\nWe can build the knowledge graph and explanation demo now. We can hold production-grade valuation claims until comparable sales are secured."),
         ],
     )
 

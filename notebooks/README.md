@@ -6,17 +6,17 @@ The notebooks are already executed so the team can review them directly in GitHu
 
 - `01_data_inventory.ipynb`: what data is downloaded and where it lives.
 - `02_executed_eda.ipynb`: main EDA charts and output tables.
-- `03_availability_and_next_steps.ipynb`: what is available, what is pending, and what we should do next.
+- `03_availability_and_next_steps.ipynb`: what is available, what is pending, and what we can do next.
 
 Before opening the notebooks, read `../docs/dataset-catalog.md` for the plain-English explanation of each dataset, source agency, county/geography, and local file path.
 
 Use any new notebooks for evidence, not as the only place where decisions live. If a notebook changes our direction, summarize the decision back in `docs/` or `reports/`.
 
-## Rules I Want Us To Follow
+## Rules We Can Follow
 
 - Read source metadata from `../data/source_registry.csv`.
 - Keep credentials in local environment variables, never in notebooks.
-- Do not add more large raw files without deciding where they should live.
+- For more large raw files, we can decide where they belong before adding them.
 - Write small reproducible outputs to `../data/processed/` only when licensing allows it.
 - At the top of every notebook, list:
   - owner

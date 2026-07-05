@@ -16,4 +16,4 @@ Use these when you want to inspect columns and example rows without opening the 
 
 Samples are for review only.
 
-Do not use sample files to make final counts or product decisions. Use the notebooks or scripts for that.
+Final counts and product decisions are better made from the notebooks or scripts, not from the small sample files.

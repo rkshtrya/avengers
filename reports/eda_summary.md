@@ -1,8 +1,8 @@
 # Project Lattice EDA Summary
 
-I used the files in `data/raw` and `data/metadata` to check what we can actually build on.
+We used the files in `data/raw` and `data/metadata` to check what we can actually build on.
 
-## My Read
+## Our Read
 
 - This repo is strong enough for data-source review and first-pass EDA.
 - Public/contextual layers are available: parcels, zoning/planning, schools, permits, Census boundaries, flood risk, wildfire risk, and OSM POIs.
@@ -55,11 +55,11 @@ I used the files in `data/raw` and `data/metadata` to check what we can actually
 
 1. **San Ramon/Contra Costa story path is feasible for the graph base.** Contra Costa publishes parcel, zoning, land-use, city-limit, and urban-limit-line shapefiles.
 2. **Risk layers are real and source-backed.** FEMA NFHL and CAL FIRE FHSZ services are queryable; this repo includes Contra Costa bbox extracts.
-3. **School metadata is downloadable.** CDE public school/district files are included, but school-quality scoring should be derived carefully from public performance data rather than proprietary ratings.
+3. **School metadata is downloadable.** CDE public school/district files are included, and school-quality scoring can be derived carefully from public performance data rather than proprietary ratings.
 4. **SF is still the easier data-first demo.** The SF permit extract has over one million records and good structured fields; in this repository it is stored as selected-column split CSV parts.
 5. **Comparable sales is still the critical path.** Without sale price/date/property attributes, Lattice can explain context and risk but cannot honestly claim production-grade valuation.
 
-## What I Would Do Next
+## What We Can Do Next
 
 1. Install geospatial tooling: `pip install geopandas pyogrio shapely duckdb duckdb-engine` or use QGIS/PostGIS.
 2. Read Contra Costa parcels and city limits, filter parcels to San Ramon, and compute parcel count plus address/APN completeness.

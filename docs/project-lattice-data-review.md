@@ -2,15 +2,15 @@
 
 Prepared for team review on 2026-07-05.
 
-## Why I Put This Together
+## Why We Put This Together
 
-I want us to look at Project Lattice from the data first, not just from the product story. The product only works if we can connect a valuation and explanation back to real property records, risk layers, schools, permits, amenities, and eventually comparable sales.
+We want to look at Project Lattice from the data first, not just from the product story. The product only works if we can connect a valuation and explanation back to real property records, risk layers, schools, permits, amenities, and eventually comparable sales.
 
 This repo is ready for source review, schema review, early feature engineering, knowledge-graph design, and first-pass EDA. It is not ready for production valuation yet because comparable sales are still unresolved.
 
 ## Start Here
 
-Please review these in order:
+A helpful review order:
 
 1. `DATA_FILES.md`  
    Direct list of the actual raw source files uploaded to GitHub.
@@ -25,10 +25,10 @@ Please review these in order:
    Visual EDA charts and tables, already executed.
 
 5. `notebooks/03_availability_and_next_steps.ipynb`  
-   What is available, what is pending, and what I need us to decide.
+   What is available, what is pending, and what we can decide together.
 
 6. `reports/domain_eda_findings.md`  
-   My main EDA summary. This is where the data is mapped back to the product.
+   Our main EDA summary. This is where the data is mapped back to the product.
 
 7. `reports/eda_summary.md`  
    Dataset inventory, row counts, sizes, sample paths, and blocked sources.
@@ -42,15 +42,15 @@ Please review these in order:
 10. `data/processed/samples/`  
    Small samples so we can review quickly before loading full files.
 
-## What I Downloaded
+## What We Downloaded
 
 Raw files are under `data/raw/`; source metadata is under `data/metadata/`.
 
-| Area | Files | What I found |
+| Area | Files | What we found |
 | --- | --- | --- |
 | Contra Costa parcels | `data/raw/contra_costa/Parcels_Public_May2026.zip` | 387,835 parcel records; APN present on 100%; street-number/name/city fields complete on 94.2%. |
-| San Ramon filtering | Contra Costa city limits plus parcel city/ZIP fields | San Ramon appears as `SNRMN` with 27,756 parcel rows. We should still validate with the city boundary geometry. |
-| Zoning and planning | Contra Costa zoning, general-plan land use, urban limit line, LAFCO SOI | Good enough for contextual explanations; we need to confirm incorporated-city zoning coverage. |
+| San Ramon filtering | Contra Costa city limits plus parcel city/ZIP fields | San Ramon appears as `SNRMN` with 27,756 parcel rows. We can still validate with the city boundary geometry. |
+| Zoning and planning | Contra Costa zoning, general-plan land use, urban limit line, LAFCO SOI | Good enough for contextual explanations; we can confirm incorporated-city zoning coverage. |
 | Census boundaries | California 2025 tract, block group, and place TIGER shapefiles | Boundaries are included; ACS attributes still need a Census API key. |
 | Schools | CDE public schools/districts file | 18,390 statewide rows; 479 Contra Costa rows; 44 rows with San Ramon in city or district. |
 | Wildfire risk | CAL FIRE FHSZ LRA/SRA Contra Costa bbox extracts | Fire-hazard categories are included for the project area. |
@@ -58,7 +58,7 @@ Raw files are under `data/raw/`; source metadata is under `data/metadata/`.
 | Amenities | OSM San Ramon POI extract | 7,026 OSM elements for prototype proximity/context features. |
 | Permits | San Francisco building permit selected-column CSV, stored as split CSV parts | 1,291,589 rows; 99.7% have point location. Strong demo dataset, but not San Ramon-specific. |
 
-## Gaps I Need Us To Resolve
+## Gaps We Can Resolve Together
 
 Critical:
 
@@ -69,11 +69,11 @@ Needs credential/manual step:
 - 511/Bay Area GTFS needs a 511 API token.
 - Census ACS 5-year variables need a Census API key.
 - CDE district-only endpoint returned a bot-validation page through automated download; the combined schools/districts file is included and usable.
-- Full California OSM PBF is large, so I used a focused San Ramon Overpass extract for now.
+- Full California OSM PBF is large, so we are using a focused San Ramon Overpass extract for now.
 
-## How I Want Us To Collaborate
+## How We Can Collaborate
 
-Use this repo as the working source of truth for scripts, manifests, reports, samples, and source decisions. Since the raw files are already organized here, we can review directly in GitHub, but I do not want us casually adding more large files without deciding whether they belong in Git, a Release asset, Drive, S3, or another shared data store.
+We can use this repo as the working source of truth for scripts, manifests, reports, samples, and source decisions. Since the raw files are already organized here, we can review directly in GitHub. For additional large files, we can decide together whether they belong in Git, a Release asset, Drive, S3, or another shared data store.
 
 Suggested split:
 

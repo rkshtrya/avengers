@@ -2,7 +2,7 @@
 
 The actual downloaded source files are committed under `data/raw/`.
 
-Use this page if you only want to find the raw data files quickly. For a plain-English explanation of each dataset, read `docs/dataset-catalog.md`.
+This page helps us find the raw data files quickly. For a plain-English explanation of each dataset, `docs/dataset-catalog.md` has the walkthrough.
 
 ## Contra Costa County Data
 

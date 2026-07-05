@@ -1,6 +1,6 @@
 # Dataset Catalog
 
-This is the plain-English guide to the data in the repo. For each dataset I list what it is, what geography it covers, where it came from, and how I expect us to use it for Project Lattice.
+This is the plain-English guide to the data in the repo. For each dataset, we list what it is, what geography it covers, where it came from, and how we can use it for Project Lattice.
 
 ## Quick Table
 
@@ -85,7 +85,7 @@ This is the plain-English guide to the data in the repo. For each dataset I list
 - **Source agency:** Contra Costa County GIS / Planning
 - **Local path:** `data/raw/contra_costa/PLA_DCD_Zoning.zip`
 - **Source URL:** https://gis.cccounty.us/Downloads/Planning/PLA_DCD_Zoning.zip
-- **What to look for:** Zoning classifications and overlays. We still need to verify incorporated San Ramon coverage.
+- **What to look for:** Zoning classifications and overlays. We can verify incorporated San Ramon coverage.
 - **Status:** Downloaded; coverage check needed
 
 ### Census TIGER Tracts

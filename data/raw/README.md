@@ -24,8 +24,8 @@ Most files are spatial files:
 - `.json` OSM files are best read with Python or a JSON viewer.
 - `.csv` permit parts can be opened with pandas or spreadsheet tools, but they are large.
 
-## Do Not Edit Raw Files
+## Raw File Care
 
-The files in this folder should be treated like evidence.
+The files in this folder are best treated like evidence.
 
 If a cleaner version is needed, write it to a processed folder and document the script that created it.

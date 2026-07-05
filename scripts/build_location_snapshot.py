@@ -47,7 +47,7 @@ def zip_read(zip_path: Path, suffix: str) -> bytes:
 
 def dbf_records(zip_path: Path) -> list[dict[str, str]]:
     data = zip_read(zip_path, ".dbf")
-    record_count = struct.unpack("<I", data[4:8])[0]
+    record_count = int.from_bytes(data[4:8], "little")
     header_len = struct.unpack("<H", data[8:10])[0]
     record_len = struct.unpack("<H", data[10:12])[0]
 

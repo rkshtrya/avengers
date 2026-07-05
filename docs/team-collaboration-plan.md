@@ -1,8 +1,8 @@
 # Project Lattice Team Collaboration Plan
 
-## How I Want Us To Work
+## How We Can Work
 
-I want GitHub to be the source of truth for the data review. Slides or docs are fine for presentation polish, but the actual source registry, EDA results, scripts, and decisions should live here so we can audit what changed.
+We can use GitHub as the source of truth for the data review. Slides or docs are fine for presentation polish, but the actual source registry, EDA results, scripts, and decisions can live here so we can audit what changed.
 
 The goal for this phase is not to make the model look good. The goal is to decide whether the data can support the product we want to build.
 
@@ -14,7 +14,7 @@ docs/
   dataset-catalog.md                # Plain-English guide to every dataset
   knowledge-graph-plan.md           # How the data becomes graph nodes and edges
   project-lattice-data-sources.md   # Product understanding and source strategy
-  project-lattice-data-review.md    # What I downloaded and how to review it
+  project-lattice-data-review.md    # What we downloaded and how to review it
   team-collaboration-plan.md        # This workflow
 data/
   README.md                         # How to read the data folder
@@ -41,9 +41,9 @@ notebooks/
 1. Start with `docs/project-lattice-data-review.md`.
 2. Use `data/source_registry.csv` as the operating checklist.
 3. Assign one owner per `P0` source or unresolved source gap.
-4. Each owner should answer the EDA questions already listed in the registry.
+4. Each owner can answer the EDA questions already listed in the registry.
 5. Put evidence in notebooks or scripts, but put decisions back into `docs/` or `reports/`.
-6. Do not add more large raw files casually. If a new file is large, decide first whether it belongs in Git, a GitHub Release asset, Drive, S3, or another shared bucket.
+6. For new large raw files, we can decide first whether they belong in Git, a GitHub Release asset, Drive, S3, or another shared bucket.
 
 ## Suggested Ownership
 
@@ -58,7 +58,7 @@ notebooks/
 
 ## EDA Goals
 
-The first pass should answer whether the data can support the promised final output:
+The first pass can answer whether the data can support the promised final output:
 
 - `Valuation result`: Do we have enough comparable sales?
 - `Why this number`: Can we compute traceable value-driver features?
@@ -69,7 +69,7 @@ The first pass should answer whether the data can support the promised final out
 
 ## The Key Milestone
 
-Before we invest heavily in UI or multi-agent orchestration, we need to validate comparable sales.
+Before we invest heavily in UI or multi-agent orchestration, we can validate comparable sales.
 
 Minimum acceptable evidence:
 
@@ -79,7 +79,7 @@ Minimum acceptable evidence:
 - Basic property attributes: beds, baths, square footage, lot size, property type.
 - Clear permission to use the data for the capstone/demo.
 
-If we cannot secure this, we should keep Lattice as an explainability/decision-support demo and label valuation as illustrative.
+If we cannot secure this, we can keep Lattice as an explainability/decision-support demo and label valuation as illustrative.
 
 ## Presentation Structure For The Team
 

@@ -56,7 +56,7 @@ def write_counter_csv(path: Path, counter: Counter) -> None:
 
 
 def dbf_fields(dbf_bytes: bytes) -> tuple[list[dict], int, int, int]:
-    num_records = struct.unpack("<I", dbf_bytes[4:8])[0]
+    num_records = int.from_bytes(dbf_bytes[4:8], "little")
     header_len = struct.unpack("<H", dbf_bytes[8:10])[0]
     record_len = struct.unpack("<H", dbf_bytes[10:12])[0]
     fields = []
@@ -335,7 +335,7 @@ def write_report(results: dict) -> None:
     lines = []
     lines.append("# Project Lattice Domain EDA Findings")
     lines.append("")
-    lines.append("I wrote this as the product-facing EDA readout: not just what files exist, but whether they support the graph, explanation layer, and valuation path we want.")
+    lines.append("This is the product-facing EDA readout: not just what files exist, but whether they support the graph, explanation layer, and valuation path we want.")
     lines.append("")
     lines.append("## Sufficiency Matrix")
     lines.append("")
@@ -428,11 +428,11 @@ def write_report(results: dict) -> None:
     lines.append("Top leisure values:")
     lines.append(md_counter(osm["leisure"]))
     lines.append("")
-    lines.append("## Decisions I Recommend")
+    lines.append("## Decisions We Recommend")
     lines.append("")
     lines.append("1. Keep San Ramon/Contra Costa as the explainability/knowledge-graph target, because the public spatial context is good.")
     lines.append("2. Use San Francisco permits as the data-rich demo path if we need a fast proof that Lattice can ingest and explain real property-related events.")
-    lines.append("3. Do not start model training until a legal comparable-sales source is secured; use the existing package for feature engineering, joins, and graph design first.")
+    lines.append("3. Keep model training paused until a legal comparable-sales source is secured; use the existing package for feature engineering, joins, and graph design first.")
     lines.append("4. Next technical step: build a `property_features` table from parcels joined to city limits, zoning, land use, risk, Census geography, schools, and OSM POIs.")
     lines.append("5. Next business/data step: decide whether we buy/license comps, partner for MLS access, or seed a small manually verified sale set for prototype valuation only.")
     (REPORTS / "domain_eda_findings.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

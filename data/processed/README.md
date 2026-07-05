@@ -15,9 +15,9 @@ The full raw files live in `../raw/`.
 
 ## Rule
 
-Processed files should be reproducible.
+Processed files are most useful when they are reproducible.
 
-If a new processed file is added, it should be clear:
+When a new processed file is added, it helps to make clear:
 
 - which raw source created it
 - which script created it

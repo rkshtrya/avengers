@@ -26,7 +26,7 @@ This is the shortest path through the repo.
 | 4 | `../docs/knowledge-graph-plan.md` | See how the raw files become graph nodes, graph edges, and sourced claims. |
 | 5 | `../notebooks/01_data_inventory.ipynb` | See what data is actually in the repo. |
 | 6 | `../notebooks/02_executed_eda.ipynb` | Review the key EDA charts and tables. |
-| 7 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who should review what. |
+| 7 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who can review what. |
 | 8 | `../docs/project-lattice-data-review.md` | Read the detailed team review instructions. |
 
 Actual downloaded data files are organized under `../data/raw/`.
