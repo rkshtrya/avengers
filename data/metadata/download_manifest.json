@@ -116,18 +116,20 @@
     },
     {
       "source_id": "san_francisco_permits_selected",
-      "path": "data/raw/san_francisco/building_permits_selected.csv",
+      "path": "data/raw/san_francisco/building_permits_selected_parts",
+      "source_csv_path": "data/raw/san_francisco/building_permits_selected.csv",
       "url": "https://data.sfgov.org/resource/i98e-djp9.csv?$select=permit_number,permit_type,permit_type_definition,permit_creation_date,block,lot,filed_date,issued_date,approved_date,completed_date,status,status_date,street_number,street_name,street_suffix,zipcode,existing_use,proposed_use,existing_units,proposed_units,estimated_cost,revised_cost,adu,primary_address_flag,supervisor_district,neighborhoods_analysis_boundaries,record_id,data_as_of,location,point_source&$limit=1500000",
-      "notes": "Selected columns for all available SF building permit rows, enough for EDA without full wide payload.",
-      "status": "existing",
-      "bytes": 544633842
+      "notes": "Selected columns for all available SF building permit rows, enough for EDA without full wide payload. Stored in Git as split CSV parts; rebuild the single CSV with scripts/reconstruct_large_files.py.",
+      "status": "existing_split_parts",
+      "parts": 8,
+      "bytes": 544637097
     },
     {
       "source_id": "fema_nfhl_contra_costa_flood_hazard_zones_attributes",
       "path": "data/raw/risk/fema_nfhl_flood_hazard_zones_contra_costa_bbox_attributes.geojson",
       "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28",
       "notes": "FEMA flood hazard zone attributes intersecting approximate Contra Costa bbox. Geometry is omitted because the full NFHL geometry query is very large/unstable.",
-      "status": "downloaded",
+      "status": "existing",
       "features": 6435,
       "bytes": 2555374
     },
@@ -137,6 +139,7 @@
       "url": "https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/FHSALRA25_v1_All/FeatureServer/0",
       "notes": "CAL FIRE Local Responsibility Area FHSZ within approximate Contra Costa bbox.",
       "status": "existing",
+      "features": 328,
       "bytes": 11434208
     },
     {
@@ -145,6 +148,7 @@
       "url": "https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/FHSZSRA_23_3/FeatureServer/0",
       "notes": "CAL FIRE State Responsibility Area FHSZ within approximate Contra Costa bbox.",
       "status": "existing",
+      "features": 241,
       "bytes": 3726354
     },
     {
@@ -152,7 +156,7 @@
       "path": "data/raw/osm/osm_san_ramon_pois.json",
       "url": "https://overpass-api.de/api/interpreter",
       "notes": "OpenStreetMap amenities/shops/leisure/public_transport in a San Ramon bbox.",
-      "status": "downloaded",
+      "status": "existing",
       "elements": 7026,
       "bytes": 1671268
     }

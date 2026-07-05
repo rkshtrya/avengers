@@ -2,14 +2,14 @@
 
 We used the files in `data/raw` and `data/metadata` to check what we can actually build on.
 
-## My Read
+## Our Read
 
 - This repo is strong enough for data-source review and first-pass EDA.
 - Public/contextual layers are available: parcels, zoning/planning, schools, permits, Census boundaries, flood risk, wildfire risk, and OSM POIs.
 - The material gap remains comparable sales: no verified free bulk source is included.
 - Full spatial joins require GeoPandas, DuckDB Spatial, QGIS, or PostGIS; this EDA inspects schemas, record counts, fields, and samples.
 
-## Downloaded Dataset Inventory
+## Inspected File Inventory
 
 | Dataset | Kind | Rows/features | Columns | Size MB | Sample |
 | --- | --- | ---: | ---: | ---: | --- |
@@ -17,16 +17,16 @@ We used the files in `data/raw` and `data/metadata` to check what we can actuall
 | `data/metadata/calfire_fhsz_webmap.json` | json_metadata |  |  | 0.02 | `` |
 | `data/metadata/download_manifest.json` | json_metadata |  |  | 0.01 | `` |
 | `data/metadata/fema_nfhl_mapserver_metadata.json` | json_metadata |  |  | 0.01 | `` |
-| `data/raw/census/cb_2025_us_county_500k.zip` | zip_shapefile_or_archive | 3235 | 12 | 11.21 | `data/processed/samples` |
-| `data/raw/census/tl_2025_06_bg.zip` | zip_shapefile_or_archive | 25607 | 13 | 50.47 | `data/processed/samples` |
-| `data/raw/census/tl_2025_06_place.zip` | zip_shapefile_or_archive | 1619 | 16 | 9.43 | `data/processed/samples` |
-| `data/raw/census/tl_2025_06_tract.zip` | zip_shapefile_or_archive | 9129 | 13 | 31.05 | `data/processed/samples` |
-| `data/raw/contra_costa/BND_DCD_City_Limits.zip` | zip_shapefile_or_archive | 20 | 5 | 0.48 | `data/processed/samples` |
-| `data/raw/contra_costa/BND_LAFCO_City_SOI.zip` | zip_shapefile_or_archive | 19 | 3 | 0.23 | `data/processed/samples` |
-| `data/raw/contra_costa/PLA_DCD_GPLanduseElement.zip` | zip_shapefile_or_archive | 1732 | 6 | 2.59 | `data/processed/samples` |
-| `data/raw/contra_costa/PLA_DCD_ULL.zip` | zip_shapefile_or_archive | 18 | 3 | 0.48 | `data/processed/samples` |
-| `data/raw/contra_costa/PLA_DCD_Zoning.zip` | zip_shapefile_or_archive | 1259 | 9 | 1.32 | `data/processed/samples` |
-| `data/raw/contra_costa/Parcels_Public_May2026.zip` | zip_shapefile_or_archive | 387835 | 10 | 40.08 | `data/processed/samples` |
+| `data/raw/census/cb_2025_us_county_500k.zip` | zip_shapefile_or_archive | 3235 | 12 | 11.21 | `data/processed/samples/cb_2025_us_county_500k_cb_2025_us_county_500k_sample.csv` |
+| `data/raw/census/tl_2025_06_bg.zip` | zip_shapefile_or_archive | 25607 | 13 | 50.47 | `data/processed/samples/tl_2025_06_bg_tl_2025_06_bg_sample.csv` |
+| `data/raw/census/tl_2025_06_place.zip` | zip_shapefile_or_archive | 1619 | 16 | 9.43 | `data/processed/samples/tl_2025_06_place_tl_2025_06_place_sample.csv` |
+| `data/raw/census/tl_2025_06_tract.zip` | zip_shapefile_or_archive | 9129 | 13 | 31.05 | `data/processed/samples/tl_2025_06_tract_tl_2025_06_tract_sample.csv` |
+| `data/raw/contra_costa/BND_DCD_City_Limits.zip` | zip_shapefile_or_archive | 20 | 5 | 0.48 | `data/processed/samples/BND_DCD_City_Limits_BND_DCD_City_Limits_sample.csv` |
+| `data/raw/contra_costa/BND_LAFCO_City_SOI.zip` | zip_shapefile_or_archive | 19 | 3 | 0.23 | `data/processed/samples/BND_LAFCO_City_SOI_BND_LAFCO_City_SOI_sample.csv` |
+| `data/raw/contra_costa/PLA_DCD_GPLanduseElement.zip` | zip_shapefile_or_archive | 1732 | 6 | 2.59 | `data/processed/samples/PLA_DCD_GPLanduseElement_PLA_DCD_GPLanduseElement_sample.csv` |
+| `data/raw/contra_costa/PLA_DCD_ULL.zip` | zip_shapefile_or_archive | 18 | 3 | 0.48 | `data/processed/samples/PLA_DCD_ULL_PLA_DCD_ULL_sample.csv` |
+| `data/raw/contra_costa/PLA_DCD_Zoning.zip` | zip_shapefile_or_archive | 1259 | 9 | 1.32 | `data/processed/samples/PLA_DCD_Zoning_PLA_DCD_Zoning_sample.csv` |
+| `data/raw/contra_costa/Parcels_Public_May2026.zip` | zip_shapefile_or_archive | 387835 | 10 | 40.08 | `data/processed/samples/Parcels_Public_May2026_Parcels_Public_sample.csv` |
 | `data/raw/osm/osm_san_ramon_pois.json` | osm_overpass_json | 7026 | 339 | 1.59 | `data/processed/samples/osm_san_ramon_pois_sample.csv` |
 | `data/raw/risk/calfire_fhsz_lra_contra_costa_bbox.geojson` | geojson | 328 | 6 | 10.90 | `data/processed/samples/calfire_fhsz_lra_contra_costa_bbox_properties_sample.csv` |
 | `data/raw/risk/calfire_fhsz_sra_contra_costa_bbox.geojson` | geojson | 241 | 6 | 3.55 | `data/processed/samples/calfire_fhsz_sra_contra_costa_bbox_properties_sample.csv` |
@@ -59,7 +59,7 @@ We used the files in `data/raw` and `data/metadata` to check what we can actuall
 4. **SF is still the easier data-first demo.** The SF permit extract has over one million records and good structured fields; in this repository it is stored as selected-column split CSV parts.
 5. **Comparable sales is still the critical path.** Without sale price/date/property attributes, Lattice can explain context and risk but cannot honestly claim production-grade valuation.
 
-## What I Would Do Next
+## What We Should Do Next
 
 1. Install geospatial tooling: `pip install geopandas pyogrio shapely duckdb duckdb-engine` or use QGIS/PostGIS.
 2. Read Contra Costa parcels and city limits, filter parcels to San Ramon, and compute parcel count plus address/APN completeness.

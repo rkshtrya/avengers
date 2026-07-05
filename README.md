@@ -14,7 +14,7 @@ Instead of stopping at "the value is X," we want the product to explain **why**:
 - which facts came from which source
 - what data is still missing before we can trust a valuation model
 
-My current read:
+Our current read:
 
 > We have enough public data to build the knowledge graph and explanation demo. Production-grade valuation still depends on comparable sales.
 

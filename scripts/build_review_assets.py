@@ -566,7 +566,7 @@ def make_notebooks() -> None:
     write_notebook(
         NOTEBOOKS / "01_data_inventory.ipynb",
         [
-            md("# 01 Data Inventory\n\nI use this notebook as the quick proof that the raw data is actually here and organized. Start with the catalog table so every file has context: county/geography, source, data type, and status."),
+            md("# 01 Data Inventory\n\nWe use this notebook as the quick proof that the raw data is actually here and organized. Start with the catalog table so every file has context: county/geography, source, data type, and status."),
             md("![Location snapshot](../reports/figures/contra_costa_location_snapshot.svg)\n\n![Review path](../reports/figures/review_path.svg)\n\n![Data readiness](../reports/figures/data_readiness.svg)"),
             code(
                 "import pandas as pd\ncatalog = pd.read_csv('../reports/dataset_catalog.csv')\ncatalog[['Dataset', 'Geography / county', 'Kind of data', 'Source agency', 'Status', 'Local path']]",
@@ -668,7 +668,7 @@ def make_notebooks() -> None:
                 next_steps,
                 count=3,
             ),
-            md("## My Decision Point\n\nWe can build the knowledge graph and explanation demo now. I would hold production-grade valuation claims until comparable sales are secured."),
+            md("## Decision Point\n\nWe can build the knowledge graph and explanation demo now. We should hold production-grade valuation claims until comparable sales are secured."),
         ],
     )
 

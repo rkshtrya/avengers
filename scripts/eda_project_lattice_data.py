@@ -130,6 +130,7 @@ def summarize_zip(path: Path, source_id: str) -> dict:
         dbfs = [n for n in names if n.lower().endswith(".dbf")]
         shps = [n for n in names if n.lower().endswith(".shp")]
         dbf_infos = []
+        sample_paths = []
         for dbf in dbfs:
             info = dbf_schema_and_sample(z.read(dbf), sample_n=5)
             info["dbf"] = dbf
@@ -140,6 +141,7 @@ def summarize_zip(path: Path, source_id: str) -> dict:
                     writer = csv.DictWriter(f, fieldnames=list(info["samples"][0].keys()))
                     writer.writeheader()
                     writer.writerows(info["samples"])
+                sample_paths.append(sample_path)
         shp_infos = []
         for shp in shps:
             head = shp_header(z.read(shp)[:100])
@@ -155,7 +157,7 @@ def summarize_zip(path: Path, source_id: str) -> dict:
         "row_count": first_dbf.get("record_count"),
         "column_count": len(first_dbf.get("fields", [])),
         "columns": columns,
-        "sample_path": safe_rel(SAMPLES),
+        "sample_path": safe_rel(sample_paths[0]) if sample_paths else safe_rel(SAMPLES),
         "notes": json.dumps({"members": names[:30], "dbf": dbf_infos, "shp": shp_infos}, default=str)[:12000],
     }
 
@@ -290,14 +292,14 @@ def write_markdown(summaries: list[dict]) -> None:
     lines.append("")
     lines.append("We used the files in `data/raw` and `data/metadata` to check what we can actually build on.")
     lines.append("")
-    lines.append("## My Read")
+    lines.append("## Our Read")
     lines.append("")
     lines.append("- This repo is strong enough for data-source review and first-pass EDA.")
     lines.append("- Public/contextual layers are available: parcels, zoning/planning, schools, permits, Census boundaries, flood risk, wildfire risk, and OSM POIs.")
     lines.append("- The material gap remains comparable sales: no verified free bulk source is included.")
     lines.append("- Full spatial joins require GeoPandas, DuckDB Spatial, QGIS, or PostGIS; this EDA inspects schemas, record counts, fields, and samples.")
     lines.append("")
-    lines.append("## Downloaded Dataset Inventory")
+    lines.append("## Inspected File Inventory")
     lines.append("")
     lines.append("| Dataset | Kind | Rows/features | Columns | Size MB | Sample |")
     lines.append("| --- | --- | ---: | ---: | ---: | --- |")
@@ -326,7 +328,7 @@ def write_markdown(summaries: list[dict]) -> None:
     lines.append("4. **SF is still the easier data-first demo.** The SF permit extract has over one million records and good structured fields; in this repository it is stored as selected-column split CSV parts.")
     lines.append("5. **Comparable sales is still the critical path.** Without sale price/date/property attributes, Lattice can explain context and risk but cannot honestly claim production-grade valuation.")
     lines.append("")
-    lines.append("## What I Would Do Next")
+    lines.append("## What We Should Do Next")
     lines.append("")
     lines.append("1. Install geospatial tooling: `pip install geopandas pyogrio shapely duckdb duckdb-engine` or use QGIS/PostGIS.")
     lines.append("2. Read Contra Costa parcels and city limits, filter parcels to San Ramon, and compute parcel count plus address/APN completeness.")

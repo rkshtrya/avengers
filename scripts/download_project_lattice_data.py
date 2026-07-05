@@ -182,6 +182,8 @@ SOCRATA_EXPORTS = [
     {
         "source_id": "san_francisco_permits_selected",
         "path": RAW / "san_francisco" / "building_permits_selected.csv",
+        "parts_dir": RAW / "san_francisco" / "building_permits_selected_parts",
+        "rows_per_part": 175000,
         "url": (
             "https://data.sfgov.org/resource/i98e-djp9.csv?"
             "$select=permit_number,permit_type,permit_type_definition,permit_creation_date,"
@@ -231,9 +233,92 @@ def urlretrieve(url: str, path: Path, timeout: int = 120) -> dict:
     }
 
 
+def split_csv_parts(source_path: Path, parts_dir: Path, rows_per_part: int) -> list[Path]:
+    parts_dir.mkdir(parents=True, exist_ok=True)
+    for old_part in parts_dir.glob("*.csv"):
+        old_part.unlink()
+
+    parts: list[Path] = []
+    with source_path.open("r", encoding="utf-8", newline="") as src:
+        reader = csv.reader(src)
+        try:
+            header = next(reader)
+        except StopIteration:
+            raise ValueError(f"Cannot split empty CSV: {source_path}")
+        part_index = 1
+        row_count = 0
+        part_path = parts_dir / f"{source_path.stem}_part_{part_index:02d}.csv"
+        out = part_path.open("w", encoding="utf-8", newline="")
+        writer = csv.writer(out)
+        try:
+            writer.writerow(header)
+            parts.append(part_path)
+            for row in reader:
+                if row_count and row_count % rows_per_part == 0:
+                    out.close()
+                    part_index += 1
+                    part_path = parts_dir / f"{source_path.stem}_part_{part_index:02d}.csv"
+                    out = part_path.open("w", encoding="utf-8", newline="")
+                    writer = csv.writer(out)
+                    writer.writerow(header)
+                    parts.append(part_path)
+                writer.writerow(row)
+                row_count += 1
+        finally:
+            out.close()
+    return parts
+
+
+def summarize_parts(parts_dir: Path) -> dict:
+    parts = sorted(parts_dir.glob("*.csv"))
+    return {
+        "parts": len(parts),
+        "bytes": sum(part.stat().st_size for part in parts),
+    }
+
+
 def download_direct(manifest: list[dict]) -> None:
     for item in DIRECT_DOWNLOADS + SOCRATA_EXPORTS:
         path = item["path"]
+        parts_dir = item.get("parts_dir")
+        if parts_dir:
+            parts = sorted(parts_dir.glob("*.csv"))
+            if parts:
+                log(f"skip existing split parts {parts_dir}")
+                status = {"status": "existing_split_parts", **summarize_parts(parts_dir)}
+            else:
+                if path.exists() and path.stat().st_size > 0:
+                    log(f"split existing {path} -> {parts_dir}")
+                    status = {"status": "split_from_existing_csv", "source_csv_bytes": path.stat().st_size}
+                else:
+                    log(f"download {item['source_id']} -> {path}")
+                    try:
+                        status = urlretrieve(item["url"], path, timeout=240)
+                        status["source_csv_bytes"] = status.get("bytes")
+                    except Exception as exc:
+                        status = {"status": "failed", "error": str(exc)}
+                if status.get("status") != "failed":
+                    split_csv_parts(path, parts_dir, item["rows_per_part"])
+                    split_status = (
+                        status["status"]
+                        if status.get("status") == "split_from_existing_csv"
+                        else "downloaded_and_split"
+                    )
+                    status = {**status, "status": split_status, **summarize_parts(parts_dir)}
+            notes = (
+                item["notes"]
+                + " Stored in Git as split CSV parts; rebuild the single CSV with scripts/reconstruct_large_files.py."
+            )
+            manifest.append({
+                "source_id": item["source_id"],
+                "path": str(parts_dir.relative_to(ROOT)),
+                "source_csv_path": str(path.relative_to(ROOT)),
+                "url": item["url"],
+                "notes": notes,
+                **status,
+            })
+            continue
+
         if path.exists() and path.stat().st_size > 0:
             log(f"skip existing {path}")
             status = {"status": "existing", "bytes": path.stat().st_size}
@@ -267,12 +352,18 @@ def download_arcgis_bbox(manifest: list[dict]) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
         if path.exists() and path.stat().st_size > 0:
             log(f"skip existing {path}")
+            try:
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                feature_count = len(payload.get("features", []))
+            except Exception:
+                feature_count = ""
             manifest.append({
                 "source_id": item["source_id"],
                 "path": str(path.relative_to(ROOT)),
                 "url": item["layer_url"],
                 "notes": item["notes"],
                 "status": "existing",
+                "features": feature_count,
                 "bytes": path.stat().st_size,
             })
             continue
@@ -334,6 +425,23 @@ def download_overpass(manifest: list[dict]) -> None:
     for item in OVERPASS_EXTRACTS:
         path = item["path"]
         path.parent.mkdir(parents=True, exist_ok=True)
+        if path.exists() and path.stat().st_size > 0:
+            log(f"skip existing {path}")
+            try:
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                elements = len(payload.get("elements", []))
+            except Exception:
+                elements = ""
+            manifest.append({
+                "source_id": item["source_id"],
+                "path": str(path.relative_to(ROOT)),
+                "url": endpoint,
+                "notes": item["notes"],
+                "status": "existing",
+                "elements": elements,
+                "bytes": path.stat().st_size,
+            })
+            continue
         south, west, north, east = item["bbox"]
         bbox = f"{south},{west},{north},{east}"
         query = f"""
@@ -379,17 +487,21 @@ def write_manifest(manifest: list[dict]) -> None:
         "root": str(ROOT),
         "downloads": manifest,
         "blocked_or_deferred": BLOCKED_OR_DEFERRED,
-    }, indent=2), encoding="utf-8")
+    }, indent=2) + "\n", encoding="utf-8")
     csv_path = REPORTS / "download_manifest.csv"
     fieldnames = sorted({k for row in manifest for k in row.keys()})
     with csv_path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(manifest)
 
     blocked_path = REPORTS / "blocked_or_deferred_sources.csv"
     with blocked_path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["source_id", "status", "reason", "next_step"])
+        writer = csv.DictWriter(
+            f,
+            fieldnames=["source_id", "status", "reason", "next_step"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(BLOCKED_OR_DEFERRED)
 

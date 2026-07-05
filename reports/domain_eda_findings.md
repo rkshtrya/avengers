@@ -230,7 +230,7 @@ Top leisure values:
 | `outdoor_seating` | 19 |
 | `fitness_station` | 17 |
 
-## Decisions I Recommend
+## Recommended Decisions
 
 1. Keep San Ramon/Contra Costa as the explainability/knowledge-graph target, because the public spatial context is good.
 2. Use San Francisco permits as the data-rich demo path if we need a fast proof that Lattice can ingest and explain real property-related events.

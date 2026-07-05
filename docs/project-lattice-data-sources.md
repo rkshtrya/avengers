@@ -19,19 +19,19 @@ The right mental model for us is a real-estate knowledge graph plus agents. The 
 
 ## MVP Geography We Can Consider
 
-I see two viable MVP paths.
+We see two viable MVP paths.
 
 ### Option A: San Ramon / Contra Costa County story-first MVP
 
 This matches the deck example and the suburban buyer use case. Contra Costa is usable because it publishes parcel and zoning downloads, and 511 covers regional transit. The likely friction is sale-price/comps access: public records exist, but automated bulk access is not as clean as the slide deck implies.
 
-I would use this path if the demo story matters more than data convenience.
+We would use this path if the demo story matters more than data convenience.
 
 ### Option B: San Francisco data-first MVP
 
 San Francisco has stronger civic open-data infrastructure, including a verified Socrata building-permits endpoint. This is the fastest route to a working demo with permits, zoning/planning signals, transit, amenities, risk, and neighborhood context.
 
-I would use this path if shipping the six-week capstone is the priority. We can still tell the Lattice story and later port to San Ramon.
+We would use this path if shipping the six-week capstone is the priority. We can still tell the Lattice story and later port to San Ramon.
 
 ## Data source matrix
 
@@ -50,9 +50,9 @@ I would use this path if shipping the six-week capstone is the priority. We can 
 | Wildfire risk | [CAL FIRE Fire Hazard Severity Zones](https://osfm.fire.ca.gov/what-we-do/community-wildfire-preparedness-and-mitigation/fire-hazard-severity-zones) | Moderate/high/very high fire hazard zones | `RiskZone`, `inside`, `wildfire_hazard` | High | Relevant for Bay Area hillside/suburban properties. |
 | Boundaries | County/city GIS, Census TIGER, CDE/NCES school/district data | City, county, tract, school district, neighborhood boundaries | `located_in`, `within_district`, `within_tract` | High | Boundary alignment is critical for joins. |
 
-## The Source Strategy I Recommend
+## Recommended Source Strategy
 
-I would start with a graph that answers fewer questions very well rather than a broad graph that makes claims we cannot verify:
+We should start with a graph that answers fewer questions very well rather than a broad graph that makes claims we cannot verify:
 
 1. Pick one MVP geography.
 2. Create a property table from parcel geometry plus a small set of known sold properties.
@@ -106,7 +106,7 @@ We can treat every Lattice explanation as incomplete unless it can pass these ch
 
 ## Best First Build Path
 
-For a capstone-quality MVP, I would take this path:
+For a capstone-quality MVP, we can take this path:
 
 1. Use Contra Costa parcels/zoning if you want to stay aligned with San Ramon.
 2. Use 511 GTFS regional transit, Census ACS/TIGER, FEMA NFHL, CAL FIRE FHSZ, CDE/NCES schools, and OSM amenities.
@@ -114,7 +114,7 @@ For a capstone-quality MVP, I would take this path:
 4. Backtest only against that known sale set.
 5. Make the demo show the explainability loop: valuation -> drivers -> source links -> verifier status.
 
-For a faster technical demo, I would take this path:
+For a faster technical demo, we can take this path:
 
 1. Use San Francisco as the first metro because the open-data surface is richer.
 2. Use DataSF building permits, 511 transit, ACS/TIGER, FEMA, CAL FIRE, OSM, and school datasets.
@@ -122,7 +122,7 @@ For a faster technical demo, I would take this path:
 
 ## Verification Status
 
-As of July 3, 2026, my read is that source sufficiency is mixed:
+As of July 3, 2026, our read is that source sufficiency is mixed:
 
 - Sufficient for the explanation layer: yes. Parcels, zoning, permits, transit, demographics, schools, amenities, flood risk, and wildfire risk can support a sourced "why" experience.
 - Sufficient for a capstone MVP: yes, if comparable sales are seeded manually or obtained from a permitted source.
