@@ -2,6 +2,10 @@
 
 This is the shortest path through the repo.
 
+## Location Snapshot
+
+![Contra Costa County location snapshot](figures/contra_costa_location_snapshot.svg)
+
 ![Review path](figures/review_path.svg)
 
 ## Current Data Readiness

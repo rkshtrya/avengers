@@ -235,7 +235,7 @@ def source_id_from_path(path: Path) -> str:
 def inspect_files() -> list[dict]:
     summaries = []
     for path in sorted(list(RAW.rglob("*")) + list((ROOT / "data" / "metadata").rglob("*"))):
-        if not path.is_file() or path.name.startswith("."):
+        if not path.is_file() or path.name.startswith(".") or path.name == "README.md":
             continue
         source_id = source_id_from_path(path)
         try:

@@ -19,13 +19,14 @@ These are the core files for the San Ramon / Contra Costa graph-first path.
 
 ## Census Boundary Data
 
-These are California statewide boundary files from the U.S. Census Bureau TIGER/Line.
+These are Census boundary files used for California, Contra Costa, San Ramon, and the location snapshot.
 
 | Dataset | Actual file on GitHub | What it is |
 | --- | --- | --- |
 | Census tracts | `data/raw/census/tl_2025_06_tract.zip` | California tract boundary shapefile zip. |
 | Census block groups | `data/raw/census/tl_2025_06_bg.zip` | California block-group boundary shapefile zip. |
 | Census places | `data/raw/census/tl_2025_06_place.zip` | California incorporated-place boundary shapefile zip. |
+| Census county boundaries | `data/raw/census/cb_2025_us_county_500k.zip` | U.S. county cartographic boundary shapefile zip, used here to show Contra Costa County inside California. |
 
 ## Schools
 

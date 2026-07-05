@@ -12,6 +12,7 @@ Run scripts from the repo root.
 | `eda_project_lattice_data.py` | Runs the main EDA and creates summaries, samples, and tables. |
 | `profile_project_lattice_data.py` | Creates profile/count tables for key datasets. |
 | `build_review_assets.py` | Builds visual review assets and notebook-supporting tables. |
+| `build_location_snapshot.py` | Builds the Contra Costa / California / Bay Area location map from Census shapefiles. |
 | `reconstruct_large_files.py` | Rebuilds the single SF permits CSV from the committed split parts. |
 
 ## Reproduce The Main Outputs
@@ -20,6 +21,12 @@ Run scripts from the repo root.
 python3 scripts/eda_project_lattice_data.py
 python3 scripts/profile_project_lattice_data.py
 python3 scripts/build_review_assets.py
+```
+
+To rebuild only the location snapshot:
+
+```bash
+python3 scripts/build_location_snapshot.py
 ```
 
 ## Rebuild The Large SF Permit CSV

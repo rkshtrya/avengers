@@ -13,6 +13,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from build_location_snapshot import main as build_location_snapshot
+
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS = ROOT / "reports"
@@ -118,6 +120,16 @@ DATASET_CATALOG = [
         "Local path": "data/raw/census/tl_2025_06_place.zip",
         "Source URL": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_06_place.zip",
         "What to look for": "Place boundaries for city-level geography checks.",
+        "Status": "Downloaded",
+    },
+    {
+        "Dataset": "Census Cartographic County Boundaries",
+        "Geography / county": "United States; used here for California and Contra Costa County",
+        "Kind of data": "Generalized county boundary shapefile",
+        "Source agency": "U.S. Census Bureau Cartographic Boundary Files",
+        "Local path": "data/raw/census/cb_2025_us_county_500k.zip",
+        "Source URL": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip",
+        "What to look for": "State/county context for the location snapshot and county-level map orientation.",
         "Status": "Downloaded",
     },
     {
@@ -382,6 +394,7 @@ def make_figures() -> dict[str, Path]:
     inventory = read_csv(REPORTS / "dataset_inventory.csv")
     status_svg(FIGURES / "data_readiness.svg")
     flow_svg(FIGURES / "review_path.svg")
+    build_location_snapshot()
 
     row_counts = []
     sf_parts = inventory[inventory["path"].astype(str).str.contains("building_permits_selected_part")]
@@ -485,6 +498,10 @@ def make_visual_index() -> None:
 
 This is the shortest path through the repo.
 
+## Location Snapshot
+
+![Contra Costa County location snapshot](figures/contra_costa_location_snapshot.svg)
+
 ![Review path](figures/review_path.svg)
 
 ## Current Data Readiness
@@ -499,11 +516,14 @@ This is the shortest path through the repo.
 
 | Step | File | Why |
 | --- | --- | --- |
-| 1 | `../docs/dataset-catalog.md` | Understand what each dataset is, what county/geography it covers, and where it came from. |
-| 2 | `../notebooks/01_data_inventory.ipynb` | See what data is actually in the repo. |
-| 3 | `../notebooks/02_executed_eda.ipynb` | Review the key EDA charts and tables. |
-| 4 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who should review what. |
-| 5 | `../docs/project-lattice-data-review.md` | Read the team review instructions. |
+| 1 | `../README.md` | Get the simple walkthrough first. |
+| 2 | `../DATA_FILES.md` | See the actual raw files uploaded to GitHub. |
+| 3 | `../docs/dataset-catalog.md` | Understand what each dataset is, what county/geography it covers, and where it came from. |
+| 4 | `../docs/knowledge-graph-plan.md` | See how the raw files become graph nodes, graph edges, and sourced claims. |
+| 5 | `../notebooks/01_data_inventory.ipynb` | See what data is actually in the repo. |
+| 6 | `../notebooks/02_executed_eda.ipynb` | Review the key EDA charts and tables. |
+| 7 | `../notebooks/03_availability_and_next_steps.ipynb` | See what is available, pending, and who should review what. |
+| 8 | `../docs/project-lattice-data-review.md` | Read the detailed team review instructions. |
 
 Actual downloaded data files are organized under `../data/raw/`.
 
@@ -528,7 +548,7 @@ def make_notebooks() -> None:
     summary_rows = [
         ("SF permits", "data/raw/san_francisco/building_permits_selected_parts/", "1,291,589 rows", "Available"),
         ("Contra Costa parcels", "data/raw/contra_costa/Parcels_Public_May2026.zip", "387,835 parcels", "Available"),
-        ("Census boundaries", "data/raw/census/", "tracts, block groups, places", "Available"),
+        ("Census boundaries", "data/raw/census/", "tracts, block groups, places, counties", "Available"),
         ("Schools", "data/raw/schools/cde_public_schools_and_districts.txt", "18,390 rows", "Available"),
         ("Wildfire risk", "data/raw/risk/calfire_*.geojson", "LRA/SRA extracts", "Available"),
         ("Flood risk", "data/raw/risk/fema_*.geojson", "6,435 attribute rows", "Available for review; geometry join pending"),
@@ -547,7 +567,7 @@ def make_notebooks() -> None:
         NOTEBOOKS / "01_data_inventory.ipynb",
         [
             md("# 01 Data Inventory\n\nI use this notebook as the quick proof that the raw data is actually here and organized. Start with the catalog table so every file has context: county/geography, source, data type, and status."),
-            md("![Review path](../reports/figures/review_path.svg)\n\n![Data readiness](../reports/figures/data_readiness.svg)"),
+            md("![Location snapshot](../reports/figures/contra_costa_location_snapshot.svg)\n\n![Review path](../reports/figures/review_path.svg)\n\n![Data readiness](../reports/figures/data_readiness.svg)"),
             code(
                 "import pandas as pd\ncatalog = pd.read_csv('../reports/dataset_catalog.csv')\ncatalog[['Dataset', 'Geography / county', 'Kind of data', 'Source agency', 'Status', 'Local path']]",
                 catalog[["Dataset", "Geography / county", "Kind of data", "Source agency", "Status", "Local path"]],

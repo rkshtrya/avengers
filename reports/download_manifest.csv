@@ -8,6 +8,7 @@ bytes,elements,features,notes,path,source_id,status,url
 32558476,,,California census tract boundaries.,data/raw/census/tl_2025_06_tract.zip,census_tiger_ca_tracts,existing,https://www2.census.gov/geo/tiger/TIGER2025/TRACT/tl_2025_06_tract.zip
 52918117,,,California census block-group boundaries.,data/raw/census/tl_2025_06_bg.zip,census_tiger_ca_block_groups,existing,https://www2.census.gov/geo/tiger/TIGER2025/BG/tl_2025_06_bg.zip
 9885068,,,California incorporated place boundaries.,data/raw/census/tl_2025_06_place.zip,census_tiger_ca_places,existing,https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_06_place.zip
+11758981,,,Generalized U.S. county boundaries used for the California / Contra Costa location snapshot.,data/raw/census/cb_2025_us_county_500k.zip,census_cb_us_counties_500k,existing,https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip
 8784929,,,CDE public schools and districts tab-delimited file.,data/raw/schools/cde_public_schools_and_districts.txt,cde_public_schools_txt,existing,https://www.cde.ca.gov/schooldirectory/report?rid=dl1&tp=txt
 6277,,,State catalogue metadata for current CAL FIRE FHSZ viewer.,data/metadata/calfire_fhsz_catalog_metadata.json,calfire_fhsz_catalog_metadata,existing,https://data.ca.gov/api/3/action/package_show?id=fire-hazard-severity-zone-viewer1
 22531,,,Underlying web map with FHSZ service URLs.,data/metadata/calfire_fhsz_webmap.json,calfire_fhsz_webmap,existing,https://CALFIRE-Forestry.maps.arcgis.com/sharing/rest/content/items/a86cdcb4a66344da8f44ad75e9fdb4c7/data?f=json

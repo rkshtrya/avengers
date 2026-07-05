@@ -15,6 +15,7 @@ This is the plain-English guide to the data in the repo. For each dataset I list
 | Census TIGER Tracts | California statewide | Census tract boundary shapefile | U.S. Census Bureau TIGER/Line | Downloaded | `data/raw/census/tl_2025_06_tract.zip` |
 | Census TIGER Block Groups | California statewide | Census block-group boundary shapefile | U.S. Census Bureau TIGER/Line | Downloaded | `data/raw/census/tl_2025_06_bg.zip` |
 | Census TIGER Places | California statewide | Incorporated place boundary shapefile | U.S. Census Bureau TIGER/Line | Downloaded | `data/raw/census/tl_2025_06_place.zip` |
+| Census Cartographic County Boundaries | United States; used here for California and Contra Costa County | Generalized county boundary shapefile | U.S. Census Bureau Cartographic Boundary Files | Downloaded | `data/raw/census/cb_2025_us_county_500k.zip` |
 | CDE Public Schools and Districts | California statewide; includes Contra Costa and San Ramon rows | School/district directory table | California Department of Education | Downloaded | `data/raw/schools/cde_public_schools_and_districts.txt` |
 | CAL FIRE Local Responsibility Area Fire Hazard Zones | Contra Costa County project bbox | Wildfire hazard polygons | CAL FIRE / Office of the State Fire Marshal | Downloaded | `data/raw/risk/calfire_fhsz_lra_contra_costa_bbox.geojson` |
 | CAL FIRE State Responsibility Area Fire Hazard Zones | Contra Costa County project bbox | Wildfire hazard polygons | CAL FIRE / Office of the State Fire Marshal | Downloaded | `data/raw/risk/calfire_fhsz_sra_contra_costa_bbox.geojson` |
@@ -115,6 +116,16 @@ This is the plain-English guide to the data in the repo. For each dataset I list
 - **Local path:** `data/raw/census/tl_2025_06_place.zip`
 - **Source URL:** https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_06_place.zip
 - **What to look for:** Place boundaries for city-level geography checks.
+- **Status:** Downloaded
+
+### Census Cartographic County Boundaries
+
+- **Geography / county:** United States; used here for California and Contra Costa County
+- **Kind of data:** Generalized county boundary shapefile
+- **Source agency:** U.S. Census Bureau Cartographic Boundary Files
+- **Local path:** `data/raw/census/cb_2025_us_county_500k.zip`
+- **Source URL:** https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip
+- **What to look for:** State/county context for the location snapshot and county-level map orientation.
 - **Status:** Downloaded
 
 ### CDE Public Schools and Districts

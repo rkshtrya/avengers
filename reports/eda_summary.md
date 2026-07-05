@@ -17,6 +17,7 @@ I used the files in `data/raw` and `data/metadata` to check what we can actually
 | `data/metadata/calfire_fhsz_webmap.json` | json_metadata |  |  | 0.02 | `` |
 | `data/metadata/download_manifest.json` | json_metadata |  |  | 0.01 | `` |
 | `data/metadata/fema_nfhl_mapserver_metadata.json` | json_metadata |  |  | 0.01 | `` |
+| `data/raw/census/cb_2025_us_county_500k.zip` | zip_shapefile_or_archive | 3235 | 12 | 11.21 | `data/processed/samples` |
 | `data/raw/census/tl_2025_06_bg.zip` | zip_shapefile_or_archive | 25607 | 13 | 50.47 | `data/processed/samples` |
 | `data/raw/census/tl_2025_06_place.zip` | zip_shapefile_or_archive | 1619 | 16 | 9.43 | `data/processed/samples` |
 | `data/raw/census/tl_2025_06_tract.zip` | zip_shapefile_or_archive | 9129 | 13 | 31.05 | `data/processed/samples` |
@@ -30,7 +31,6 @@ I used the files in `data/raw` and `data/metadata` to check what we can actually
 | `data/raw/risk/calfire_fhsz_lra_contra_costa_bbox.geojson` | geojson | 328 | 6 | 10.90 | `data/processed/samples/calfire_fhsz_lra_contra_costa_bbox_properties_sample.csv` |
 | `data/raw/risk/calfire_fhsz_sra_contra_costa_bbox.geojson` | geojson | 241 | 6 | 3.55 | `data/processed/samples/calfire_fhsz_sra_contra_costa_bbox_properties_sample.csv` |
 | `data/raw/risk/fema_nfhl_flood_hazard_zones_contra_costa_bbox_attributes.geojson` | geojson | 6435 | 16 | 2.44 | `data/processed/samples/fema_nfhl_flood_hazard_zones_contra_costa_bbox_attributes_properties_sample.csv` |
-| `data/raw/san_francisco/README.md` | other |  |  | 0.00 | `` |
 | `data/raw/san_francisco/building_permits_selected_parts/building_permits_selected_part_01.csv` | tabular | 175000 | 30 | 69.41 | `data/processed/samples/building_permits_selected_part_01_sample.csv` |
 | `data/raw/san_francisco/building_permits_selected_parts/building_permits_selected_part_02.csv` | tabular | 175000 | 30 | 70.60 | `data/processed/samples/building_permits_selected_part_02_sample.csv` |
 | `data/raw/san_francisco/building_permits_selected_parts/building_permits_selected_part_03.csv` | tabular | 175000 | 30 | 70.52 | `data/processed/samples/building_permits_selected_part_03_sample.csv` |

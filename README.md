@@ -103,7 +103,11 @@ If you only have two minutes, open:
 
 ## Visual Checkpoints
 
-These three pictures give the quickest orientation.
+These visuals give the quickest orientation.
+
+![Contra Costa County location snapshot](reports/figures/contra_costa_location_snapshot.svg)
+
+Contra Costa County is in **California**, in the **northern part of the state**, inside the **San Francisco Bay Area / East Bay**. The project city focus, **San Ramon**, is in the southern part of Contra Costa County.
 
 ![Suggested review path](reports/figures/review_path.svg)
 
@@ -127,6 +131,7 @@ High-level view:
 | City limits | Contra Costa County | Contra Costa County GIS / Planning | Available | `data/raw/contra_costa/BND_DCD_City_Limits.zip` |
 | Zoning / land use | Contra Costa County | Contra Costa County GIS / Planning | Available | `data/raw/contra_costa/` |
 | Census boundaries | California statewide | U.S. Census Bureau TIGER/Line | Available | `data/raw/census/` |
+| County location map boundary | United States; used for California/Contra Costa | U.S. Census Bureau Cartographic Boundary Files | Available | `data/raw/census/cb_2025_us_county_500k.zip` |
 | Schools | California statewide, includes Contra Costa/San Ramon rows | California Department of Education | Available | `data/raw/schools/` |
 | Wildfire risk | Contra Costa project area | CAL FIRE / Office of the State Fire Marshal | Available | `data/raw/risk/` |
 | Flood risk | Contra Costa project area | FEMA NFHL ArcGIS service | Available as attributes | `data/raw/risk/` |
@@ -175,7 +180,7 @@ notebooks/
 reports/
   README.md                    How to read the EDA outputs
   visual_review.md            Short visual walkthrough
-  figures/                    SVG charts used in README/reports
+  figures/                    SVG charts and location snapshot used in README/reports
   profiles/                   Small count tables from EDA
   dataset_inventory.csv       File-level inventory
   dataset_catalog.csv         Table version of docs/dataset-catalog.md
@@ -186,6 +191,7 @@ scripts/
   eda_project_lattice_data.py
   profile_project_lattice_data.py
   build_review_assets.py
+  build_location_snapshot.py
   reconstruct_large_files.py
 ```
 

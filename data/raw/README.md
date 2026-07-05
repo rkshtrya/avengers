@@ -9,7 +9,7 @@ Use `../../DATA_FILES.md` for the direct file index. This page explains the fold
 | Folder | Geography | What is inside | Why it matters |
 | --- | --- | --- | --- |
 | `contra_costa/` | Contra Costa County | Parcels, city limits, zoning, general plan, urban limit line, LAFCO sphere of influence | Main San Ramon / Contra Costa graph base. |
-| `census/` | California statewide | 2025 Census TIGER tract, block group, and place shapefiles | Used to connect parcels to Census geography. |
+| `census/` | California statewide plus U.S. county boundary context | 2025 Census TIGER tract, block group, place shapefiles, plus 2025 cartographic county boundaries | Used to connect parcels to Census geography and show Contra Costa County inside California. |
 | `schools/` | California statewide | CDE public schools and districts text file | Used for school and district context. |
 | `risk/` | Contra Costa project area | CAL FIRE hazard files and FEMA flood-zone attributes | Used for risk explanations. |
 | `osm/` | San Ramon bounding box | OpenStreetMap POIs from Overpass | Used for nearby amenities and neighborhood context. |

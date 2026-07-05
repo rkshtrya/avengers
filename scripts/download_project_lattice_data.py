@@ -82,6 +82,12 @@ DIRECT_DOWNLOADS = [
         "notes": "California incorporated place boundaries.",
     },
     {
+        "source_id": "census_cb_us_counties_500k",
+        "url": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip",
+        "path": RAW / "census" / "cb_2025_us_county_500k.zip",
+        "notes": "Generalized U.S. county boundaries used for the California / Contra Costa location snapshot.",
+    },
+    {
         "source_id": "cde_public_schools_txt",
         "url": "https://www.cde.ca.gov/schooldirectory/report?rid=dl1&tp=txt",
         "path": RAW / "schools" / "cde_public_schools_and_districts.txt",

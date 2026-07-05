@@ -1,6 +1,6 @@
 {
   "created_at": "2026-07-05",
-  "root": "/Volumes/GreyKumara/asif",
+  "root": "/Volumes/GreyKumara/asif/avengers",
   "downloads": [
     {
       "source_id": "contra_costa_parcels",
@@ -73,6 +73,14 @@
       "notes": "California incorporated place boundaries.",
       "status": "existing",
       "bytes": 9885068
+    },
+    {
+      "source_id": "census_cb_us_counties_500k",
+      "path": "data/raw/census/cb_2025_us_county_500k.zip",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip",
+      "notes": "Generalized U.S. county boundaries used for the California / Contra Costa location snapshot.",
+      "status": "existing",
+      "bytes": 11758981
     },
     {
       "source_id": "cde_public_schools_txt",
