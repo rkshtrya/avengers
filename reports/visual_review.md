@@ -6,6 +6,8 @@ This is the shortest path through the repo.
 
 ![Contra Costa County location snapshot](figures/contra_costa_location_snapshot.svg)
 
+San Ramon is a city inside Contra Costa County. Contra Costa is the larger county data layer; San Ramon is the local project focus we filter to.
+
 ![Review path](figures/review_path.svg)
 
 ## Current Data Readiness

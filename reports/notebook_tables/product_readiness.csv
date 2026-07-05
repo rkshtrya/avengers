@@ -1,5 +1,5 @@
 Product layer,Status,Why
-Graph base,Ready,"Parcels, APN, address fields, city/ZIP."
+Graph base,Ready,Contra Costa countywide parcels filtered to San Ramon.
 Explainability context,Ready,"Zoning, risk, schools, amenities, Census boundaries."
 Permit signal,Ready for SF demo,1.29M SF permits; San Ramon feed still needs follow-up.
 Production valuation,Not ready,Comparable sales are missing.

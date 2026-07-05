@@ -46,6 +46,8 @@ A helpful review order:
 
 Raw files are under `data/raw/`; source metadata is under `data/metadata/`.
 
+Geography note for the team: **San Ramon is a city inside Contra Costa County**. Contra Costa is the county-level data umbrella. San Ramon is the city-level focus. That is why several files are countywide Contra Costa datasets even though the story we are testing is San Ramon.
+
 | Area | Files | What we found |
 | --- | --- | --- |
 | Contra Costa parcels | `data/raw/contra_costa/Parcels_Public_May2026.zip` | 387,835 parcel records; APN present on 100%; street-number/name/city fields complete on 94.2%. |

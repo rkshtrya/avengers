@@ -362,6 +362,12 @@ def make_dataset_catalog() -> pd.DataFrame:
     lines.append("")
     lines.append("This is the plain-English guide to the data in the repo. For each dataset, we list what it is, what geography it covers, where it came from, and how we can use it for Project Lattice.")
     lines.append("")
+    lines.append("## Geography Note")
+    lines.append("")
+    lines.append("San Ramon is a city inside Contra Costa County. Contra Costa is the larger county in the East Bay; San Ramon is the local city focus inside that county.")
+    lines.append("")
+    lines.append("This matters because many official public datasets are published countywide. We use Contra Costa County files as the broad source layer, then filter them to San Ramon for the first graph and product story.")
+    lines.append("")
     lines.append("## Quick Table")
     lines.append("")
     lines.append("| Dataset | Geography / county | Kind of data | Source agency | Status | Local path |")
@@ -502,6 +508,8 @@ This is the shortest path through the repo.
 
 ![Contra Costa County location snapshot](figures/contra_costa_location_snapshot.svg)
 
+San Ramon is a city inside Contra Costa County. Contra Costa is the larger county data layer; San Ramon is the local project focus we filter to.
+
 ![Review path](figures/review_path.svg)
 
 ## Current Data Readiness
@@ -547,7 +555,7 @@ def make_notebooks() -> None:
 
     summary_rows = [
         ("SF permits", "data/raw/san_francisco/building_permits_selected_parts/", "1,291,589 rows", "Available"),
-        ("Contra Costa parcels", "data/raw/contra_costa/Parcels_Public_May2026.zip", "387,835 parcels", "Available"),
+        ("Contra Costa parcels", "data/raw/contra_costa/Parcels_Public_May2026.zip", "387,835 countywide parcels; filter to San Ramon", "Available"),
         ("Census boundaries", "data/raw/census/", "tracts, block groups, places, counties", "Available"),
         ("Schools", "data/raw/schools/cde_public_schools_and_districts.txt", "18,390 rows", "Available"),
         ("Wildfire risk", "data/raw/risk/calfire_*.geojson", "LRA/SRA extracts", "Available"),
@@ -566,7 +574,7 @@ def make_notebooks() -> None:
     write_notebook(
         NOTEBOOKS / "01_data_inventory.ipynb",
         [
-            md("# 01 Data Inventory\n\nWe use this notebook as the quick proof that the raw data is actually here and organized. Start with the catalog table so every file has context: county/geography, source, data type, and status."),
+            md("# 01 Data Inventory\n\nWe use this notebook as the quick proof that the raw data is actually here and organized. Start with the catalog table so every file has context: county/geography, source, data type, and status.\n\nGeography note: San Ramon is a city inside Contra Costa County. Contra Costa is the countywide data umbrella; San Ramon is the city-level slice we filter to."),
             md("![Location snapshot](../reports/figures/contra_costa_location_snapshot.svg)\n\n![Review path](../reports/figures/review_path.svg)\n\n![Data readiness](../reports/figures/data_readiness.svg)"),
             code(
                 "import pandas as pd\ncatalog = pd.read_csv('../reports/dataset_catalog.csv')\ncatalog[['Dataset', 'Geography / county', 'Kind of data', 'Source agency', 'Status', 'Local path']]",
@@ -640,7 +648,7 @@ def make_notebooks() -> None:
     ], columns=["Workstream", "Status", "Owner need", "Next action"])
 
     readiness = pd.DataFrame([
-        ("Graph base", "Ready", "Parcels, APN, address fields, city/ZIP."),
+        ("Graph base", "Ready", "Contra Costa countywide parcels filtered to San Ramon."),
         ("Explainability context", "Ready", "Zoning, risk, schools, amenities, Census boundaries."),
         ("Permit signal", "Ready for SF demo", "1.29M SF permits; San Ramon feed still needs follow-up."),
         ("Production valuation", "Not ready", "Comparable sales are missing."),

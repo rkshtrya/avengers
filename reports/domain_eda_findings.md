@@ -7,7 +7,7 @@ This is the product-facing EDA readout: not just what files exist, but whether t
 | Product need | Current data status | Verdict |
 | --- | --- | --- |
 | Parcel graph / property identity | Contra Costa parcels include APN, address fields, city, and ZIP for 387,835 parcels. | Sufficient for prototype graph base. |
-| San Ramon filtering | Contra Costa city limits are included and parcels have city/ZIP fields. | Sufficient for first pass; verify exact San Ramon boundary spatially. |
+| San Ramon filtering | San Ramon is a city inside Contra Costa County. Countywide city limits are included, and parcels have city/ZIP fields. | Sufficient for first pass; verify exact San Ramon boundary spatially. |
 | Zoning / land-use explanation | Zoning and general-plan land-use shapefiles are included. | Sufficient for context, subject to incorporated-city zoning coverage check. |
 | Risk explanation | CAL FIRE FHSZ geometry and FEMA NFHL flood attributes are included for the project bbox. | Sufficient for review; parcel-level flood joins need full FEMA geometry or ArcGIS/QGIS pull. |
 | Schools / districts | CDE public schools/districts file is included. | Sufficient for school metadata; performance/ratings need additional public accountability data. |
@@ -232,7 +232,7 @@ Top leisure values:
 
 ## Recommended Decisions
 
-1. Keep San Ramon/Contra Costa as the explainability/knowledge-graph target, because the public spatial context is good.
+1. Keep San Ramon inside Contra Costa County as the explainability/knowledge-graph target, because the countywide public spatial context can be filtered to the city.
 2. Use San Francisco permits as the data-rich demo path if we need a fast proof that Lattice can ingest and explain real property-related events.
 3. Keep model training paused until a legal comparable-sales source is secured; use the existing package for feature engineering, joins, and graph design first.
 4. Next technical step: build a `property_features` table from parcels joined to city limits, zoning, land use, risk, Census geography, schools, and OSM POIs.

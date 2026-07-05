@@ -2,6 +2,12 @@
 
 This is the plain-English guide to the data in the repo. For each dataset, we list what it is, what geography it covers, where it came from, and how we can use it for Project Lattice.
 
+## Geography Note
+
+San Ramon is a city inside Contra Costa County. Contra Costa is the larger county in the East Bay; San Ramon is the local city focus inside that county.
+
+This matters because many official public datasets are published countywide. We use Contra Costa County files as the broad source layer, then filter them to San Ramon for the first graph and product story.
+
 ## Quick Table
 
 | Dataset | Geography / county | Kind of data | Source agency | Status | Local path |

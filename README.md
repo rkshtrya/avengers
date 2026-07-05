@@ -48,6 +48,29 @@ The current repo answers most of the context questions. It does not yet solve co
 
 ---
 
+## Geography In Plain English
+
+When we say **San Ramon / Contra Costa**, this is the relationship:
+
+| Place | What it means for this project |
+| --- | --- |
+| California | The state. |
+| San Francisco Bay Area / East Bay | The larger region. |
+| Contra Costa County | The county in the East Bay. It contains many cities, including San Ramon. |
+| San Ramon | The city we are using as the main local example inside Contra Costa County. |
+
+Why this matters:
+
+- Many official property, zoning, boundary, risk, and planning files are published at the **county** level.
+- San Ramon is inside that county, so we start with **Contra Costa County** files.
+- Then we filter those countywide files down to **San Ramon** using city boundaries, parcel city codes, and geometry.
+
+Simple version:
+
+> Contra Costa is the larger container. San Ramon is the city inside it that we care about first.
+
+---
+
 ## The Simple Mental Model
 
 Think of this like building a case file for a house.
@@ -107,7 +130,7 @@ These visuals give the quickest orientation.
 
 ![Contra Costa County location snapshot](reports/figures/contra_costa_location_snapshot.svg)
 
-Contra Costa County is in **California**, in the **northern part of the state**, inside the **San Francisco Bay Area / East Bay**. The project city focus, **San Ramon**, is in the southern part of Contra Costa County.
+Contra Costa County is in **California**, in the **San Francisco Bay Area / East Bay**. **San Ramon is a city inside Contra Costa County**, in the southern part of the county. This is why we use countywide Contra Costa files first, then filter to San Ramon.
 
 ![Suggested review path](reports/figures/review_path.svg)
 

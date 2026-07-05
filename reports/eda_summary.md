@@ -53,7 +53,7 @@ We used the files in `data/raw` and `data/metadata` to check what we can actuall
 
 ## EDA Takeaways
 
-1. **San Ramon/Contra Costa story path is feasible for the graph base.** Contra Costa publishes parcel, zoning, land-use, city-limit, and urban-limit-line shapefiles.
+1. **San Ramon inside Contra Costa is feasible for the graph base.** San Ramon is a city inside Contra Costa County, and the county publishes parcel, zoning, land-use, city-limit, and urban-limit-line shapefiles that we can filter to the city.
 2. **Risk layers are real and source-backed.** FEMA NFHL and CAL FIRE FHSZ services are queryable; this repo includes Contra Costa bbox extracts.
 3. **School metadata is downloadable.** CDE public school/district files are included, and school-quality scoring can be derived carefully from public performance data rather than proprietary ratings.
 4. **SF is still the easier data-first demo.** The SF permit extract has over one million records and good structured fields; in this repository it is stored as selected-column split CSV parts.
@@ -62,7 +62,7 @@ We used the files in `data/raw` and `data/metadata` to check what we can actuall
 ## What We Should Do Next
 
 1. Install geospatial tooling: `pip install geopandas pyogrio shapely duckdb duckdb-engine` or use QGIS/PostGIS.
-2. Read Contra Costa parcels and city limits, filter parcels to San Ramon, and compute parcel count plus address/APN completeness.
+2. Read Contra Costa countywide parcels and city limits, filter parcels to San Ramon, and compute parcel count plus address/APN completeness.
 3. Spatially join San Ramon parcels to zoning, land-use, FEMA flood zones, CAL FIRE FHSZ, OSM POIs, schools, and Census tracts.
 4. Build a `property_features` table with one row per parcel or candidate listing.
 5. Separately validate comparable-sales acquisition before building a valuation model.

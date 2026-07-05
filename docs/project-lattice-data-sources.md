@@ -21,6 +21,8 @@ The right mental model for us is a real-estate knowledge graph plus agents. The 
 
 We see two viable MVP paths.
 
+For the general audience, the geography reads like this: **Contra Costa County is the larger county in the East Bay, and San Ramon is a city inside that county**. When we say "San Ramon / Contra Costa," we mean a San Ramon-focused product story built from the official countywide data that covers it.
+
 ### Option A: San Ramon / Contra Costa County story-first MVP
 
 This matches the deck example and the suburban buyer use case. Contra Costa is usable because it publishes parcel and zoning downloads, and 511 covers regional transit. The likely friction is sale-price/comps access: public records exist, but automated bulk access is not as clean as the slide deck implies.

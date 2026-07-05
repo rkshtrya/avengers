@@ -72,6 +72,8 @@ For the first version, the graph can answer questions like:
 
 The first graph can start with Contra Costa / San Ramon because that matches the main story geography.
 
+For anyone new to the geography: **Contra Costa County is the larger county, and San Ramon is one city inside that county**. In data terms, Contra Costa is the broad source layer. San Ramon is the focused slice we create after filtering the countywide parcel, boundary, planning, and risk files.
+
 ```mermaid
 flowchart TD
   A["Contra Costa parcels"] --> B["Filter to San Ramon"]

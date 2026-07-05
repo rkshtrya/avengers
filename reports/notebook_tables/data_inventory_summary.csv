@@ -1,6 +1,6 @@
 Area,Path,Current coverage,Status
 SF permits,data/raw/san_francisco/building_permits_selected_parts/,"1,291,589 rows",Available
-Contra Costa parcels,data/raw/contra_costa/Parcels_Public_May2026.zip,"387,835 parcels",Available
+Contra Costa parcels,data/raw/contra_costa/Parcels_Public_May2026.zip,"387,835 countywide parcels; filter to San Ramon",Available
 Census boundaries,data/raw/census/,"tracts, block groups, places, counties",Available
 Schools,data/raw/schools/cde_public_schools_and_districts.txt,"18,390 rows",Available
 Wildfire risk,data/raw/risk/calfire_*.geojson,LRA/SRA extracts,Available

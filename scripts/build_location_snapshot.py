@@ -283,11 +283,11 @@ def build_svg() -> str:
         '<rect width="1400" height="900" fill="url(#page)"/>',
         '<text x="58" y="70" font-family="Arial, sans-serif" font-size="38" font-weight="900" fill="#111827">Contra Costa County Location Snapshot</text>',
         '<text x="60" y="103" font-family="Arial, sans-serif" font-size="17" fill="#475569">California -> Northern California -> San Francisco Bay Area -> East Bay</text>',
-        '<text x="60" y="128" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#334155">Contra Costa County -> San Ramon project focus</text>',
+        '<text x="60" y="128" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#334155">Contra Costa County contains San Ramon, our city focus</text>',
         f'<g filter="url(#softShadow)">{rect(48, 132, 590, 685)}</g>',
         '<rect x="72" y="160" width="542" height="615" rx="22" fill="#e8f6fb"/>',
         '<text x="92" y="190" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#111827">State view: California</text>',
-        '<text x="92" y="216" font-family="Arial, sans-serif" font-size="14" fill="#475569">Contra Costa sits in Northern California, in the East Bay.</text>',
+        '<text x="92" y="216" font-family="Arial, sans-serif" font-size="14" fill="#475569">Contra Costa is the countywide data layer; San Ramon is one city inside it.</text>',
     ]
 
     for feature in ca:
@@ -310,7 +310,7 @@ def build_svg() -> str:
         '<rect x="708" y="160" width="620" height="445" rx="22" fill="#e8f6fb"/>',
         '<text x="728" y="190" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#111827">Bay Area zoom: East Bay focus</text>',
         '<text x="728" y="216" font-family="Arial, sans-serif" font-size="14" fill="#475569">Contra Costa is east of San Francisco and north of Alameda County.</text>',
-        '<text x="728" y="237" font-family="Arial, sans-serif" font-size="14" fill="#475569">San Ramon is in the southern part of the county.</text>',
+        '<text x="728" y="237" font-family="Arial, sans-serif" font-size="14" fill="#475569">San Ramon is in the southern part of Contra Costa County.</text>',
     ])
 
     for feature in bay:
@@ -361,7 +361,7 @@ def build_svg() -> str:
         pill(720, 737, "State", "California", "#f8fafc"),
         pill(1020, 737, "Part of state", "Northern California", "#f8fafc"),
         pill(720, 802, "Metro region", "San Francisco Bay Area", "#f8fafc"),
-        pill(1020, 802, "Local focus", "East Bay / San Ramon", "#fff7ed"),
+        pill(1020, 802, "City inside county", "Contra Costa -> San Ramon", "#fff7ed"),
         '<rect x="72" y="792" width="542" height="46" rx="16" fill="#ffffff" fill-opacity="0.86" stroke="#dbe4ea"/>',
         f'<circle cx="97" cy="815" r="7" fill="{COUNTY}"/>',
         '<text x="116" y="820" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#334155">Source: U.S. Census Bureau 2025 county and place boundaries.</text>',

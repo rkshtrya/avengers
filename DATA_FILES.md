@@ -8,6 +8,8 @@ This page helps us find the raw data files quickly. For a plain-English explanat
 
 These are the core files for the San Ramon / Contra Costa graph-first path.
 
+For a general audience: **San Ramon is a city inside Contra Costa County**. Contra Costa is the larger county container, and San Ramon is the local city focus. We use countywide files first because many official public datasets are published by the county, then we filter the records down to San Ramon.
+
 | Dataset | Actual file on GitHub | What it is |
 | --- | --- | --- |
 | Contra Costa parcels | `data/raw/contra_costa/Parcels_Public_May2026.zip` | Parcel shapefile zip from Contra Costa County GIS / Assessor. |
