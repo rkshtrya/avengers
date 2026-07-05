@@ -1,0 +1,1001 @@
+id,type,lat,lon,name,amenity,shop,leisure,public_transport
+57956405,node,37.7733477,-121.971412,Annabel Lane & End,,,,stop_position
+355645470,node,37.7746802,-121.9762304,San Ramon Valley Boulevard & Courtyard Center,,,,stop_position
+358817105,node,37.7789733,-121.9642751,San Ramon Post Office,post_office,,,
+368171356,node,37.7041487,-121.9175203,Dublin City Hall,townhall,,,
+368172508,node,37.8291841,-122.002635,Danville Town Hall,townhall,,,
+418951334,node,37.8120322,-121.9917914,Danville Park and Ride,,,,stop_position
+564941149,node,37.8264865,-122.04901,,bench,,,
+599700733,node,37.7616096,-121.962625,Chipotle,fast_food,,,
+614453952,node,37.7054446,-121.8659529,Dublin Boulevard & Grafton Street,,,,stop_position
+650130658,node,37.7017176,-121.9004437,Dublin/Pleasanton,,,,stop_position
+650131553,node,37.7015802,-121.8980378,Dublin/Pleasanton,,,,stop_position
+1227752148,node,37.8127019,-122.0463201,,drinking_water,,,
+1227752201,node,37.8159147,-122.0496037,,recycling,,,
+1227752203,node,37.8159147,-122.0497325,,waste_basket,,,
+1227752367,node,37.8127702,-122.046267,,toilets,,,
+1345567966,node,37.7008403,-121.9276465,,parking_entrance,,,
+1372758046,node,37.705914,-121.8538986,Fallon Gateway,,,,stop_position
+1373480961,node,37.7189461,-121.9105733,Chevron,fuel,,,
+1425314672,node,37.7627649,-121.9515436,Nob Hill Foods,,supermarket,,
+1588549347,node,37.7064626,-121.858019,,parking_entrance,,,
+1588549360,node,37.7064527,-121.8589047,,parking_entrance,,,
+1834942678,node,37.8208499,-122.0010123,,drinking_water,,,
+1834942679,node,37.8242519,-122.006468,,drinking_water,,,
+1834942703,node,37.8497296,-122.0346517,,drinking_water,,,
+1838330287,node,37.8237326,-122.0033332,Railroad Avenue & Love Lane,,,,stop_position
+1899683800,node,37.7008636,-121.896374,Dublin/Pleasanton BART,,,,platform
+1941018587,node,37.7740735,-121.9234799,Subway,fast_food,,,
+1941018588,node,37.7743038,-121.9241979,Indian Hotspot,restaurant,,,
+1977259837,node,37.8214593,-121.9998467,Kathlyn Stone Jewelry,,jewelry,,
+1977259838,node,37.8214171,-121.9997584,Derby Jewelers,,jewelry,,
+2293888092,node,37.8179184,-121.996783,,bicycle_parking,,,
+2293888123,node,37.8207621,-122.0007117,,bicycle_parking,,,
+2293888142,node,37.8210113,-122.0010783,,bicycle_parking,,,
+2293888150,node,37.8210291,-122.0011324,,waste_basket,,,
+2293888154,node,37.8210478,-122.0011426,,recycling,,,
+2293888204,node,37.8496976,-122.0346482,,waste_basket,,,
+2293888208,node,37.8497071,-122.0346362,,recycling,,,
+2293888226,node,37.8497622,-122.0346623,,bench,,,
+2293888235,node,37.8497934,-122.0346927,,bench,,,
+2385930022,node,37.8431073,-121.9203792,,drinking_water,,,
+2386056122,node,37.7737756,-121.969591,UPS,post_office,copyshop,,
+2386056531,node,37.7739677,-121.970338,24 Hour Fitness,,,fitness_centre,
+2389084071,node,37.7798168,-121.968808,Crow Canyon Road & Camino Ramon,,,,stop_position
+2390271873,node,37.7652308,-121.957298,,parking_entrance,,,
+2390271903,node,37.7665463,-121.9631928,Bishop Ranch 2600,,,,stop_position
+2393586947,node,37.7698046,-121.986774,,,,playground,
+2399703659,node,37.7786505,-121.9695955,Peet's Coffee,cafe,,,
+2415110397,node,37.7994124,-121.8826516,Camino Tassajara & Blackhawk Drive,,,,stop_position
+2418531083,node,37.7590355,-121.967184,Chevron,fuel,,,
+2438436767,node,37.7103718,-121.9275801,Bangkok 101 Thai Cuisine,restaurant,,,
+2438436771,node,37.7055739,-121.92283,7-Eleven,,convenience,,
+2438436774,node,37.7077516,-121.9254877,Casper's Hot Dogs,fast_food,,,
+2438436782,node,37.7103277,-121.9283102,E Sushi Japanese,restaurant,,,
+2439996540,node,37.7058214,-121.9343846,Valero,fuel,,,
+2440016675,node,37.7027397,-121.882581,Black Angus,restaurant,,,
+2440016700,node,37.7049114,-121.887528,Shell,fuel,,,
+2442321104,node,37.7057658,-121.9376201,SummerWinds Nursery,,garden_centre,,
+2442344358,node,37.7044468,-121.9097562,Chevron,fuel,,,
+2442344359,node,37.7048559,-121.9103352,76,fuel,,,
+2442344360,node,37.7054824,-121.909565,Shell,fuel,,,
+2467275612,node,37.7073815,-121.9243619,Consignment Furnishings,,furniture,,
+2467275613,node,37.7081462,-121.924947,Corwood Car Wash,car_wash,,,
+2467275614,node,37.7055256,-121.923852,Dublin Auto Wash,car_wash,,,
+2467275615,node,37.7056237,-121.9240627,Dublin Auto Wash,fuel,,,
+2467275616,node,37.7071994,-121.9242173,Dublin Plumbing Supply,,hardware,,
+2467275618,node,37.7080334,-121.924854,Midas of Dublin,,car_repair,,
+2467275619,node,37.7070317,-121.9240164,Parkway Veterinary Hospital,veterinary,,,
+2467275620,node,37.7078039,-121.924451,United States Post Office,post_office,,,
+2467283065,node,37.7149472,-121.8544339,ACFD Station 18,fire_station,,,
+2501967972,node,37.7119691,-121.9270827,Los Pericos Taqueria,restaurant,,,
+2522831700,node,37.7092451,-121.92694,Evie's,bar,,,
+2522831710,node,37.7665004,-121.9580962,Bishop Cafe,restaurant,,,
+2583177176,node,37.7105936,-121.9266493,Arco,fuel,,,
+2583177177,node,37.7097202,-121.927215,Oil Changers,,car_repair,,
+2583179130,node,37.7119434,-121.926551,Little Caesars,fast_food,,,
+2588103800,node,37.7037066,-121.8535993,Dick's Sporting Goods,,sports,,
+2588107351,node,37.7027118,-121.8516307,BJ's,restaurant,,,
+2588117997,node,37.708016,-121.872468,Peet's Coffee,cafe,,,
+2591916991,node,37.8185901,-121.996876,Cielito Cocina Mexicana,restaurant,,,
+2597283679,node,37.7079929,-121.8731456,Amici's East Coast Pizzeria,restaurant,,,
+2597283691,node,37.7078159,-121.873848,Armadillo Willy's,restaurant,,,
+2611825117,node,37.7750749,-121.9224521,Starbucks,cafe,,,
+2611825121,node,37.7754345,-121.9237561,,atm,,,
+2611825122,node,37.7751481,-121.9239489,Wells Fargo,bank,,,
+2611825123,node,37.7740407,-121.9232889,Peet's Coffee,cafe,,,
+2616864592,node,37.702295,-121.8776245,Dublin Chevrolet Cadillac,,car,,
+2633259955,node,37.7001499,-121.8771901,East Bay BMW,,car,,
+2633261103,node,37.7008288,-121.875881,Acura of Pleasanton,,car,,
+2633262564,node,37.7003151,-121.8743147,Lexus of Pleasanton,,car,,
+2712361221,node,37.766956,-121.957561,,post_box,,,
+2712361731,node,37.768977,-121.95932,,post_box,,,
+2712361737,node,37.772893,-121.960347,,post_box,,,
+2722329048,node,37.771439,-121.961066,,post_box,,,
+2786878686,node,37.7057854,-121.9191122,Dublin Cyclery,,bicycle,,
+2807346401,node,37.77473,-121.961707,,post_box,,,
+2875040919,node,37.7038241,-121.851228,The UPS Store,post_office,copyshop,,
+2880844626,node,37.7054184,-121.8803542,Chase,bank,,,
+2933417901,node,37.7055,-121.926441,Safeway Fuel Station,fuel,,,
+3110371063,node,37.7049944,-121.866105,Buffalo Wild Wings,restaurant,,,
+3119716022,node,37.7095572,-121.9279946,Shalimar,restaurant,,,
+3119782533,node,37.7048551,-121.9078936,Ken Harvey's Dublin Honda,,car,,
+3119782682,node,37.7027075,-121.9111873,Dublin Nissan,,car,,
+3119784398,node,37.7037647,-121.9073275,Dublin Mazda Service,,car_repair,,
+3119809124,node,37.7059679,-121.8725941,Wells Fargo,bank,,,
+3119809251,node,37.7047172,-121.8773425,Dublin Buick GMC,,car,,
+3119809260,node,37.7074407,-121.872962,Baja Fresh,fast_food,,,
+3119811093,node,37.703563,-121.9295956,Chase,bank,,,
+3130293422,node,37.7032166,-121.851412,Panera Bread,fast_food,,,
+3132430521,node,37.7042214,-121.851224,T-Mobile,,mobile_phone,,
+3132581869,node,37.7033208,-121.8772931,Dublin Infiniti,,car,,
+3132596819,node,37.7061959,-121.92226,Big O Tires,,tyres,,
+3196532961,node,37.704466,-121.911603,Caps and Taps,bar,,,
+3356501298,node,37.7039256,-121.851231,Jersey Mike's Subs,fast_food,,,
+3393407231,node,37.7043858,-121.8514421,Seoul Jung Korean BBQ,restaurant,,,
+3393407233,node,37.704385,-121.8517332,Hawaiian Grill Express,restaurant,,,
+3393407234,node,37.7039795,-121.851233,Menchie's,ice_cream,,,
+3393407236,node,37.7040724,-121.851225,T4 Tea For U,cafe,tea,,
+3393407237,node,37.7043868,-121.8516551,Tea Nails,,beauty,,
+3393407238,node,37.7037414,-121.8512015,The Vitamin Shoppe,,nutrition_supplements,,
+3393957414,node,37.7034268,-121.8844175,,toilets,,,
+3401326494,node,37.75881,-121.9663402,Bollinger Nail Salon,,beauty,,
+3401326495,node,37.7586706,-121.966072,Chevys,restaurant,,,
+3401326496,node,37.7588616,-121.966657,Chiropractor,doctors,,,
+3401326497,node,37.7588522,-121.966429,Guri S. Dhaliwal D.M.D.,dentist,,,
+3401326498,node,37.7588961,-121.9667461,San Ramon Lighting,,interior_decoration,,
+3402320437,node,37.7116879,-121.9264149,Ace Hardware,,doityourself,,
+3402320438,node,37.7121227,-121.9266556,Dublin Corners Barber Shop,,hairdresser,,
+3402320439,node,37.7120792,-121.9266288,Sky Martial Arts,dojo,,,
+3402320440,node,37.7119953,-121.9265685,United Car Stereo,,hifi,,
+3423924628,node,37.7782799,-121.9686175,The Kebab Shop,fast_food,,,
+3423926623,node,37.7781008,-121.968433,Thai Taste,restaurant,,,
+3423949741,node,37.7777631,-121.9685526,F45 Training,,,fitness_centre,
+3423949742,node,37.7786297,-121.9688433,Panda Express,fast_food,,,
+3426196314,node,37.7034672,-121.917289,,clock,,,
+3432490465,node,37.7044946,-121.9199871,Dublin Police,police,,,
+3438060821,node,37.8102585,-121.990177,Starbucks,cafe,,,
+3467955282,node,37.818118,-121.996852,Panda Express,fast_food,,,
+3470478306,node,37.7061677,-121.8742682,Bagel Street Cafe,,bakery,,
+3470481389,node,37.706313,-121.9056314,Cooks Collision of Dublin,,car_repair,,
+3495940679,node,37.70775,-121.92485,,post_box,,,
+3657306915,node,37.7307195,-121.929394,Extra Space Storage,,storage_rental,,
+3799657271,node,37.70318,-121.92533,Tesla Supercharger,charging_station,,,
+3825972857,node,37.7041402,-121.9120328,,fountain,,,
+3882985706,node,37.7012861,-121.9290391,,parking_entrance,,,
+3882985711,node,37.7014091,-121.9296468,,parking_entrance,,,
+3882985715,node,37.7023671,-121.928862,,fountain,,,
+3901985442,node,37.7025959,-121.8962005,,parking_entrance,,,
+3901985443,node,37.7026002,-121.8969869,,parking_entrance,,,
+3901985444,node,37.7031238,-121.8969689,,parking_entrance,,,
+3922615110,node,37.7003257,-121.9387805,,toilets,,,
+3923010804,node,37.7097126,-121.9297874,Resurrection Lutheran Church,place_of_worship,,,
+3923010805,node,37.7096654,-121.9300041,United Community Baptist Church,place_of_worship,,,
+4064826731,node,37.7060747,-121.8608483,,,,playground,
+4064826760,node,37.7061405,-121.8612587,,,,playground,
+4106665053,node,37.723549,-121.9418979,,bicycle_repair_station,,,
+4172435114,node,37.7102469,-121.928588,Pho 99,restaurant,,,
+4224791339,node,37.7072015,-121.8738682,Unleashed,,pet,,
+4316007698,node,37.8183116,-121.9957076,Domino's,fast_food,,,
+4316007897,node,37.8196297,-121.995943,Taco Bell Cantina,fast_food,,,
+4346147021,node,37.7036673,-121.909462,United Rentals,,plant_hire,,
+4346148133,node,37.7059686,-121.9095703,O'Reilly Auto Parts,,car_parts,,
+4346744871,node,37.7120125,-121.9269807,Khyber Pass Kebob,restaurant,,,
+4348210564,node,37.7074666,-121.8738653,GNC,,nutrition_supplements,,
+4348213859,node,37.7006677,-121.8698613,Auto World of Pleasanton,,car,,
+4348215297,node,37.7004797,-121.868789,Budget,car_rental,,,
+4348215469,node,37.7006091,-121.8693687,Pleasanton Hand Car Wash,car_wash,,,
+4348216381,node,37.7034075,-121.8659575,Happy Lamb Hot Pot,restaurant,,,
+4348217659,node,37.7031913,-121.8658886,Tandoori Pizza,restaurant,,,
+4348221598,node,37.704727,-121.8760901,Koi Palace,restaurant,,,
+4348221599,node,37.7049847,-121.8762104,Thai Basil Express,restaurant,,,
+4349147302,node,37.7049112,-121.8812888,Fit Mealz Meal Prep,,health_food,,
+4349149894,node,37.7063302,-121.9099378,Autobahn Gallery,,car,,
+4350243735,node,37.704917,-121.8810987,New India Bazaar,,supermarket,,
+4350365540,node,37.7094112,-121.909892,Sherwin-Williams,,paint,,
+4350579145,node,37.7063289,-121.9067164,Calphin Aquatic Club,,,sports_centre,
+4350580185,node,37.7065422,-121.9093768,Allsafe Self Storage,,storage_rental,,
+4350581830,node,37.7073918,-121.9096626,Kahler's Werkstatt,,car_repair,,
+4382461831,node,37.7025024,-121.8992157,Dublin/Pleasanton BART,,,,stop_position
+4382478655,node,37.706115,-121.891869,Dublin Boulevard & Arnold Road,,,,platform
+4382478656,node,37.7062312,-121.8918631,Dublin Boulevard & Arnold Road,,,,stop_position
+4382478657,node,37.7063457,-121.8885683,Dublin Boulevard & Hacienda Drive,,,,stop_position
+4382478658,node,37.7064647,-121.888558,Dublin Boulevard & Hacienda Drive,,,,platform
+4382478659,node,37.7069893,-121.8879339,Hacienda Drive & Dublin Boulevard,,,,stop_position
+4382478660,node,37.7069906,-121.887792,Hacienda Drive & Dublin Boulevard,,,,platform
+4382478661,node,37.7096344,-121.8880907,Hacienda Drive & Central Parkway,,,,stop_position
+4382478662,node,37.7096356,-121.888175,Hacienda Drive & Central Parkway,,,,platform
+4382478663,node,37.7113477,-121.887804,Hacienda Drive & Summer Glen Drive,,,,platform
+4382478664,node,37.7114048,-121.8879116,Hacienda Drive & Summer Glen Drive,,,,stop_position
+4382478665,node,37.7136905,-121.887873,Hacienda Drive & Gleason Drive,,,,stop_position
+4382478666,node,37.7136939,-121.887775,Hacienda Drive & Gleason Drive,,,,platform
+4382478667,node,37.7138111,-121.890243,Gleason Drive & Hacienda Drive,,,,platform
+4382478668,node,37.7138417,-121.892361,Gleason Drive & Arnold Road,,,,platform
+4382478669,node,37.7138733,-121.8902424,Gleason Drive & Hacienda Drive,,,,stop_position
+4382478670,node,37.7139001,-121.8923618,Gleason Drive & Arnold Road,,,,stop_position
+4382478671,node,37.7157819,-121.883316,Madigan Avenue & Broder Boulevard,,,,platform
+4382478672,node,37.7157878,-121.8834124,Madigan Avenue & Broder Boulevard,,,,stop_position
+4382478673,node,37.7160083,-121.8881568,Santa Rita Jail,,,,stop_position
+4382478674,node,37.7160954,-121.888139,Santa Rita Jail,,,,platform
+4382498395,node,37.7000275,-121.9005046,Owens Drive & Chabot Drive,,,,stop_position
+4382498396,node,37.7001537,-121.900469,Owens Drive & Chabot Drive,,,,platform
+4382498397,node,37.7009565,-121.8963785,Dublin/Pleasanton BART,,,,stop_position
+4382708729,node,37.7025755,-121.8989684,Dublin/Pleasanton BART,,,,stop_position
+4385974049,node,37.7007593,-121.926884,West Dublin/Pleasanton BART North Side,,,,platform
+4385974050,node,37.7008231,-121.9269104,West Dublin/Pleasanton BART North Side,,,,stop_position
+4385974051,node,37.7038639,-121.9111633,Dublin Boulevard & Dublin Court,,,,platform
+4385974052,node,37.7039433,-121.9112681,Dublin Boulevard & Dublin Court,,,,stop_position
+4385974053,node,37.7041747,-121.929018,Dublin Boulevard & Golden Gate Drive,,,,platform
+4385974054,node,37.704231,-121.9290498,Dublin Boulevard & Golden Gate Drive,,,,stop_position
+4385974055,node,37.7042581,-121.915779,Dublin Boulevard & Civic Plaza,,,,platform
+4385974056,node,37.7043256,-121.9157575,Dublin Boulevard & Civic Plaza,,,,stop_position
+4385974057,node,37.7044027,-121.9107118,Dublin Boulevard & Dublin Court,,,,stop_position
+4385974058,node,37.7044155,-121.8591264,Dublin Boulevard & Keegan Street,,,,platform
+4385974059,node,37.7044986,-121.910834,Dublin Boulevard & Dublin Court,,,,platform
+4385974060,node,37.7045464,-121.8602085,Dublin Boulevard & Keegan Street,,,,stop_position
+4385974061,node,37.7046729,-121.9167347,Dublin Boulevard & Sierra Court,,,,stop_position
+4385974062,node,37.7047228,-121.8612502,Dublin Boulevard & Keegan Street,,,,stop_position
+4385974063,node,37.7047571,-121.916703,Dublin Boulevard & Sierra Court,,,,platform
+4385974064,node,37.7047915,-121.864345,Dublin Boulevard & Grafton Street,,,,platform
+4385974065,node,37.7048384,-121.86124,Dublin Boulevard & Keegan Street,,,,platform
+4385974066,node,37.7049029,-121.8643151,Dublin Boulevard & Grafton Street,,,,stop_position
+4385974067,node,37.7054288,-121.920948,Dublin Boulevard & Clark Avenue,,,,platform
+4385974068,node,37.7054565,-121.876419,Dublin Boulevard & John Monego Court,,,,platform
+4385974069,node,37.7054962,-121.879524,Dublin Boulevard & Myrtle Drive,,,,platform
+4385974070,node,37.7055159,-121.9209184,Dublin Boulevard & Clark Avenue,,,,stop_position
+4385974071,node,37.70555,-121.865897,Dublin Boulevard & Grafton Street,,,,platform
+4385974072,node,37.705559,-121.8764209,Dublin Boulevard & John Monego Court,,,,stop_position
+4385974073,node,37.7055962,-121.8794997,Dublin Boulevard & Myrtle Drive,,,,stop_position
+4385974074,node,37.7057226,-121.8751122,Dublin Boulevard & Tassajara Road,,,,stop_position
+4385974075,node,37.7057506,-121.9247024,Dublin Boulevard & Village Parkway,,,,stop_position
+4385974076,node,37.705788,-121.9214488,Dublin Boulevard & Clark Avenue,,,,stop_position
+4385974077,node,37.7058321,-121.924678,Dublin Boulevard & Village Parkway,,,,platform
+4385974078,node,37.7058282,-121.875111,Dublin Boulevard & Tassajara Road,,,,platform
+4385974079,node,37.7058681,-121.9214187,Dublin Boulevard & Clark Avenue,,,,platform
+4385974080,node,37.7060595,-121.887225,Dublin Boulevard & Hacienda Drive,,,,platform
+4385974081,node,37.7060708,-121.8814242,Dublin Boulevard & Myrtle Drive,,,,stop_position
+4385974082,node,37.7061574,-121.8872281,Dublin Boulevard & Hacienda Drive,,,,stop_position
+4385974083,node,37.7061999,-121.881385,Dublin Boulevard & Myrtle Drive,,,,platform
+4386008949,node,37.7056544,-121.853742,Fallon Gateway,,,,platform
+4386008950,node,37.7057457,-121.8538402,Fallon Gateway,,,,stop_position
+4386008951,node,37.706078,-121.853863,Fallon Gateway,,,,platform
+4386318230,node,37.7085165,-121.878184,Central Parkway & Killian Street,,,,platform
+4386318231,node,37.7085357,-121.885861,Central Parkway & Hibernia Drive,,,,platform
+4386318232,node,37.708579,-121.8781948,Central Parkway & Killian Street,,,,stop_position
+4386318233,node,37.7085878,-121.8858603,Central Parkway & Hibernia Drive,,,,stop_position
+4386318234,node,37.7087135,-121.8840056,Central Parkway & Aspen Street,,,,stop_position
+4386318235,node,37.7087352,-121.8874603,Central Parkway & Hacienda Drive,,,,stop_position
+4386318236,node,37.7087663,-121.889968,Central Parkway & Sybase Drive,,,,platform
+4386318237,node,37.7087824,-121.884002,Central Parkway & Aspen Street,,,,platform
+4386318238,node,37.7088104,-121.887456,Central Parkway & Hacienda Drive,,,,platform
+4386318239,node,37.7088194,-121.8899563,Central Parkway & Sybase Drive,,,,stop_position
+4386318240,node,37.7088882,-121.8895245,Central Parkway & Sybase Drive,,,,stop_position
+4386318241,node,37.7089591,-121.889498,Central Parkway & Sybase Drive,,,,platform
+4386318242,node,37.7093096,-121.875369,Central Parkway & Glynnis Rose Drive,,,,platform
+4386318243,node,37.7093608,-121.8753956,Central Parkway & Glynnis Rose Drive,,,,stop_position
+4386318244,node,37.7147347,-121.871765,Tassajara Road & South Dublin Ranch Drive,,,,platform
+4386318245,node,37.7147353,-121.8718604,Tassajara Road & South Dublin Ranch Drive,,,,stop_position
+4386318246,node,37.7237034,-121.871322,Tassajara Road & Bridgestone Circle,,,,platform
+4386318247,node,37.7237045,-121.8715153,Tassajara Road & Bridgestone Circle,,,,stop_position
+4386340036,node,37.7100913,-121.8548471,2605 Central Parkway,,,,stop_position
+4386340037,node,37.7101705,-121.854892,2605 Central Parkway,,,,platform
+4386340038,node,37.715924,-121.856133,Fallon Road & Gleason Drive,,,,platform
+4386340039,node,37.7160257,-121.8560781,Fallon Road & Gleason Drive,,,,stop_position
+4386340046,node,37.7199964,-121.8594269,Fallon Road & Antone Way,,,,stop_position
+4386340047,node,37.7200051,-121.859571,Fallon Road & Antone Way,,,,platform
+4386340048,node,37.7256584,-121.8584309,Fallon Road & Signal Hill Drive,,,,stop_position
+4386340049,node,37.7256705,-121.858562,Fallon Road & Signal Hill Drive,,,,platform
+4386340050,node,37.7307763,-121.870934,Tassajara Road & Silvera Ranch Drive,,,,platform
+4386340051,node,37.730791,-121.8710475,Tassajara Road & Silvera Ranch Drive,,,,stop_position
+4386340052,node,37.732068,-121.865955,Fallon Road & Silvera Ranch Drive,,,,platform
+4386340053,node,37.732132,-121.8658948,Fallon Road & Silvera Ranch Drive,,,,stop_position
+4386342302,node,37.7144168,-121.8587902,Gleason Drive & Madden Way,,,,stop_position
+4386342303,node,37.7145008,-121.85886,Gleason Drive & Madden Way,,,,platform
+4386342304,node,37.7148822,-121.8666252,Fallon Middle School,,,,stop_position
+4386342305,node,37.714951,-121.866627,Fallon Middle School,,,,platform
+4386413151,node,37.7025744,-121.939276,,post_box,,,
+4406047867,node,37.7308683,-121.927094,Kumon,prep_school,,,
+4406064456,node,37.7310578,-121.926297,Family Dentistry DDS Inc.,dentist,,,
+4406380703,node,37.7001329,-121.869727,USPS,post_box,,,
+4427238844,node,37.7277499,-121.87122,Quarry Lane School,,,,platform
+4427238845,node,37.7277519,-121.8713478,Quarry Lane School,,,,stop_position
+4447022319,node,37.7097055,-121.8744261,Central Parkway & Glynnis Rose Drive,,,,stop_position
+4447022320,node,37.7097845,-121.874448,Central Parkway & Glynnis Rose Drive,,,,platform
+4518474008,node,37.7624264,-121.9636479,CVS Pharmacy,pharmacy,,,
+4556756458,node,37.7241969,-121.9420657,General Dentistry For Children,dentist,,,
+4574537902,node,37.702574,-121.8988704,,taxi,,,
+4574537903,node,37.7007831,-121.9278747,,taxi,,,
+4575630664,node,37.7791989,-121.9771527,,,,picnic_table,
+4575630665,node,37.7791762,-121.9771436,,,,picnic_table,
+4575630666,node,37.7791514,-121.9771354,,,,picnic_table,
+4599203011,node,37.703932,-121.884719,,post_box,,,
+4599211987,node,37.7014395,-121.93767,,post_box,,,
+4726497611,node,37.7620092,-121.953018,Sports Basement,,sports,,
+4727182415,node,37.8490588,-121.933248,,drinking_water,,,
+4727185075,node,37.8480182,-121.9343627,,toilets,,,
+4731261021,node,37.8162331,-122.0492726,,drinking_water,,,
+4750169082,node,37.704183,-121.926691,Bank of America,atm,,,
+4758464254,node,37.7036913,-121.932678,,bicycle_parking,,,
+4758464256,node,37.7005493,-121.927697,,bicycle_parking,,,
+4758464257,node,37.7028998,-121.932856,,bicycle_parking,,,
+4758464258,node,37.7100803,-121.926608,,bicycle_parking,,,
+4758464259,node,37.7078489,-121.929542,,bicycle_parking,,,
+4758464260,node,37.7086502,-121.930426,,bicycle_parking,,,
+4758464262,node,37.705658,-121.93088,,bicycle_parking,,,
+4758464263,node,37.70657,-121.929332,,bicycle_parking,,,
+4758464264,node,37.7060249,-121.929094,,bicycle_parking,,,
+4758464265,node,37.7064767,-121.9310725,,bicycle_parking,,,
+4758464266,node,37.7041457,-121.9289043,,bicycle_parking,,,
+4758464267,node,37.7040478,-121.930303,,bicycle_parking,,,
+4758464268,node,37.7032855,-121.930141,,bicycle_parking,,,
+4909471900,node,37.7027895,-121.9276003,,parking_entrance,,,
+4986054865,node,37.700785,-121.9336,Earl Anthony's Dublin Bowl,,,sports_centre,
+4986054866,node,37.7021438,-121.9341123,Mattress Firm,,bed,,
+4986054868,node,37.701887,-121.9351477,Starbucks,cafe,,,
+4986054870,node,37.7023146,-121.934425,Video Only,,electronics,,
+4986054871,node,37.7022462,-121.9346822,American Furnishings,,furniture,,
+4986069998,node,37.7021634,-121.936883,Petco,,pet,,
+4986070008,node,37.7006211,-121.939673,U.S. Bank,bank,,,
+4986070019,node,37.701513,-121.936419,Shell,fuel,,,
+4986104368,node,37.7028102,-121.9344416,Palace Shine Car Wash,car_wash,,,
+4986104369,node,37.70292,-121.9344999,O'Reilly Auto Parts,,car_parts,,
+4986104370,node,37.702773,-121.9353066,,toilets,,,
+4986104377,node,37.702786,-121.935549,Chevron,fuel,,,
+4986104378,node,37.7033571,-121.9345535,Popeyes,fast_food,,,
+4986104387,node,37.7040128,-121.9291053,Amakara,restaurant,,,
+4986104388,node,37.70432,-121.9346575,Paris Baguette,,bakery,,
+4986112820,node,37.7044555,-121.933914,,atm,,,
+4986113321,node,37.7044686,-121.9340667,Wells Fargo,bank,,,
+4986113329,node,37.7032425,-121.9335216,Citibank,bank,,,
+4986113330,node,37.7033005,-121.933352,,atm,,,
+4986970179,node,37.7040638,-121.9323756,Ashley HomeStore,,furniture,,
+4986970180,node,37.7060331,-121.9330817,Saigon Garden,restaurant,,,
+4986970181,node,37.7059609,-121.9330508,Budget Cleaners,,dry_cleaning,,
+4986970182,node,37.7056538,-121.9332144,Smoker's Gift Shop,,gift,,
+4986970183,node,37.7057031,-121.9332346,Beauty Hair and Nails,,beauty,,
+4986970184,node,37.7058166,-121.9330595,Ralph Gracie Dublin Jiu Jitsu Academy,,,fitness_centre,
+4986970185,node,37.7057593,-121.9332607,Baskin-Robbins,ice_cream,,,
+4986970193,node,37.7063174,-121.9330991,99 Ranch Market,,supermarket,,
+4986970200,node,37.7044787,-121.9325767,Savers,,second_hand,,
+4986970208,node,37.7051375,-121.9326854,CVS Pharmacy,pharmacy,,,
+5065437780,node,37.7034563,-121.9276171,,parking_entrance,,,
+5065437782,node,37.7040183,-121.9283231,,parking_entrance,,,
+5080690721,node,37.7770772,-121.9703637,Dos Coyotes Border Cafe,fast_food,,,
+5110354848,node,37.7049805,-121.9351852,4Ever Dance Studio,,,dance,
+5110354851,node,37.7049365,-121.935484,C2 Education,prep_school,,,
+5110354852,node,37.7049243,-121.9355768,Relax Center,,beauty,,
+5110354853,node,37.704911,-121.9356667,Optometrist,,optician,,
+5110354854,node,37.7048999,-121.9357605,Nails and Spa,,beauty,,
+5110354862,node,37.7045983,-121.9359407,,atm,,,
+5110354863,node,37.7047391,-121.9360777,Viange Hair,,hairdresser,,
+5110354864,node,37.7048468,-121.9359932,China Village,restaurant,,,
+5110354865,node,37.7046553,-121.9360596,Mike's Camera,,electronics,,
+5110354866,node,37.704563,-121.9360408,Cathay Bank,bank,,,
+5110363628,node,37.7041121,-121.9359262,Go Goong,restaurant,,,
+5110398463,node,37.7025592,-121.9302647,Xpress Dry Cleaners,,dry_cleaning,,
+5110398464,node,37.7033709,-121.9307583,Mancini's Sleepworld,,bed,,
+5110398466,node,37.7034431,-121.9303834,SalonCentric,,hairdresser_supply,,
+5110398467,node,37.7035687,-121.930443,Music Exchange,,musical_instrument,,
+5110398470,node,37.7036205,-121.93059,,bicycle_parking,,,
+5111489628,node,37.7046246,-121.9270072,Bank of America,bank,,,
+5111489629,node,37.7041932,-121.9259892,"Guns, Fishing & Other Stuff",,outdoor,,
+5111489630,node,37.7044971,-121.9270316,,atm,,,
+5133546995,node,37.703354,-121.8514085,Chaat Cafe,restaurant,,,
+5149019991,node,37.7537695,-121.9086537,Bollinger Canyon Road & East Branch Parkway,,,,stop_position
+5168355575,node,37.7149996,-121.8880427,East Alameda County Hall of Justice,,,,stop_position
+5170017441,node,37.7101651,-121.9261012,Joyful Kids Bilingual Preschool,school,,,
+5170017447,node,37.7098925,-121.9264707,Hunter Joseph Salon,,hairdresser,,
+5170017448,node,37.7098431,-121.9264345,Iron Horse Optometric Group,,optician,,
+5170017449,node,37.7099444,-121.926506,Starbrite Dental,dentist,,,
+5170088686,node,37.703329,-121.8847188,Fuddruckers,restaurant,,,
+5170088687,node,37.7034897,-121.8844693,Pho Asian Bistro,restaurant,,,
+5170088689,node,37.7036181,-121.8842474,Dublin Dental Center,dentist,,,
+5170088690,node,37.7036622,-121.8843359,Red Tractor Cafe,fast_food,,,
+5170088691,node,37.7036606,-121.884468,World Of Beer,restaurant,,,
+5188946023,node,37.8130589,-121.994635,Lucky,,supermarket,,
+5195311211,node,37.7063105,-121.9353951,Keypoint Credit Union,bank,,,
+5195311219,node,37.7060538,-121.9362373,Casa Orozco,restaurant,,,
+5195311220,node,37.7073222,-121.9347829,Dollar Tree,,variety_store,,
+5195314430,node,37.7071392,-121.9350833,Round Table Pizza,restaurant,,,
+5195314431,node,37.7072814,-121.9351517,Gallagher's Pub,pub,,,
+5195314432,node,37.7069742,-121.9358356,Banseok Korean BBQ,restaurant,,,
+5195314437,node,37.7070352,-121.9354175,Dough Boy's Donuts,cafe,,,
+5195345771,node,37.7075583,-121.9344,Mathnasium,prep_school,,,
+5195345772,node,37.7074013,-121.9343095,Inspire Smiles Dental,dentist,,,
+5195345773,node,37.7073365,-121.934284,Erik's DeliCafé,fast_food,,,
+5195345774,node,37.7072495,-121.9341955,Golden Sand Harbor,restaurant,,,
+5195372379,node,37.7040951,-121.935566,The UPS Store,post_office,copyshop,,
+5195372381,node,37.70418,-121.9351771,Cafe Tapioca,cafe,,,
+5195372382,node,37.7041184,-121.9354628,Bagel Bakery,cafe,,,
+5195385075,node,37.7051728,-121.935954,Sodam,restaurant,,,
+5198626596,node,37.7067694,-121.927889,REI,,outdoor,,
+5198626597,node,37.7073392,-121.9278225,SAGE Centers for Veterinary Specialty & Emergency Care,veterinary,,,
+5198626600,node,37.7071753,-121.9288062,Togo's,fast_food,,,
+5198626601,node,37.707128,-121.928924,Tous les Jours,cafe,bakery,,
+5198626602,node,37.7070883,-121.9290329,Taqueria Azteca,restaurant,,,
+5198659575,node,37.7072909,-121.928357,"Custom Fireplace, Patio & BBQ",,fireplace,,
+5198659576,node,37.707267,-121.928542,Carpeteria,,flooring,,
+5198659577,node,37.7072347,-121.9286621,Smoker Friendly,,tobacco,,
+5198659578,node,37.707205,-121.928717,Famous Hair & Nails,,beauty,,
+5198712772,node,37.7089859,-121.929352,Chuck E. Cheese,restaurant,,amusement_arcade,
+5198712774,node,37.7087697,-121.9303857,The Habbit Burger Grill,fast_food,,,
+5198712782,node,37.7086108,-121.9288901,The Floor Store,,flooring,,
+5198977997,node,37.7048362,-121.9286232,BMO,bank,,,
+5198977998,node,37.704771,-121.9292817,Bassett Home Furnishings,,furniture,,
+5198978000,node,37.7056819,-121.9289283,PetSmart,,pet,,
+5198978005,node,37.7063673,-121.9290879,Chipotle,fast_food,,,
+5198978006,node,37.7064628,-121.929138,Panera Bread,fast_food,,,
+5199035779,node,37.706988,-121.9333291,FASTSIGNS,,copyshop,,
+5199035780,node,37.7068713,-121.9333774,IronHorse VetCare,veterinary,,,
+5199035782,node,37.7077795,-121.9327444,Dublin Senior Center,community_centre,,,
+5199035784,node,37.706658,-121.9318096,Target,,department_store,,
+5199035786,node,37.7061339,-121.931216,Metro by T-Mobile,,mobile_phone,,
+5199035788,node,37.7050994,-121.930946,Burlington,,department_store,,
+5199297800,node,37.7029295,-121.9301668,Premier Medical,doctors,,,
+5199297802,node,37.7028711,-121.9301413,Dublin Plaza Dental,dentist,,,
+5199297803,node,37.70207,-121.9314355,Ross,,department_store,,
+5199297804,node,37.7019607,-121.9318016,Michaels,,craft,,
+5199297805,node,37.7018599,-121.9321261,Marshalls,,department_store,,
+5199297806,node,37.7017719,-121.9324172,DSW,,shoes,,
+5199297807,node,37.7017761,-121.9326921,Half Price Books,,books,,
+5199321654,node,37.705041,-121.9375415,Hana Japan,restaurant,,,
+5199321655,node,37.704189,-121.9381075,Tofu House,restaurant,,,
+5199321656,node,37.7042834,-121.9375214,Lamps Plus,,interior_decoration,,
+5199321657,node,37.7050155,-121.9385091,Crow Canyon Dry Cleaners,,dry_cleaning,,
+5199321658,node,37.7048505,-121.9384769,Tornado Martial Arts,,,fitness_centre,
+5199321659,node,37.7047105,-121.9384568,Rachel's Ballet,,,dance,
+5199321660,node,37.7046389,-121.938438,"G-Jen Hsu, DDS",dentist,,,
+5199321661,node,37.7044362,-121.938375,Trek,,bicycle,,
+5199321662,node,37.70525,-121.9370734,Pho Dublin,restaurant,,,
+5199321663,node,37.7048468,-121.937502,Country Waffles,restaurant,,,
+5199321665,node,37.703755,-121.9378795,Dublin Iceland,,,ice_rink,
+5199332715,node,37.7052272,-121.935546,Radiant Family Dentistry,dentist,,,
+5199332716,node,37.7052182,-121.9356123,Hog's Breath Barber Shop,,hairdresser,,
+5199332717,node,37.7052065,-121.9356774,Discount Cigarettes,,tobacco,,
+5199332718,node,37.7051975,-121.9357431,Aroma Spa Massage,,beauty,,
+5199332720,node,37.7051827,-121.9358772,Nails Spa,,beauty,,
+5199333321,node,37.7052978,-121.9361374,Hollywood Hair Style,,hairdresser,,
+5199333322,node,37.7054081,-121.936162,Dogtopia,animal_boarding,,,
+5207580624,node,37.7716357,-121.9474766,Patel indian Grocery,,supermarket,,
+5207580625,node,37.7710188,-121.948106,Domino's,fast_food,,,
+5229576313,node,37.703669,-121.930139,Bay Breeze Dental,dentist,,,
+5229576314,node,37.7054676,-121.9284353,Happy Nails & Spa,,beauty,,
+5263459181,node,37.7103922,-121.927438,Sharetea,cafe,,,
+5289073079,node,37.7793655,-121.963756,,post_box,,,
+5289073096,node,37.7758946,-121.981554,,post_box,,,
+5290061773,node,37.7743211,-121.9799006,,post_box,,,
+5290064152,node,37.7735147,-121.9766359,,post_box,,,
+5300320010,node,37.7107932,-121.9261837,The Copper Skillet,restaurant,,,
+5301127733,node,37.7725281,-121.9691019,Iwatani,fuel,,,
+5307227242,node,37.7131734,-122.035886,,shelter,,,
+5313294754,node,37.7497927,-121.956181,,,,picnic_table,
+5313294755,node,37.7498924,-121.9560559,,,,picnic_table,
+5313294756,node,37.7497935,-121.9561055,,,,picnic_table,
+5313294757,node,37.7498728,-121.9565003,,,,picnic_table,
+5313294758,node,37.749863,-121.9563339,,,,picnic_table,
+5313294759,node,37.7497608,-121.9566719,,,,picnic_table,
+5313294760,node,37.7496938,-121.9565603,,,,picnic_table,
+5313294761,node,37.7499578,-121.9558554,,,,picnic_table,
+5313294762,node,37.7499153,-121.9557944,,,,picnic_table,
+5313294763,node,37.7499095,-121.9561882,,,,picnic_table,
+5371815505,node,37.7161833,-121.8503916,Positano Parkway & Vinton Avenue,,,,stop_position
+5402098505,node,37.7055705,-121.9329,Fitness 19,,,fitness_centre,
+5402230290,node,37.7059583,-121.9377461,INC 82 Brewing,restaurant,,,
+5402288571,node,37.7047805,-121.9107885,Yanagi Sushi & Grill,restaurant,,,
+5402288572,node,37.7046208,-121.9110969,Curry Pizza House,fast_food,,,
+5402593651,node,37.7068967,-121.9236255,Flooring Liquidators,,flooring,,
+5402593660,node,37.7065153,-121.9244537,Biryaniz,restaurant,,,
+5402622958,node,37.7094553,-121.9279124,Falafel Village,restaurant,,,
+5402622959,node,37.7093434,-121.927044,Sri Vasantha Bhavan,restaurant,,,
+5402622960,node,37.7084029,-121.9261595,Three Sheets Craft Beer Bar,pub,,,
+5402622962,node,37.707005,-121.9249593,The FIT Potato,,,fitness_centre,
+5402622963,node,37.7068739,-121.9248459,Western Tile Design Center,,flooring,,
+5404198654,node,37.7080278,-121.9266276,Schuck’s Transmission & Auto Repair,,car_repair,,
+5404198655,node,37.70844,-121.9268596,Coin Car Wash,car_wash,,,
+5404198660,node,37.7081063,-121.9266853,All Smogs,,car_repair,,
+5404198684,node,37.7086421,-121.9263641,Dublin Carpet,,flooring,,
+5404198685,node,37.7085392,-121.9262749,5 Star Medical Supply,,medical_supply,,
+5404198686,node,37.7084713,-121.9262179,Kids N Cribs,,baby_goods,,
+5404198687,node,37.7083341,-121.9260985,The Frame Company,,frame,,
+5404198688,node,37.708266,-121.9260442,J Salon & Supply,,beauty,,
+5404198689,node,37.7081986,-121.9259852,Diamond Sharp Equipment,,agrarian,,
+5406228146,node,37.7049975,-121.9379479,Burma! Burma!,restaurant,,,
+5406507465,node,37.7054962,-121.9192716,Athens Burgers,fast_food,,,
+5418943942,node,37.7061487,-121.9402083,,bench,,,
+5418943943,node,37.7061837,-121.9402365,,bench,,,
+5418943947,node,37.7068554,-121.93949,,bicycle_parking,,,
+5418943948,node,37.7067774,-121.9392554,,bench,,,
+5418943949,node,37.7068299,-121.9391689,,bench,,,
+5418943950,node,37.7067853,-121.9390248,,bench,,,
+5418943951,node,37.7069286,-121.9391944,,bench,,,
+5418943966,node,37.7066851,-121.9395156,,toilets,,,
+5421714727,node,37.7051912,-121.922229,Nothing Bundt Cakes,,pastry,,
+5423536468,node,37.76256,-121.9513441,Sport Clips Haircuts,,beauty,,
+5423577225,node,37.7630929,-121.9611438,Sunset Drive & Bishop Drive,,,,platform
+5475929398,node,37.8160562,-121.9959414,,parking_entrance,,,
+5496832590,node,37.8247922,-122.0029855,,bicycle_repair_station,,,
+5521491352,node,37.7788703,-121.969755,Panera Bread,fast_food,,,
+5521491353,node,37.7786871,-121.9694711,Habit Burger & Grill,fast_food,,,
+5557420194,node,37.7228722,-121.941805,Shell,fuel,,,
+5597060338,node,37.7590993,-121.955768,,post_box,,,
+5597060339,node,37.7598025,-121.954024,,post_box,,,
+5668621306,node,37.7294682,-121.93138,Starbucks,cafe,,,
+5670817178,node,37.7508591,-121.8916478,,,,picnic_table,
+5670821000,node,37.748329,-121.8927539,,,,picnic_table,
+5670821001,node,37.7482844,-121.8927261,,,,picnic_table,
+5670827389,node,37.7495307,-121.8874593,,,,picnic_table,
+5670827390,node,37.7495853,-121.8873402,,,,picnic_table,
+5670827391,node,37.7490724,-121.8872628,,,,picnic_table,
+5670827752,node,37.7431813,-121.8838843,,toilets,,,
+5670830773,node,37.7490711,-121.8871579,,,,picnic_table,
+5670853752,node,37.7670363,-121.955269,,toilets,,,
+5673740319,node,37.7662709,-121.9533045,,fountain,,,
+5673740320,node,37.7657749,-121.952464,,,,picnic_table,
+5673740421,node,37.7656433,-121.9531985,,,,picnic_table,
+5673740422,node,37.7658442,-121.9533435,,,,picnic_table,
+5673800145,node,37.800591,-121.918724,,fountain,,,
+5714140838,node,37.75939,-121.9547438,Gatherings,cafe,,,
+5859468893,node,37.7029518,-121.918355,ChargePoint,charging_station,,,
+5859468894,node,37.7058092,-121.9211606,,bicycle_parking,,,
+5859468895,node,37.7053805,-121.920691,,bicycle_parking,,,
+5859468896,node,37.7037497,-121.9180553,,bicycle_parking,,,
+5859468897,node,37.7028876,-121.918302,,bicycle_parking,,,
+5893188549,node,37.7346702,-121.9201187,,,,picnic_table,
+5893276535,node,37.7477636,-121.9193217,,,,water_park,
+5893276561,node,37.7508999,-121.9194698,,,,picnic_table,
+5893276562,node,37.7508405,-121.91946,,,,picnic_table,
+5893276567,node,37.7491845,-121.9184117,,,,picnic_table,
+5893276568,node,37.7492537,-121.9184556,,,,picnic_table,
+5893276569,node,37.7493093,-121.9185046,,,,picnic_table,
+5893277324,node,37.7507165,-121.9196195,,,,picnic_table,
+5900545134,node,37.7661622,-121.8889541,,,,picnic_table,
+5900545135,node,37.7659567,-121.8889411,,,,picnic_table,
+5900545136,node,37.7665131,-121.8899763,,,,picnic_table,
+5900560782,node,37.7594488,-121.8891687,,,,picnic_table,
+5900564032,node,37.7597742,-121.8898527,,bench,,,
+5900664323,node,37.7633186,-121.8942445,,,,picnic_table,
+5900664324,node,37.7633546,-121.8942258,,,,picnic_table,
+5900664325,node,37.7633993,-121.8942171,,,,picnic_table,
+5900664326,node,37.763439,-121.894199,,,,picnic_table,
+5900689634,node,37.7615284,-121.8992598,,,,picnic_table,
+5900689635,node,37.761507,-121.8991831,,,,picnic_table,
+5900689636,node,37.7613347,-121.8990026,,,,picnic_table,
+5900689641,node,37.7602311,-121.8989269,,,,picnic_table,
+5900689642,node,37.7602711,-121.8988811,,,,picnic_table,
+5900759204,node,37.7649004,-121.9000595,,,,picnic_table,
+5900759205,node,37.7656647,-121.8991265,,,,picnic_table,
+5900759206,node,37.7656819,-121.8990952,,,,picnic_table,
+5900759207,node,37.7657101,-121.9000407,,,,picnic_table,
+5900759208,node,37.7656491,-121.9001845,,,,picnic_table,
+5900759209,node,37.7649854,-121.9001486,,,,picnic_table,
+5905431248,node,37.7748773,-121.909143,,,,picnic_table,
+5905431249,node,37.7749219,-121.9091232,,,,picnic_table,
+5905431250,node,37.7749636,-121.9090898,,,,picnic_table,
+5905431251,node,37.7750033,-121.909037,,,,picnic_table,
+5905431252,node,37.7751009,-121.9100338,,,,picnic_table,
+5905431253,node,37.7750745,-121.9099241,,,,picnic_table,
+5905431254,node,37.7751598,-121.909975,,,,picnic_table,
+5905431255,node,37.7759353,-121.9094993,,,,picnic_table,
+5905431256,node,37.7759568,-121.9094524,,,,picnic_table,
+5905431257,node,37.7759899,-121.9094333,,,,picnic_table,
+5905501477,node,37.7662719,-121.9163492,,,,picnic_table,
+5905501478,node,37.7663923,-121.9162657,,,,picnic_table,
+5905501479,node,37.7664726,-121.9161995,,,,picnic_table,
+5905501480,node,37.766536,-121.9165135,,,,picnic_table,
+5905501481,node,37.7665711,-121.9165358,,,,picnic_table,
+5905501482,node,37.7666062,-121.9165567,,,,picnic_table,
+5907198097,node,37.7444533,-121.8890808,,,,picnic_table,
+5907198098,node,37.7447331,-121.8894654,,,,picnic_table,
+5907198099,node,37.7450996,-121.8897318,,,,picnic_table,
+5907198100,node,37.7449668,-121.8896721,,bench,,,
+5907198101,node,37.7448548,-121.8895979,,bench,,,
+5907209192,node,37.7498344,-121.9016999,,,,picnic_table,
+5907209193,node,37.7497692,-121.9019109,,,,picnic_table,
+5907209194,node,37.7497743,-121.9018685,,,,picnic_table,
+5907209195,node,37.7503662,-121.9018006,,,,picnic_table,
+5910474551,node,37.7837277,-121.9823957,California Strength,,,sports_centre,
+5956045752,node,37.7037672,-121.9352207,,fountain,,,
+5962625871,node,37.7053529,-121.9327895,Daiso Japan,,variety_store,,
+6001564008,node,37.7120962,-121.892666,Rockin' Jump Trampoline Park,,,trampoline_park,
+6025756118,node,37.7054074,-121.8536058,Guitar Center,,musical_instrument,,
+6025772310,node,37.7049032,-121.8536423,PetSmart,,pet,,
+6025772311,node,37.7045493,-121.8536299,Lucky,,supermarket,,
+6025814259,node,37.7041375,-121.8511961,Fallon Dental Group,dentist,,,
+6025861376,node,37.7061523,-121.8520041,Hisui Express Sushi & Ramen,restaurant,,,
+6025861377,node,37.7062225,-121.8518015,Sourdough & Co,restaurant,,,
+6025861378,node,37.7054444,-121.8512016,SweetHoney Dessert,restaurant,,,
+6025915894,node,37.7049926,-121.8516437,Hawaiian Poke,restaurant,,,
+6025915895,node,37.7049917,-121.8517211,Kiki Brows,,beauty,,
+6101129791,node,37.76292,-121.96366,Tesla Supercharger San Ramon,charging_station,,,
+6131716473,node,37.7016465,-121.8992387,Dublin/Pleasanton,,,,station
+6239787185,node,37.7532268,-121.9101574,Front Row Theater,theatre,,,
+6240965598,node,37.8236573,-121.999862,Danville Hardwood Company,,flooring,,
+6240965611,node,37.8230234,-122.0033266,Trader Joe's,,supermarket,,
+6240965612,node,37.8239598,-122.0038165,Starbucks,cafe,,,
+6240965613,node,37.8231478,-122.003955,Jamba,fast_food,,,
+6240965614,node,37.8232107,-122.0040201,Chipotle,fast_food,,,
+6253220543,node,37.731452,-121.9279005,,post_box,,,
+6253220544,node,37.729756,-121.931237,,post_box,,,
+6253220545,node,37.7280722,-121.9244455,,post_box,,,
+6253220546,node,37.7247186,-121.937114,,post_box,,,
+6253220547,node,37.72429,-121.944205,,post_box,,,
+6253220548,node,37.7065487,-121.873687,USPS,post_box,,,
+6253220549,node,37.7097105,-121.913771,,post_box,,,
+6253220550,node,37.7098686,-121.928351,,post_box,,,
+6329884002,node,37.709315,-121.9277999,Dublin Veterinary Hospital,veterinary,,,
+6408101521,node,37.7778589,-121.9724745,Zachary's Chicago Pizza,restaurant,,,
+6427386135,node,37.793036,-121.9827743,Camino Ramon & Greenbrook Drive,,,,platform
+6427386136,node,37.7960831,-121.9846229,Camino Ramon & Saint Patrick's Drive,,,,platform
+6427386137,node,37.7996265,-121.9872891,Camino Ramon & El Capitan Drive,,,,platform
+6427386138,node,37.8041602,-121.9894317,Camino Ramon & San Thomas Way,,,,platform
+6427386139,node,37.8093982,-121.9911057,Camino Ramon & Rose Garden,,,,platform
+6427386140,node,37.8119797,-121.99184,Danville Park and Ride,,,,platform
+6427386141,node,37.8133849,-121.996013,San Ramon Valley Boulevard & Livery-Mercantile,,,,platform
+6427386142,node,37.8152804,-121.996497,San Ramon Valley Boulevard & Danville Town and Country Shopping Center,,,,platform
+6427386143,node,37.817679,-121.996756,San Ramon Valley Boulevard & Sonora Avenue,,,,platform
+6427386144,node,37.8208007,-122.0002581,Railroad Avenue & Prospect Avenue,,,,platform
+6427386145,node,37.8234999,-122.003293,Railroad Avenue & Love Lane and Linda Mesa Avenue,,,,platform
+6427386146,node,37.8252169,-122.00378,Danville Boulevard & Railroad Avenue,,,,platform
+6427386147,node,37.8256649,-122.003927,Danville Boulevard & La Gonda Way,,,,platform
+6427386148,node,37.8237646,-122.003202,Railroad Avenue & Love Lane,,,,platform
+6427386149,node,37.8225744,-122.002199,Railroad Avenue & Linda Mesa Avenue,,,,platform
+6427386150,node,37.8203171,-121.999112,Railroad Avenue & Church Street,,,,platform
+6427386151,node,37.817466,-121.99645,San Ramon Valley Boulevard & Sonora Avenue,,,,platform
+6427386152,node,37.8153932,-121.996212,San Ramon Valley Boulevard & Bank of America,,,,platform
+6427386153,node,37.8125898,-121.995424,San Ramon Valley Boulevard & Sycamore Square,,,,platform
+6427386154,node,37.8102155,-121.9908228,Camino Ramon & Sycamore Valley Road,,,,platform
+6427386155,node,37.8046122,-121.9894724,Camino Ramon & San Thomas Way,,,,platform
+6427386156,node,37.8004239,-121.9876042,Camino Ramon & El Capitan Drive,,,,platform
+6427386157,node,37.7962891,-121.984594,Camino Ramon & Saint Patrick's Drive,,,,platform
+6427386158,node,37.7945711,-121.9834214,Camino Ramon & Baldwin Drive,,,,platform
+6427386159,node,37.828285,-122.0072992,Danville Boulevard & El Cerro Boulevard,,,,platform
+6427386160,node,37.8322904,-122.014067,Danville Boulevard & Hartford Road,,,,platform
+6427386161,node,37.8349743,-122.017148,Danville Boulevard & El Portal,,,,platform
+6427386162,node,37.8379536,-122.021062,Danville Boulevard & Camille Avenue,,,,platform
+6427386163,node,37.8415861,-122.025104,Danville Boulevard & Hemme Avenue,,,,platform
+6427386164,node,37.8442044,-122.0277,Danville Boulevard & La Serena Avenue,,,,platform
+6427386165,node,37.8453062,-122.028813,Danville Boulevard & South Avenue,,,,platform
+6427386166,node,37.8476377,-122.0308036,Danville Boulevard & Las Trampas Road,,,,platform
+6427386183,node,37.8477319,-122.0312114,Danville Boulevard & Las Trampas Road,,,,platform
+6427386184,node,37.8451324,-122.0288908,Danville Boulevard & Alamo Women's Club,,,,platform
+6427386785,node,37.8438206,-122.027554,Danville Boulevard & La Serena Avenue,,,,platform
+6427386786,node,37.8413309,-122.02507,Danville Boulevard & Hemme Avenue,,,,platform
+6427386787,node,37.8374146,-122.020654,Danville Boulevard & Camille Avenue,,,,platform
+6427386788,node,37.8348233,-122.017272,Danville Boulevard & Wayne Avenue,,,,platform
+6427386789,node,37.8320046,-122.013999,Danville Boulevard & Hartford Road,,,,platform
+6427386790,node,37.8285511,-122.008257,Danville Boulevard & Del Amigo Road,,,,platform
+6429535144,node,37.8179649,-121.9964032,,drinking_water,,,
+6429722933,node,37.8238931,-122.0038934,Rakestraw Books,,books,,
+6429722934,node,37.8238095,-122.0040539,HK Animal Hospital,veterinary,,,
+6429722935,node,37.8237321,-122.0042108,Hand & Stone Massage and Facial Spa,,massage,,
+6429722936,node,37.8234544,-122.004298,Ike's Love and Sandwiches,fast_food,,,
+6429722937,node,37.8233748,-122.004218,Danville Square Post Office,post_office,,,
+6429722938,node,37.8232974,-122.0041323,AT&T,,mobile_phone,,
+6429722939,node,37.8232615,-122.0040865,Image Design & Framing,,frame,,
+6429722940,node,37.8231179,-122.003916,Kanpai Poke,restaurant,,,
+6429722941,node,37.8230828,-122.0038738,Bishop Cuts/Color,,hairdresser,,
+6429722942,node,37.8230213,-122.0038098,Beauty Source,,beauty,,
+6429722943,node,37.8229912,-122.0036017,Matt's Classic Bowties,,car_parts,,
+6429722945,node,37.8230175,-122.003117,Batter ‘N Icing,,pastry,,
+6429722948,node,37.8227503,-122.0034123,Danville Service Center,,car_repair,,
+6429722967,node,37.8225,-122.0025733,Crystal Blue Cleaners,,dry_cleaning,,
+6429722969,node,37.8224085,-122.0024377,Pattivs Fine Jewelry,,jewelry,,
+6429722970,node,37.8224824,-122.0028315,Big O Tires,,tyres,,
+6429722971,node,37.8223413,-122.002461,All Apparel Alterations,,yes,,
+6429722977,node,37.8221297,-122.0022045,A Dress Change,,clothes,,
+6429723792,node,37.8217114,-122.0015988,Life is Sweet Bakery and Cafe,cafe,,,
+6429723793,node,37.8215725,-122.001407,StarCycle Danville,,,fitness_centre,
+6429723806,node,37.8193816,-121.9981037,Provence Pizza,restaurant,,,
+6429723808,node,37.8202311,-121.9988093,Pedego Electric Bike Rentals,,bicycle,,
+6429723809,node,37.8202951,-121.9986923,Fit Personal Fitness Studio,,,fitness_centre,
+6429723829,node,37.8207178,-121.9993202,Justtix,,ticket,,
+6429723849,node,37.8207926,-121.9997924,Patrick James,,clothes,,
+6429723850,node,37.8208618,-121.9999107,Pressed Juicery,fast_food,,,
+6429723851,node,37.8210064,-122.0001336,Danville Brewing Company,restaurant,,,
+6429723852,node,37.8212043,-122.0002521,Pizza Antica,restaurant,,,
+6429723861,node,37.821464,-121.999932,bluemercury,,cosmetics,,
+6431742783,node,37.7029925,-121.8998658,Dublin/Pleasanton BART,,,,stop_position
+6431742784,node,37.7030596,-121.8996254,Dublin/Pleasanton BART,,,,stop_position
+6431743385,node,37.7029456,-121.8994707,Dublin/Pleasanton BART,,,,stop_position
+6431743386,node,37.7028771,-121.8997127,Dublin/Pleasanton BART,,,,stop_position
+6431743387,node,37.702817,-121.8992961,Dublin/Pleasanton BART,,,,stop_position
+6431743388,node,37.7027469,-121.89954,Dublin/Pleasanton BART,,,,stop_position
+6431743389,node,37.7026981,-121.8991348,Dublin/Pleasanton BART,,,,stop_position
+6431743390,node,37.7026266,-121.8993805,Dublin/Pleasanton BART,,,,stop_position
+6431743391,node,37.7009638,-121.8960533,Dublin/Pleasanton BART,,,,stop_position
+6431743392,node,37.7008704,-121.896053,Dublin/Pleasanton BART,,,,platform
+6431743393,node,37.7027882,-121.8994006,Dublin/Pleasanton BART,bus_station,,,station
+6431743401,node,37.7027862,-121.8977851,,,,,platform
+6431743402,node,37.7029084,-121.8976095,,,,,platform
+6431743403,node,37.7028677,-121.8978767,Dublin/Pleasanton BART,,,,stop_position
+6431743404,node,37.70299,-121.8977011,Dublin/Pleasanton BART,,,,stop_position
+6437753678,node,37.7894078,-121.9824953,San Ramon Valley Boulevard & Ridgeland Drive,,,,platform
+6437753679,node,37.7849942,-121.9804572,San Ramon Valley Boulevard & Hooper Drive,,,,platform
+6437753680,node,37.7824277,-121.9793273,San Ramon Valley Boulevard & Purdue Road,,,,platform
+6437753681,node,37.7810155,-121.9732055,Fostoria Way & Crow Canyon Place,,,,platform
+6437753682,node,37.7817782,-121.9706292,Camino Ramon & Fostoria Way,,,,platform
+6437753683,node,37.780077,-121.9695483,Camino Ramon & Crow Canyon Road,,,,platform
+6437753684,node,37.7780391,-121.9682407,Camino Ramon & Crow Canyon Road,,,,platform
+6437754085,node,37.7747536,-121.9651632,Camino Ramon & Norris Canyon Road,,,,platform
+6437754086,node,37.7703379,-121.9601863,San Ramon Transit Center,,,,stop_position
+6437754087,node,37.7703754,-121.9604262,San Ramon Transit Center,,,,stop_position
+6437754088,node,37.7702307,-121.9603389,San Ramon Transit Center,,,,stop_position
+6437754089,node,37.7705188,-121.9605138,San Ramon Transit Center,,,,stop_position
+6437754090,node,37.7704781,-121.9602817,San Ramon Transit Center,,,,stop_position
+6437794987,node,37.7714865,-121.9627281,Camino Ramon & Bishop Ranch 7,,,,platform
+6437794988,node,37.7755195,-121.9657215,Camino Ramon & Norris Canyon Road,,,,platform
+6437794989,node,37.7787965,-121.9683698,Camino Ramon & Crow Canyon Road,,,,platform
+6437794990,node,37.7806499,-121.96961,Camino Ramon & Crow Canyon Road,,,,platform
+6437794991,node,37.7820575,-121.9711721,Fostoria Way & Camino Ramon,,,,platform
+6437794992,node,37.7813436,-121.9729393,Fostoria Way & Camino Ramon,,,,platform
+6437794993,node,37.7809313,-121.9782836,San Ramon Valley Boulevard & Fostoria Way,,,,platform
+6437794994,node,37.7849023,-121.9800964,San Ramon Valley Boulevard & Hooper Drive,,,,platform
+6437794995,node,37.7898762,-121.9823686,San Ramon Valley Boulevard & Ridgeland Drive,,,,platform
+6439992639,node,37.780547,-121.97388,Crow Canyon Place & Fostoria Way,,,,platform
+6439992640,node,37.7797419,-121.972818,Crow Canyon Place & Crow Canyon Road,,,,platform
+6441769239,node,37.7693358,-121.9641054,Executive Parkway & Camino Ramon and Bishop Drive,,,,platform
+6441769240,node,37.7673698,-121.968927,Executive Parkway & Bishop Drive,,,,platform
+6441769241,node,37.7633893,-121.964116,Bishop Drive & San Ramon Marriott,,,,platform
+6448787058,node,37.8105939,-121.976258,,post_box,,,
+6448787059,node,37.8120809,-121.9761158,Sycamore Valley Road & Greenbrook Drive,,,,platform
+6448787060,node,37.8112207,-121.986792,Sycamore Valley Road & Brookside Drive,,,,platform
+6448797359,node,37.8117632,-121.9952108,,waste_basket,,,
+6448797381,node,37.8123067,-121.9946722,All Fur Love,,pet_grooming,,
+6448797382,node,37.8123512,-121.9946729,Made to Fit,,dry_cleaning,,
+6448797383,node,37.8123934,-121.9946747,Modern Nails,,beauty,,
+6448797384,node,37.812439,-121.994675,The UPS Store,post_office,copyshop,,
+6448797385,node,37.8125275,-121.9946455,Benjamin Moore,,paint,,
+6448797386,node,37.8126634,-121.9946463,Kitchens of Diablo,,kitchen,,
+6448797387,node,37.8127841,-121.9946485,Melo's,restaurant,,,
+6448797388,node,37.8134905,-121.994645,CVS Pharmacy,pharmacy,,,
+6448797389,node,37.8128563,-121.9947168,,bicycle_parking,,,
+6448797390,node,37.8128729,-121.9947174,,vending_machine,,,
+6448797391,node,37.8133297,-121.9947155,,bench,,,
+6448797392,node,37.8133929,-121.994718,,vending_machine,,,
+6448797393,node,37.8134123,-121.9947183,,waste_basket,,,
+6448797398,node,37.8126105,-121.99543,,waste_basket,,,
+6448835904,node,37.8139435,-121.995654,,post_box,,,
+6448835906,node,37.8147812,-121.9960572,,waste_basket,,,
+6448835922,node,37.8153733,-121.9961987,,waste_basket,,,
+6448835930,node,37.8154421,-121.996096,Bank of America,atm,,,
+6448835932,node,37.8121645,-121.9950527,,waste_basket,,,
+6448835941,node,37.8159908,-121.9962498,Potozkin + Ellis Dermatology - Lasers - Aesthetics,doctors,,,
+6448835950,node,37.816876,-121.9964143,,bench,,,
+6448835951,node,37.816804,-121.9964133,,bench,,,
+6448835981,node,37.8172555,-121.9958883,Sushi Yokohama,restaurant,,,
+6448835982,node,37.8173289,-121.995893,Elite Kicks Tae Kwon Do Academy,dojo,,,
+6448835983,node,37.81747,-121.9960351,Danville Jiu Jitsu,dojo,,,
+6448835984,node,37.8174747,-121.9962039,Perfect Ten Nails,,beauty,,
+6448837286,node,37.8175534,-121.9963857,Charlie's Barber Shop,,hairdresser,,
+6448837291,node,37.817793,-121.9963886,,bench,,,
+6448837292,node,37.8179415,-121.9963752,,bicycle_parking,,,
+6448837293,node,37.8180574,-121.9963865,,bench,,,
+6448837294,node,37.8180408,-121.996357,,bench,,,
+6448837295,node,37.8180107,-121.9963394,,bench,,,
+6448837296,node,37.8179241,-121.9963305,,bench,,,
+6448837297,node,37.8179294,-121.9962884,,bench,,,
+6448837298,node,37.8179459,-121.9962536,,bench,,,
+6448837304,node,37.8179804,-121.9968345,,bench,,,
+6448837305,node,37.8180053,-121.9968781,,bench,,,
+6448837306,node,37.8180297,-121.9969237,,bench,,,
+6448837307,node,37.8180636,-121.9968928,,waste_basket,,,
+6448837308,node,37.8180615,-121.9964475,,waste_basket,,,
+6448837314,node,37.8182349,-121.996951,Verizon,,mobile_phone,,
+6448837328,node,37.8182339,-121.995962,JD Academy of Salon + Spa,,hairdresser,,
+6448837329,node,37.8183094,-121.9958692,Danville Market,,convenience,,
+6448837330,node,37.8183798,-121.9957546,Joanna's Bridal Boutique,,clothes,,
+6448837331,node,37.8184555,-121.9958087,Leslie's Pool Supplies,,swimming_pool,,
+6448837332,node,37.8185937,-121.9958027,The Thrift Station,,second_hand,,
+6448837333,node,37.8187213,-121.9958454,Los Panchos,restaurant,,,
+6448837334,node,37.8188179,-121.99591,FedEx Office,post_office,copyshop,,
+6448837335,node,37.8189124,-121.9959125,Sultan's Kebab,fast_food,,,
+6448837336,node,37.8189997,-121.995898,Kumon,prep_school,,,
+6448837337,node,37.8190459,-121.9959527,Medleno Coffee Shop and Roastery,cafe,,,
+6450686000,node,37.8176963,-121.9967573,,waste_basket,,,
+6450686015,node,37.817029,-121.9972701,Tao Sports Taekowndo,dojo,,,
+6450686016,node,37.8169536,-121.9972568,Colonial Barber Shop,,hairdresser,,
+6450686050,node,37.8163682,-121.996841,Cresco Xpress,,car_parts,,
+6450686088,node,37.8139996,-121.9967938,Walgreens,pharmacy,,,
+6450686089,node,37.8139413,-121.9970725,Pet Food Express,,pet,,
+6450686095,node,37.815201,-121.996693,Wells Fargo,atm,,,
+6450686105,node,37.8152501,-121.9964891,,waste_basket,,,
+6450686106,node,37.8156491,-121.9965988,,waste_basket,,,
+6450686107,node,37.815219,-121.9964795,,post_box,,,
+6450686108,node,37.8142189,-121.9961968,,waste_basket,,,
+6450686109,node,37.8133604,-121.9960058,,waste_basket,,,
+6456641544,node,37.8187812,-121.997181,Penguin Cleaners,,dry_cleaning,,
+6456641545,node,37.81882,-121.9972492,Supercuts,,hairdresser,,
+6456641546,node,37.8188597,-121.99732,Peet's Coffee,cafe,,,
+6456641547,node,37.8189564,-121.997448,Noah's Bagels,fast_food,,,
+6473951553,node,37.8191183,-121.9979345,,bicycle_repair_station,,,
+6474423915,node,37.7032817,-121.865902,qTea,cafe,,,
+6475744789,node,37.7047497,-121.8656995,Chaat Bhavan,restaurant,,,
+6475795962,node,37.7049109,-121.8656351,Spice Corner,,supermarket,,
+6475795963,node,37.7043921,-121.8658819,The Banana Garden,restaurant,,,
+6479717875,node,37.8471098,-121.996041,Stone Valley Road & Stonecreek Place,,,,platform
+6479717876,node,37.8448706,-121.981789,Stone Valley Road & Monte Vista High,,,,platform
+6479717877,node,37.8423665,-121.978837,Green Valley Road & Compo Via,,,,platform
+6479717878,node,37.8389491,-121.978557,Green Valley Road & Donna Lane,,,,platform
+6479717879,node,37.8350144,-121.97875,Diablo Road & Green Valley Road,,,,platform
+6479717880,node,37.8294663,-121.987439,Diablo Road & El Cerro Boulevard,,,,platform
+6479717881,node,37.8230567,-121.9923393,Diablo Road & Green Valley Shopping Center,,,,platform
+6479717882,node,37.823051,-121.99698,Diablo Road & El Pintado,,,,platform
+6479717883,node,37.8216882,-122.000095,Hartz Avenue & Prospect Avenue,,,,platform
+6479717884,node,37.8159889,-121.967824,Camino Tassajara & Sycamore Valley Road,,,,platform
+6479717985,node,37.815027,-121.9635608,Camino Tassajara & Messian Place,,,,platform
+6479717986,node,37.8109757,-121.956088,Camino Tassajara & Shady Creek Drive,,,,platform
+6479717987,node,37.807292,-121.949563,Camino Tassajara & Sherburne Hills Drive,,,,platform
+6479717988,node,37.8008096,-121.932722,Camino Tassajara & Wood Ranch Drive,,,,platform
+6479717989,node,37.8048967,-121.9448834,Camino Tassajara & Creekside Avenue,,,,platform
+6483159149,node,37.8257352,-121.987435,Diablo Road & Arroyo Drive,,,,platform
+6483159150,node,37.7988103,-121.9198105,Camino Tassajara & Tassajara Village,,,,platform
+6483159151,node,37.7995222,-121.903072,Camino Tassajara & Jasmine Way,,,,platform
+6483159152,node,37.7995658,-121.8982236,Camino Tassajara & Lawrence Road,,,,platform
+6483159153,node,37.7995045,-121.8922774,Camino Tassajara & Monterosso Street,,,,platform
+6483159154,node,37.7987281,-121.8880561,Camino Tassajara & Creekview Place,,,,platform
+6483159155,node,37.7992213,-121.8814645,Camino Tassajara & Charbray Street,,,,platform
+6483159156,node,37.7953678,-121.882526,Lusitano Street & Charbray Street,,,,platform
+6483159157,node,37.7994932,-121.8826522,Camino Tassajara & Blackhawk Drive,,,,platform
+6483159158,node,37.7992679,-121.888978,Camino Tassajara & Knollview Drive,,,,platform
+6483159159,node,37.7998592,-121.8934775,Camino Tassajara & Shadow Creek Drive,,,,platform
+6483159160,node,37.7999012,-121.8993088,Camino Tassajara & Oak Gate Drive,,,,platform
+6483159162,node,37.7885694,-121.927437,Crow Canyon Road & Dougherty Road,,,,platform
+6483159163,node,37.7834244,-121.939413,Crow Canyon Road & Shoreline Drive,,,,platform
+6483159164,node,37.7859402,-121.943347,Crow Canyon Road & Canyon Crest Drive,,,,platform
+6483159165,node,37.7883977,-121.947109,Crow Canyon Road & Canyon Crest Drive,,,,platform
+6483159166,node,37.7815466,-121.9647472,Crow Canyon Road & Alcosta Boulevard,,,,platform
+6483159167,node,37.7798779,-121.9688448,Crow Canyon Road & Camino Ramon,,,,platform
+6483159168,node,37.7791043,-121.9707791,Crow Canyon Road & Crow Canyon Place,,,,platform
+6483159169,node,37.7752616,-121.977883,San Ramon Valley Boulevard & Crow Canyon Road,,,,platform
+6483159170,node,37.7752377,-121.9778532,,waste_basket,,,
+6483159171,node,37.772149,-121.97429,San Ramon Valley Boulevard & Regal Crow Canyon,,,,platform
+6483159172,node,37.7721173,-121.9742766,,waste_basket,,,
+6483159173,node,37.7735463,-121.971371,Annabel Lane & End,,,,platform
+6483159174,node,37.7735542,-121.971422,,post_box,,,
+6484552705,node,37.7973565,-121.917401,Tassajara Ranch Drive & Center Way,,,,platform
+6484552706,node,37.7953892,-121.918778,Tassajara Ranch Drive & Blackstone Drive,,,,platform
+6484552707,node,37.7931937,-121.920814,Tassajara Ranch Drive & Blackstone Drive,,,,platform
+6493275191,node,37.7883968,-121.9470575,,post_box,,,
+6514296286,node,37.7628773,-121.960075,Starbucks,cafe,,,
+6514296287,node,37.7628672,-121.9601769,,bicycle_parking,,,
+6514296288,node,37.7624006,-121.9597652,Mixt,restaurant,,,
+6514296289,node,37.7623006,-121.9597252,,waste_basket,,,
+6514296293,node,37.7624098,-121.9593841,,waste_basket,,,
+6514296307,node,37.7629836,-121.959496,,waste_basket,,,
+6514296308,node,37.7630383,-121.959677,Williams-Sonoma,,houseware,,
+6514296310,node,37.7630929,-121.959998,Slanted Door,restaurant,,,
+6514298736,node,37.7632402,-121.959233,Anthropologie,,clothes,,
+6514298737,node,37.7633547,-121.958926,Sephora,,cosmetics,,
+6514298738,node,37.7636092,-121.959233,Trader,,clothes,,
+6514298739,node,37.7636616,-121.95908,M by Maggie Rizer,,clothes,,
+6514298740,node,37.7635111,-121.959478,Athleta,,clothes,,
+6514602216,node,37.7227388,-121.9412991,Boba Bliss,cafe,,,
+6522157141,node,37.7161609,-121.850294,Positano Parkway & Vinton Avenue,,,,platform
+6522386609,node,37.7064307,-121.8938001,Dublin Boulevard & Arnold Road,,,,stop_position
+6522386610,node,37.7065395,-121.893799,Dublin Boulevard & Arnold Road,,,,platform
+6525666460,node,37.7149603,-121.888093,East Alameda County Hall of Justice,,,,platform
+6529955690,node,37.704753,-121.9278338,Dublin Boulevard & Amador Plaza Road,,,,stop_position
+6529955691,node,37.7048192,-121.927868,Dublin Boulevard & Amador Plaza Road,,,,platform
+6530707312,node,37.77029,-121.9602528,San Ramon Transit Center,bus_station,,,station
+6534588229,node,37.8472065,-121.9960183,Stone Valley Road & Stonecreek Place,,,,stop_position
+6534588230,node,37.8449578,-121.9818137,Stone Valley Road & Monte Vista High,,,,stop_position
+6534588231,node,37.8423591,-121.9787566,Green Valley Road & Compo Via,,,,stop_position
+6534588232,node,37.8389839,-121.9784686,Green Valley Road & Donna Lane,,,,stop_position
+6534588233,node,37.8349205,-121.9786949,Diablo Road & Green Valley Road,,,,stop_position
+6534588234,node,37.8294669,-121.9873227,Diablo Road & El Cerro Boulevard,,,,stop_position
+6534588235,node,37.8257346,-121.9873372,Diablo Road & Arroyo Drive,,,,stop_position
+6534588236,node,37.8229877,-121.992339,Diablo Road & Green Valley Shopping Center,,,,stop_position
+6534588237,node,37.8230111,-121.9969799,Diablo Road & El Pintado,,,,stop_position
+6534588238,node,37.8217358,-122.0000241,Hartz Avenue & Prospect Avenue,,,,stop_position
+6534588239,node,37.8176797,-121.9966644,San Ramon Valley Boulevard & Sonora Avenue,,,,stop_position
+6534656836,node,37.8477813,-122.0310983,Danville Boulevard & Las Trampas Road,,,,stop_position
+6534656837,node,37.8475764,-122.0309511,Danville Boulevard & Las Trampas Road,,,,stop_position
+6534656838,node,37.8452695,-122.0288783,Danville Boulevard & South Avenue,,,,stop_position
+6534656839,node,37.8451787,-122.0287918,Danville Boulevard & Alamo Women's Club,,,,stop_position
+6534656840,node,37.8441574,-122.0277964,Danville Boulevard & La Serena Avenue,,,,stop_position
+6534656841,node,37.8438529,-122.0275113,Danville Boulevard & La Serena Avenue,,,,stop_position
+6534656842,node,37.8415148,-122.0251711,Danville Boulevard & Hemme Avenue,,,,stop_position
+6534656843,node,37.8413859,-122.0250208,Danville Boulevard & Hemme Avenue,,,,stop_position
+6534656844,node,37.8379114,-122.0211395,Danville Boulevard & Camille Avenue,,,,stop_position
+6534656845,node,37.837472,-122.0206048,Danville Boulevard & Camille Avenue,,,,stop_position
+6534656846,node,37.8349077,-122.0172218,Danville Boulevard & El Portal,,,,stop_position
+6534656847,node,37.834898,-122.0172089,Danville Boulevard & Wayne Avenue,,,,stop_position
+6534656848,node,37.8322227,-122.0141432,Danville Boulevard & Hartford Road,,,,stop_position
+6534656850,node,37.8320501,-122.0139407,Danville Boulevard & Hartford Road,,,,stop_position
+6534656851,node,37.8286679,-122.0081841,Danville Boulevard & Del Amigo Road,,,,stop_position
+6534656852,node,37.8282119,-122.0073691,Danville Boulevard & El Cerro Boulevard,,,,stop_position
+6534656853,node,37.8255934,-122.0040358,Danville Boulevard & La Gonda Way,,,,stop_position
+6534656854,node,37.8252962,-122.0036951,Danville Boulevard & Railroad Avenue,,,,stop_position
+6534656855,node,37.8235623,-122.0031832,Railroad Avenue & Love Lane and Linda Mesa Avenue,,,,stop_position
+6534656856,node,37.8225386,-122.0023223,Railroad Avenue & Linda Mesa Avenue,,,,stop_position
+6534656857,node,37.8209419,-122.0003095,Railroad Avenue & Prospect Avenue,,,,stop_position
+6534656858,node,37.8202555,-121.9991851,Railroad Avenue & Church Street,,,,stop_position
+6534656859,node,37.8174706,-121.9966057,San Ramon Valley Boulevard & Sonora Avenue,,,,stop_position
+6534656860,node,37.8153872,-121.9962843,San Ramon Valley Boulevard & Bank of America,,,,stop_position
+6534656861,node,37.8152994,-121.996435,San Ramon Valley Boulevard & Danville Town and Country Shopping Center,,,,stop_position
+6534656862,node,37.8133983,-121.9958923,San Ramon Valley Boulevard & Livery-Mercantile,,,,stop_position
+6534656863,node,37.8125813,-121.9955036,San Ramon Valley Boulevard & Sycamore Square,,,,stop_position
+6536049562,node,37.8113155,-121.986801,Sycamore Valley Road & Brookside Drive,,,,stop_position
+6536049563,node,37.8121429,-121.9761682,Sycamore Valley Road & Greenbrook Drive,,,,stop_position
+6536049564,node,37.816045,-121.9678414,Camino Tassajara & Sycamore Valley Road,,,,stop_position
+6536049565,node,37.8150985,-121.9634909,Camino Tassajara & Messian Place,,,,stop_position
+6536049566,node,37.8110699,-121.9560248,Camino Tassajara & Shady Creek Drive,,,,stop_position
+6536049567,node,37.8073649,-121.9495176,Camino Tassajara & Sherburne Hills Drive,,,,stop_position
+6536049568,node,37.8049836,-121.9448199,Camino Tassajara & Creekside Avenue,,,,stop_position
+6536049569,node,37.8009136,-121.9326993,Camino Tassajara & Wood Ranch Drive,,,,stop_position
+6536049570,node,37.7989138,-121.9198017,Camino Tassajara & Tassajara Village,,,,stop_position
+6536049571,node,37.7996053,-121.9030823,Camino Tassajara & Jasmine Way,,,,stop_position
+6536049572,node,37.7996733,-121.8982211,Camino Tassajara & Lawrence Road,,,,stop_position
+6536049573,node,37.7995888,-121.8922748,Camino Tassajara & Monterosso Street,,,,stop_position
+6536049574,node,37.7988349,-121.8880285,Camino Tassajara & Creekview Place,,,,stop_position
+6536049575,node,37.7993176,-121.8814306,Camino Tassajara & Charbray Street,,,,stop_position
+6536049576,node,37.7953051,-121.8824838,Lusitano Street & Charbray Street,,,,stop_position
+6536049577,node,37.7991653,-121.8890139,Camino Tassajara & Knollview Drive,,,,stop_position
+6536049578,node,37.7997455,-121.8934803,Camino Tassajara & Shadow Creek Drive,,,,stop_position
+6536049579,node,37.7997955,-121.8993011,Camino Tassajara & Oak Gate Drive,,,,stop_position
+6536049580,node,37.7973292,-121.9173037,Tassajara Ranch Drive & Center Way,,,,stop_position
+6536049581,node,37.7953757,-121.918668,Tassajara Ranch Drive & Blackstone Drive,,,,stop_position
+6536049582,node,37.7931082,-121.9208181,Tassajara Ranch Drive & Blackstone Drive,,,,stop_position
+6564078102,node,37.7044267,-121.9120848,Harmony Music School,music_school,,,
+6575671313,node,37.768075,-121.9685063,Bishop Ranch 8,,,,stop_position
+6575671314,node,37.7680335,-121.968607,Bishop Ranch 8,,,,platform
+6575671315,node,37.7743283,-121.9654431,Norris Canyon Road & Camino Ramon,,,,stop_position
+6575671316,node,37.7744054,-121.9655126,Norris Canyon Road & Camino Ramon,,,,platform
+6575671317,node,37.7736678,-121.9609802,Bishop Ranch 15,,,,stop_position
+6575671319,node,37.773684,-121.960804,Bishop Ranch 15,,,,platform
+6575671322,node,37.7664651,-121.9632706,Bishop Ranch 2600,,,,platform
+6575671323,node,37.7714135,-121.9628493,Camino Ramon & Bishop Ranch 7,,,,stop_position
+6575671326,node,37.7643193,-121.9591407,Bishop Ranch City Center,,,,stop_position
+6575671327,node,37.7642106,-121.9590738,Bishop Ranch City Center,,,,platform
+6704740195,node,37.7040629,-121.9357551,A1 Liquor & Party Rentals,,alcohol,,
+6770165712,node,37.7813642,-121.91988,,bench,,,
+6770165713,node,37.7813421,-121.91986,,bench,,,
+6770165714,node,37.7813647,-121.9199995,,,,picnic_table,
+6770165715,node,37.7813358,-121.9200024,,,,picnic_table,
+6770165716,node,37.7813392,-121.9201302,,,,picnic_table,
+6770165717,node,37.7813182,-121.9201682,,,,picnic_table,
+6770165718,node,37.7811457,-121.9206302,,,,picnic_table,
+6770165719,node,37.7807762,-121.9203642,,,,picnic_table,
+6770165720,node,37.7807757,-121.9203364,,,,picnic_table,
+6770165727,node,37.7886458,-121.916902,,bench,,,
+6770855360,node,37.7745848,-121.9263425,,bench,,,
+6770855361,node,37.775737,-121.9265095,,bench,,,
+6816229011,node,37.7039573,-121.853636,Golf Galaxy,,sports,,
+6816256205,node,37.7033003,-121.858653,Dublin Medical Offices and Cancer Center,clinic,,,
+6835307403,node,37.707456,-121.872539,CoCo Fresh Tea & Juice,cafe,,,
+6837692466,node,37.7641712,-121.958868,Fieldwork,pub,,,
+6848316585,node,37.7627437,-121.9526236,Shish Grill,restaurant,,,
+6856146493,node,37.7627237,-121.9527032,Shish Market,,food,,
+6857995280,node,37.7620496,-121.9651546,,loading_dock,,,
+6879974085,node,37.7043523,-121.9116345,Paradise,restaurant,,,
+6879974185,node,37.7042834,-121.9117778,techcu,bank,,,
+6879999185,node,37.7044968,-121.911988,Dublin smiles,dentist,,,
+6901588845,node,37.7125029,-121.9742475,,bench,,,
+6901588847,node,37.7002996,-121.975022,,,,picnic_table,
+6901588848,node,37.7003436,-121.9750381,,,,picnic_table,
+6901588849,node,37.7003617,-121.9750951,,,,picnic_table,
+6901588856,node,37.7002105,-121.9749174,,toilets,,,
+6914417745,node,37.7141712,-121.8799109,East Bay SPCA Spay/Neuter Clinic,veterinary,,,
+6914417746,node,37.7140535,-121.8798459,East Bay SPCA Adoption Center,animal_shelter,,,
+6950788559,node,37.7786009,-121.980773,East Bay Sports,,,sports_centre,
+6956563027,node,37.8122175,-121.995272,,bench,,,
+6959323280,node,37.8204968,-122.00043,Danville Farmers' Market,marketplace,,,
+7025363855,node,37.7043237,-121.9122378,,parking_entrance,,,
+7085776596,node,37.710806,-121.8544283,Lower Parking Lot,parking,,,
+7087282891,node,37.7766051,-121.9720744,Shampooches,,dog_grooming,,
+7087282892,node,37.7775385,-121.972835,Comerica Bank,bank,,,
+7087282893,node,37.7772581,-121.9714124,Nick’s Shoe Repair,,shoes,,
+7087282894,node,37.7768609,-121.97033,McCurley’s Floor Coverings,,flooring,,
+7087282895,node,37.7766705,-121.9705413,GNC,,nutrition_supplements,,
+7087282896,node,37.7765966,-121.9707654,20/20 Optometry,,optician,,
+7087282897,node,37.7766533,-121.971013,Phở Hòa,restaurant,,,
+7087282898,node,37.7763938,-121.971594,Big 5 Sporting Goods,,sports,,
+7087282899,node,37.7767511,-121.9721721,Primavera,restaurant,,,
+7087282900,node,37.7773795,-121.9716226,Chase,bank,,,
+7087282901,node,37.7773603,-121.971332,Ike's Love and Sandwiches,fast_food,,,
+7087282902,node,37.7767734,-121.970389,T-Mobile,,mobile_phone,,
+7087282904,node,37.7766038,-121.970833,European Wax Center,,beauty,,
+7087282905,node,37.7766341,-121.971086,Jazen Tea,cafe,,,
+7087282906,node,37.7763305,-121.97177,Leslie's Pool Supplies,,swimming_pool,,
+7087282907,node,37.7776336,-121.972737,Starbucks,cafe,,,
+7087282908,node,37.7772717,-121.9715114,Quality Haircuts,,hairdresser,,
+7087282909,node,37.7769687,-121.970333,Massage Envy,,massage,,
+7087282910,node,37.7767162,-121.9704739,Supercuts,,hairdresser,,
+7087282911,node,37.776595,-121.9706866,Plucked,cafe,,,
+7087282912,node,37.7765878,-121.970888,C2 Education,prep_school,,,
+7100878044,node,37.8005995,-121.9197428,Starbucks,cafe,,,
+7100878061,node,37.8021412,-121.9204662,Kumon,prep_school,,,
+7100919699,node,37.8010885,-121.917821,,fountain,,,
+7115218816,node,37.7629355,-121.959808,THE LOT City Center,cinema,,,
+7117747257,node,37.7660177,-121.9573455,,parking_entrance,,,
+7117747259,node,37.7657172,-121.9580859,,parking_entrance,,,
+7117747260,node,37.7655114,-121.9583182,,parking_entrance,,,
+7117747261,node,37.7650574,-121.9580233,,parking_entrance,,,
+7117747265,node,37.7655888,-121.956707,,parking_entrance,,,
+7117781958,node,37.7095799,-121.8908453,,parking_entrance,,,
+7117781960,node,37.7114905,-121.8908208,,parking_entrance,,,
+7235965896,node,37.8490674,-121.9333127,,,,picnic_table,
+7236005416,node,37.8491731,-121.933444,,,,picnic_table,
+7236017596,node,37.8491287,-121.9333791,,,,picnic_table,
+7320173829,node,37.7060421,-121.9377413,Cassara's Italian Men's Wear,,clothes,,
+7320173831,node,37.7062467,-121.9290265,Yafa Hummus,fast_food,,,

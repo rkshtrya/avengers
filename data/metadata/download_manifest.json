@@ -1,0 +1,184 @@
+{
+  "created_at": "2026-07-05",
+  "root": "/Volumes/GreyKumara/asif",
+  "downloads": [
+    {
+      "source_id": "contra_costa_parcels",
+      "path": "data/raw/contra_costa/Parcels_Public_May2026.zip",
+      "url": "https://gis.cccounty.us/Downloads/Assessor/Parcels_Public_May2026.zip",
+      "notes": "Base parcel geometry for Contra Costa County.",
+      "status": "existing",
+      "bytes": 42024405
+    },
+    {
+      "source_id": "contra_costa_city_limits",
+      "path": "data/raw/contra_costa/BND_DCD_City_Limits.zip",
+      "url": "https://gis.cccounty.us/Downloads/Planning/BND_DCD_City_Limits.zip",
+      "notes": "City boundaries, useful for San Ramon filtering.",
+      "status": "existing",
+      "bytes": 502327
+    },
+    {
+      "source_id": "contra_costa_lafco_soi",
+      "path": "data/raw/contra_costa/BND_LAFCO_City_SOI.zip",
+      "url": "https://gis.cccounty.us/Downloads/Planning/BND_LAFCO_City_SOI.zip",
+      "notes": "Sphere-of-influence context.",
+      "status": "existing",
+      "bytes": 245153
+    },
+    {
+      "source_id": "contra_costa_general_plan_land_use",
+      "path": "data/raw/contra_costa/PLA_DCD_GPLanduseElement.zip",
+      "url": "https://gis.cccounty.us/Downloads/Planning/PLA_DCD_GPLanduseElement.zip",
+      "notes": "General plan land-use layer.",
+      "status": "existing",
+      "bytes": 2712609
+    },
+    {
+      "source_id": "contra_costa_urban_limit_line",
+      "path": "data/raw/contra_costa/PLA_DCD_ULL.zip",
+      "url": "https://gis.cccounty.us/Downloads/Planning/PLA_DCD_ULL.zip",
+      "notes": "Urban limit line context.",
+      "status": "existing",
+      "bytes": 506504
+    },
+    {
+      "source_id": "contra_costa_zoning",
+      "path": "data/raw/contra_costa/PLA_DCD_Zoning.zip",
+      "url": "https://gis.cccounty.us/Downloads/Planning/PLA_DCD_Zoning.zip",
+      "notes": "County zoning layer. Needs incorporated-city coverage check.",
+      "status": "existing",
+      "bytes": 1379330
+    },
+    {
+      "source_id": "census_tiger_ca_tracts",
+      "path": "data/raw/census/tl_2025_06_tract.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/TRACT/tl_2025_06_tract.zip",
+      "notes": "California census tract boundaries.",
+      "status": "existing",
+      "bytes": 32558476
+    },
+    {
+      "source_id": "census_tiger_ca_block_groups",
+      "path": "data/raw/census/tl_2025_06_bg.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/BG/tl_2025_06_bg.zip",
+      "notes": "California census block-group boundaries.",
+      "status": "existing",
+      "bytes": 52918117
+    },
+    {
+      "source_id": "census_tiger_ca_places",
+      "path": "data/raw/census/tl_2025_06_place.zip",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/PLACE/tl_2025_06_place.zip",
+      "notes": "California incorporated place boundaries.",
+      "status": "existing",
+      "bytes": 9885068
+    },
+    {
+      "source_id": "cde_public_schools_txt",
+      "path": "data/raw/schools/cde_public_schools_and_districts.txt",
+      "url": "https://www.cde.ca.gov/schooldirectory/report?rid=dl1&tp=txt",
+      "notes": "CDE public schools and districts tab-delimited file.",
+      "status": "existing",
+      "bytes": 8784929
+    },
+    {
+      "source_id": "calfire_fhsz_catalog_metadata",
+      "path": "data/metadata/calfire_fhsz_catalog_metadata.json",
+      "url": "https://data.ca.gov/api/3/action/package_show?id=fire-hazard-severity-zone-viewer1",
+      "notes": "State catalogue metadata for current CAL FIRE FHSZ viewer.",
+      "status": "existing",
+      "bytes": 6277
+    },
+    {
+      "source_id": "calfire_fhsz_webmap",
+      "path": "data/metadata/calfire_fhsz_webmap.json",
+      "url": "https://CALFIRE-Forestry.maps.arcgis.com/sharing/rest/content/items/a86cdcb4a66344da8f44ad75e9fdb4c7/data?f=json",
+      "notes": "Underlying web map with FHSZ service URLs.",
+      "status": "existing",
+      "bytes": 22531
+    },
+    {
+      "source_id": "fema_nfhl_mapserver_metadata",
+      "path": "data/metadata/fema_nfhl_mapserver_metadata.json",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer?f=pjson",
+      "notes": "FEMA NFHL ArcGIS service metadata.",
+      "status": "existing",
+      "bytes": 11814
+    },
+    {
+      "source_id": "san_francisco_permits_selected",
+      "path": "data/raw/san_francisco/building_permits_selected.csv",
+      "url": "https://data.sfgov.org/resource/i98e-djp9.csv?$select=permit_number,permit_type,permit_type_definition,permit_creation_date,block,lot,filed_date,issued_date,approved_date,completed_date,status,status_date,street_number,street_name,street_suffix,zipcode,existing_use,proposed_use,existing_units,proposed_units,estimated_cost,revised_cost,adu,primary_address_flag,supervisor_district,neighborhoods_analysis_boundaries,record_id,data_as_of,location,point_source&$limit=1500000",
+      "notes": "Selected columns for all available SF building permit rows, enough for EDA without full wide payload.",
+      "status": "existing",
+      "bytes": 544633842
+    },
+    {
+      "source_id": "fema_nfhl_contra_costa_flood_hazard_zones_attributes",
+      "path": "data/raw/risk/fema_nfhl_flood_hazard_zones_contra_costa_bbox_attributes.geojson",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28",
+      "notes": "FEMA flood hazard zone attributes intersecting approximate Contra Costa bbox. Geometry is omitted because the full NFHL geometry query is very large/unstable.",
+      "status": "downloaded",
+      "features": 6435,
+      "bytes": 2555374
+    },
+    {
+      "source_id": "calfire_fhsz_lra_contra_costa_bbox",
+      "path": "data/raw/risk/calfire_fhsz_lra_contra_costa_bbox.geojson",
+      "url": "https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/FHSALRA25_v1_All/FeatureServer/0",
+      "notes": "CAL FIRE Local Responsibility Area FHSZ within approximate Contra Costa bbox.",
+      "status": "existing",
+      "bytes": 11434208
+    },
+    {
+      "source_id": "calfire_fhsz_sra_contra_costa_bbox",
+      "path": "data/raw/risk/calfire_fhsz_sra_contra_costa_bbox.geojson",
+      "url": "https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/FHSZSRA_23_3/FeatureServer/0",
+      "notes": "CAL FIRE State Responsibility Area FHSZ within approximate Contra Costa bbox.",
+      "status": "existing",
+      "bytes": 3726354
+    },
+    {
+      "source_id": "osm_san_ramon_pois",
+      "path": "data/raw/osm/osm_san_ramon_pois.json",
+      "url": "https://overpass-api.de/api/interpreter",
+      "notes": "OpenStreetMap amenities/shops/leisure/public_transport in a San Ramon bbox.",
+      "status": "downloaded",
+      "elements": 7026,
+      "bytes": 1671268
+    }
+  ],
+  "blocked_or_deferred": [
+    {
+      "source_id": "county_sales_records",
+      "status": "blocked",
+      "reason": "No verified free automated bulk comparable-sales source for San Ramon/Contra Costa yet.",
+      "next_step": "Secure permitted comps source or seed 50-200 sale records manually."
+    },
+    {
+      "source_id": "bay_area_511_gtfs",
+      "status": "needs_api_key",
+      "reason": "511 GTFS and transit APIs require a 511 API token.",
+      "next_step": "Register at 511.org, set TRANSIT_511_API_KEY, then download regional operator_id=RG feed."
+    },
+    {
+      "source_id": "geofabrik_california_full_pbf",
+      "status": "deferred_large_file",
+      "reason": "Full California OSM PBF is about 1.3 GB. Handoff uses Overpass San Ramon POI extract instead.",
+      "next_step": "Download only if team needs offline OSM processing: https://download.geofabrik.de/north-america/us/california.html"
+    },
+    {
+      "source_id": "census_acs_5yr",
+      "status": "needs_api_key",
+      "reason": "Current Census API requests redirect to missing_key.html without a key.",
+      "next_step": "Set CENSUS_API_KEY and pull selected ACS variables for Contra Costa/SF tracts and block groups."
+    },
+    {
+      "source_id": "cde_public_districts_txt",
+      "status": "manual_download_or_retry",
+      "reason": "The separate district-only endpoint returned an HTML bot-validation page in automated download. The combined schools/districts file is included.",
+      "next_step": "Use the included CDE schools/districts file or manually download the district-only extract from the CDE directory page if needed."
+    }
+  ]
+}
