@@ -14,11 +14,12 @@ Open these in order:
 
 | Step | Open | What it shows |
 | --- | --- | --- |
-| 1 | `docs/dataset-catalog.md` | What each dataset is, what county/geography it covers, where it came from, and why it matters. |
-| 2 | `notebooks/01_data_inventory.ipynb` | What data files are already downloaded and where they live. |
-| 3 | `notebooks/02_executed_eda.ipynb` | The main EDA charts and tables, already executed. |
-| 4 | `notebooks/03_availability_and_next_steps.ipynb` | What is available, what is pending, and what we need to decide. |
-| 5 | `docs/project-lattice-data-handoff.md` | My written walkthrough for the team. |
+| 1 | `DATA_FILES.md` | Direct list of the actual raw data files committed to GitHub. |
+| 2 | `docs/dataset-catalog.md` | What each dataset is, what county/geography it covers, where it came from, and why it matters. |
+| 3 | `notebooks/01_data_inventory.ipynb` | What data files are already downloaded and where they live. |
+| 4 | `notebooks/02_executed_eda.ipynb` | The main EDA charts and tables, already executed. |
+| 5 | `notebooks/03_availability_and_next_steps.ipynb` | What is available, what is pending, and what we need to decide. |
+| 6 | `docs/project-lattice-data-handoff.md` | My written walkthrough for the team. |
 
 ## Data Readiness
 
@@ -40,6 +41,10 @@ docs/                      Team walkthrough and source plan
 scripts/                   Reproducible download + EDA scripts
 project_brief/             Project deck export
 ```
+
+Direct raw-file index:
+
+`DATA_FILES.md`
 
 ## Data Included
 
@@ -74,6 +79,7 @@ Quick view:
 ## Main EDA Files
 
 - `reports/visual_review.md`
+- `DATA_FILES.md`
 - `docs/dataset-catalog.md`
 - `reports/domain_eda_findings.md`
 - `reports/eda_summary.md`
