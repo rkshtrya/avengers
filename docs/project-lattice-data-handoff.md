@@ -2,50 +2,48 @@
 
 Prepared for team review on 2026-07-05.
 
-## What This Package Is
+## Why I Put This Together
 
-This is a review-ready data package for Project Lattice: a property intelligence and explainable valuation product centered on parcel identity, local context, risk, schools, permits, and comparable sales.
+I want us to look at Project Lattice from the data first, not just from the product story. The product only works if we can connect a valuation and explanation back to real property records, risk layers, schools, permits, amenities, and eventually comparable sales.
 
-The package is sufficient for source review, schema review, early feature engineering, knowledge-graph design, and a first-pass EDA discussion. It is not yet sufficient for production valuation because a permitted comparable-sales dataset is still missing.
+This repo is ready for source review, schema review, early feature engineering, knowledge-graph design, and first-pass EDA. It is not ready for production valuation yet because comparable sales are still unresolved.
 
 ## Start Here
 
-Review these files in this order:
+Please review these in order:
 
 1. `reports/domain_eda_findings.md`  
-   Product-oriented EDA: sufficiency matrix, core counts, risk mix, permit signal, schools, OSM POIs, and recommended decisions.
+   My main EDA summary. This is where the data is mapped back to the product.
 
 2. `reports/eda_summary.md`  
-   Dataset inventory summary with row counts, file sizes, and blocked/deferred source list.
+   Dataset inventory, row counts, sizes, sample paths, and blocked sources.
 
 3. `reports/download_manifest.csv`  
-   Machine-readable list of downloaded files, source URLs, status, notes, and sizes.
+   Source URLs, file paths, status, notes, and sizes.
 
 4. `reports/blocked_or_deferred_sources.csv`  
-   Sources that need an API key, manual download, licensing, or a product decision.
+   Items that need an API key, manual download, licensing, or a product decision.
 
 5. `data/processed/samples/`  
-   Small sample CSVs for quick review without opening the full raw datasets.
+   Small samples so we can review quickly before loading full files.
 
-## Downloaded Data
+## What I Downloaded
 
-Raw files live under `data/raw/`; metadata lives under `data/metadata/`.
+Raw files are under `data/raw/`; source metadata is under `data/metadata/`.
 
-Included:
-
-| Area | Files | Current EDA signal |
+| Area | Files | What I found |
 | --- | --- | --- |
-| Contra Costa parcels | `data/raw/contra_costa/Parcels_Public_May2026.zip` | 387,835 parcel records; APN present on 100%; street-number/name/city address fields complete on 94.2%. |
-| San Ramon filtering | Contra Costa city limits plus parcel city/ZIP fields | San Ramon city abbreviation appears as `SNRMN` with 27,756 parcel rows. Spatial boundary validation still recommended. |
-| Zoning and planning | Contra Costa zoning, general-plan land use, urban limit line, LAFCO SOI | Sufficient for contextual explanations; verify incorporated-city zoning coverage. |
-| Census boundaries | California 2025 tract, block group, and place TIGER shapefiles | Boundaries included; ACS attributes need Census API key. |
-| Schools | CDE public schools/districts file | 18,390 rows statewide; 479 Contra Costa rows; 44 rows with San Ramon in city or district. |
-| Wildfire risk | CAL FIRE FHSZ LRA/SRA Contra Costa bbox extracts | LRA and SRA feature extracts included with fire-hazard categories. |
-| Flood risk | FEMA NFHL Contra Costa bbox attributes | 6,435 flood-zone attribute rows. Full parcel-level geometry join needs a full FEMA geometry pull. |
-| Amenities | OSM San Ramon POI extract | 7,026 OSM elements; useful for prototype proximity/context features. |
-| Permits | San Francisco building permit selected-column CSV, stored as split CSV parts in this repository | 1,291,589 rows, 99.7% with point location. Strong demo dataset, but not San Ramon-specific. |
+| Contra Costa parcels | `data/raw/contra_costa/Parcels_Public_May2026.zip` | 387,835 parcel records; APN present on 100%; street-number/name/city fields complete on 94.2%. |
+| San Ramon filtering | Contra Costa city limits plus parcel city/ZIP fields | San Ramon appears as `SNRMN` with 27,756 parcel rows. We should still validate with the city boundary geometry. |
+| Zoning and planning | Contra Costa zoning, general-plan land use, urban limit line, LAFCO SOI | Good enough for contextual explanations; we need to confirm incorporated-city zoning coverage. |
+| Census boundaries | California 2025 tract, block group, and place TIGER shapefiles | Boundaries are included; ACS attributes still need a Census API key. |
+| Schools | CDE public schools/districts file | 18,390 statewide rows; 479 Contra Costa rows; 44 rows with San Ramon in city or district. |
+| Wildfire risk | CAL FIRE FHSZ LRA/SRA Contra Costa bbox extracts | Fire-hazard categories are included for the project area. |
+| Flood risk | FEMA NFHL Contra Costa bbox attributes | 6,435 flood-zone attribute rows. Parcel-level flood joins need full FEMA geometry or a GIS pull. |
+| Amenities | OSM San Ramon POI extract | 7,026 OSM elements for prototype proximity/context features. |
+| Permits | San Francisco building permit selected-column CSV, stored as split CSV parts | 1,291,589 rows; 99.7% have point location. Strong demo dataset, but not San Ramon-specific. |
 
-## Source Gaps
+## Gaps I Need Us To Resolve
 
 Critical:
 
@@ -55,35 +53,37 @@ Needs credential/manual step:
 
 - 511/Bay Area GTFS needs a 511 API token.
 - Census ACS 5-year variables need a Census API key.
-- CDE district-only endpoint returned a bot-validation page in automated download; the combined schools/districts file is included and usable.
-- Full California OSM PBF was deferred because it is large; the package uses a focused San Ramon Overpass extract instead.
+- CDE district-only endpoint returned a bot-validation page through automated download; the combined schools/districts file is included and usable.
+- Full California OSM PBF is large, so I used a focused San Ramon Overpass extract for now.
 
-## Recommended Collaboration Workflow
+## How I Want Us To Collaborate
 
-Use the current folder as the source-controlled handoff for scripts, manifests, reports, and samples. Put the raw data package in shared storage such as Drive, Dropbox, S3, or an internal data bucket rather than sending it through chat or email.
+Use this repo as the working source of truth for scripts, manifests, reports, samples, and source decisions. Since the raw files are already organized here, we can review directly in GitHub, but I do not want us casually adding more large files without deciding whether they belong in Git, a Release asset, Drive, S3, or another shared data store.
 
-Suggested team review split:
+Suggested split:
 
 | Owner | Review focus | Output |
 | --- | --- | --- |
-| Product/data lead | Confirm MVP target: San Ramon graph-first vs SF permit demo | Decision on first demo geography and narrative. |
-| Data engineer | Validate raw files, schemas, and reload process | Reproducible data lake layout and ingestion notes. |
+| Product/data lead | Confirm MVP target: San Ramon graph-first vs SF permit demo | Decision on first demo geography and story. |
+| Data engineer | Validate raw files, schemas, and reload process | Reproducible data layout and ingestion notes. |
 | Geospatial analyst | Parcel joins to city limits, zoning, land use, fire, flood, Census | `property_features` join plan and join-quality report. |
 | ML/valuation owner | Comparable-sales acquisition options | Decision on licensed comps, MLS partnership, or manually seeded prototype comps. |
 | Compliance/source owner | Confirm licenses and allowed usage | Approved source list and restrictions. |
 
-## Recommended Next Technical Steps
+## Next Technical Steps
 
 1. Build `property_features` with one row per parcel.
-2. Spatially filter Contra Costa parcels to San Ramon using city limits, then compare to parcel `S_CTY_ABBR = SNRMN`.
+2. Spatially filter Contra Costa parcels to San Ramon using city limits, then compare that result to parcel `S_CTY_ABBR = SNRMN`.
 3. Join parcels to zoning, general-plan land use, Census geography, CAL FIRE FHSZ, FEMA flood zones, schools, and OSM POIs.
 4. Pull ACS variables once a Census API key is available.
-5. Resolve comparable-sales source before training a valuation model.
-6. Use the SF permit dataset as a parallel ingestion/explainability demo if the team needs a rich public dataset immediately.
+5. Resolve comparable-sales access before training a valuation model.
+6. Use the SF permit dataset as the data-rich ingestion/explainability demo if we need a faster proof point.
 
 ## Large File Layout
 
-The San Francisco permits extract is stored as split CSV parts under `data/raw/san_francisco/building_permits_selected_parts/` so every committed file stays below GitHub's normal single-file limit.
+The San Francisco permits extract is stored as split CSV parts under:
+
+`data/raw/san_francisco/building_permits_selected_parts/`
 
 To rebuild the original single CSV locally:
 
@@ -106,4 +106,4 @@ python3 scripts/eda_project_lattice_data.py
 python3 scripts/profile_project_lattice_data.py
 ```
 
-The generated reports are under `reports/`; reusable small extracts are under `data/processed/samples/`.
+Reports are under `reports/`; small review samples are under `data/processed/samples/`.

@@ -1,40 +1,45 @@
-# Project Lattice Data Collaboration Plan
+# Project Lattice Team Collaboration Plan
 
-## Recommended collaboration setup
+## How I Want Us To Work
 
-Use a GitHub repository as the source of truth, with Google Slides or Google Docs only for presentation polish.
+I want GitHub to be the source of truth for the data review. Slides or docs are fine for presentation polish, but the actual source registry, EDA results, scripts, and decisions should live here so we can audit what changed.
 
-The reason: the team needs both narrative alignment and reproducible EDA. A shared doc alone will get messy. A repo lets everyone inspect the same source registry, run notebooks, commit findings, and keep data decisions auditable.
+The goal for this phase is not to make the model look good. The goal is to decide whether the data can support the product we want to build.
 
-## Folder structure
+## Folder Structure
 
 ```text
 docs/
-  project-lattice-data-sources.md   # Deep source analysis and current verdict
-  team-collaboration-plan.md        # This collaboration workflow
+  project-lattice-data-sources.md   # Product understanding and source strategy
+  project-lattice-data-handoff.md   # What I downloaded and how to review it
+  team-collaboration-plan.md        # This workflow
 data/
-  source_registry.csv               # Machine-readable source list and EDA ownership
-  raw/                              # Local only; do not commit large raw data
-  processed/                        # Small derived samples are okay if allowed
+  source_registry.csv               # Source list, priority, and EDA questions
+  raw/                              # Downloaded source files already organized by folder
+  processed/samples/                # Small review samples
+  metadata/                         # Source/service metadata
+reports/
+  domain_eda_findings.md            # Main product-oriented EDA summary
+  eda_summary.md                    # File inventory, row counts, and samples
+  profiles/                         # Count tables from EDA
+scripts/
+  download_project_lattice_data.py
+  eda_project_lattice_data.py
+  profile_project_lattice_data.py
 notebooks/
-  README.md                         # Notebook conventions
-  01_source_inventory.ipynb         # Pull/sample each source
-  02_spatial_join_quality.ipynb     # Parcels + boundaries + risks + amenities
-  03_comps_feasibility.ipynb        # Comparable sales blocker analysis
-  04_feature_eda.ipynb              # Value-driver feature distributions
-  05_demo_property_report.ipynb     # One property end-to-end
+  README.md
 ```
 
-## Team workflow
+## Team Workflow
 
-1. Use `data/source_registry.csv` as the operating checklist.
-2. Assign one owner per `P0` source.
-3. Each owner answers the EDA questions in the registry.
-4. Each owner adds a short finding to `docs/project-lattice-data-sources.md`.
-5. Use notebooks for evidence, not prose. Put decisions and conclusions back in docs.
-6. Keep large raw data out of Git. Store it in Google Drive, S3, or a shared data bucket, and commit only sample rows or metadata.
+1. Start with `docs/project-lattice-data-handoff.md`.
+2. Use `data/source_registry.csv` as the operating checklist.
+3. Assign one owner per `P0` source or unresolved source gap.
+4. Each owner should answer the EDA questions already listed in the registry.
+5. Put evidence in notebooks or scripts, but put decisions back into `docs/` or `reports/`.
+6. Do not add more large raw files casually. If a new file is large, decide first whether it belongs in Git, a GitHub Release asset, Drive, S3, or another shared bucket.
 
-## Suggested ownership
+## Suggested Ownership
 
 | Workstream | Owner | Deliverable |
 | --- | --- | --- |
@@ -43,11 +48,11 @@ notebooks/
 | Transit and commute | TBD | Can we compute nearest stop and commute to a target office? |
 | Risk layers | TBD | Can we label flood/wildfire risk with source-backed edges? |
 | Schools and demographics | TBD | Can we derive explainable school/neighborhood features? |
-| Product narrative | TBD | Can we turn EDA findings into the final team presentation? |
+| Product narrative | TBD | Can we turn the EDA into the final team presentation? |
 
-## EDA goals
+## EDA Goals
 
-The first EDA pass should not try to prove the model works. It should answer whether the data can support the promised final output:
+The first pass should answer whether the data can support the promised final output:
 
 - `Valuation result`: Do we have enough comparable sales?
 - `Why this number`: Can we compute traceable value-driver features?
@@ -56,9 +61,9 @@ The first EDA pass should not try to prove the model works. It should answer whe
 - `For you`: Can we personalize with commute and school preferences?
 - `Every claim links to a public record`: Can each graph edge store source metadata?
 
-## The key milestone
+## The Key Milestone
 
-Before investing heavily in UI or multi-agent orchestration, validate comparable sales.
+Before we invest heavily in UI or multi-agent orchestration, we need to validate comparable sales.
 
 Minimum acceptable evidence:
 
@@ -68,9 +73,9 @@ Minimum acceptable evidence:
 - Basic property attributes: beds, baths, square footage, lot size, property type.
 - Clear permission to use the data for the capstone/demo.
 
-If this cannot be secured, keep Lattice as an explainability/decision-support demo and label valuation as illustrative.
+If we cannot secure this, we should keep Lattice as an explainability/decision-support demo and label valuation as illustrative.
 
-## Presentation structure for the team
+## Presentation Structure For The Team
 
 1. What Lattice needs from data.
 2. Which sources are verified and sufficient.
@@ -78,4 +83,3 @@ If this cannot be secured, keep Lattice as an explainability/decision-support de
 4. The critical blocker: comparable sales.
 5. MVP recommendation: story-first San Ramon vs data-first San Francisco.
 6. EDA assignments and one-week validation plan.
-

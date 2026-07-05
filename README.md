@@ -1,67 +1,67 @@
 # Project Lattice Data Workspace
 
-This repository is a data and EDA handoff for Project Lattice, an explainable property intelligence and valuation product.
+I put this repo together so we can review Project Lattice from the data up: what we already have, what is strong enough to build on, and what still needs a decision before we claim a real valuation product.
 
-The goal of this workspace is to help the team review source coverage, inspect the available data, understand the remaining gaps, and build the next feature-engineering layer.
+Project Lattice is an explainable property intelligence and valuation product. The point is not just to output a number; the point is to show why a property looks fairly priced, overpriced, undervalued, risky, or promising, with every claim tied back to source data.
 
-## Review Order
+## How I Want The Team To Review This
 
 Start here:
 
 1. `docs/project-lattice-data-handoff.md`  
-   Team-facing overview, review workflow, source gaps, and next steps.
+   My summary of what is in the repo, what is missing, and how I want us to review it.
 
 2. `reports/domain_eda_findings.md`  
-   Product-oriented EDA: sufficiency matrix, parcel coverage, permit signal, schools, risks, OSM POIs, and recommended decisions.
+   The most useful EDA readout. This connects the datasets back to the actual product: parcels, permits, schools, risks, amenities, and valuation readiness.
 
 3. `reports/eda_summary.md`  
-   Dataset inventory with row counts, file sizes, samples, and blocked/deferred sources.
+   A compact inventory of the downloaded files, row counts, fields, samples, and blocked sources.
 
 4. `reports/download_manifest.csv`  
-   Download status, source URLs, file paths, and notes.
+   The source URL and status behind each downloaded file.
 
 5. `data/processed/samples/`  
-   Small samples for quick review without opening full raw files.
+   Small samples we can inspect quickly before opening the full raw files.
 
-## Repository Layout
+## Repo Layout
 
 ```text
 data/
   raw/                  Downloaded source datasets
-  processed/samples/    Small review samples generated from raw files
+  processed/samples/    Small samples for quick review
   metadata/             Source/service metadata
-  source_registry.csv   Source registry and MVP relevance notes
-docs/                   Project handoff and collaboration notes
+  source_registry.csv   Source list, priority, and open EDA questions
+docs/                   Project notes and team review plan
 reports/                EDA summaries and profile outputs
-reports/profiles/       Count tables from domain EDA
-scripts/                Download, EDA, and reconstruction scripts
+reports/profiles/       Count tables from the domain EDA
+scripts/                Download, EDA, and file reconstruction scripts
 project_brief/          Project deck export
 notebooks/              Notebook workspace notes
 ```
 
-## Included Dataset Areas
+## Data I Included
 
 - Contra Costa parcels, city limits, zoning, general-plan land use, urban limit line, and LAFCO sphere of influence.
 - California Census TIGER boundaries for tracts, block groups, and places.
 - CDE public schools and districts.
 - CAL FIRE wildfire hazard severity zone extracts.
-- FEMA flood hazard zone attributes for the project bbox.
+- FEMA flood hazard zone attributes for the project area.
 - OpenStreetMap San Ramon POIs.
-- San Francisco building permit selected-column extract, stored as split CSV parts.
+- San Francisco building permit extract, stored as split CSV parts because the single CSV is too large for a normal GitHub file.
 
-## Important Data Note
+## Large SF Permit File
 
-The San Francisco permits extract is 519 MB as one CSV, so it is stored in split parts under:
+The San Francisco permits extract is 519 MB as one CSV, so I split it into parts here:
 
 `data/raw/san_francisco/building_permits_selected_parts/`
 
-To rebuild the single source file locally:
+To rebuild the original single CSV locally:
 
 ```bash
 python3 scripts/reconstruct_large_files.py
 ```
 
-The rebuilt file is ignored by Git to avoid accidentally committing a file larger than GitHub's normal limit.
+The rebuilt file is ignored by Git so we do not accidentally recommit a file over GitHub's normal limit.
 
 ## Reproduce The EDA
 
@@ -84,12 +84,12 @@ To refresh source downloads:
 python3 scripts/download_project_lattice_data.py
 ```
 
-Some sources need credentials or manual decisions. See:
+Some sources still need credentials, manual download, or a business decision. See:
 
 `reports/blocked_or_deferred_sources.csv`
 
-## Current Project Verdict
+## My Current Read
 
-The public/contextual data is strong enough for source review, knowledge-graph design, early joins, and explainability work.
+We have enough public/contextual data to build the graph, run spatial joins, produce source-backed explanations, and make a credible demo.
 
-The critical blocker is comparable sales. Before claiming production-grade valuation, the team needs a permitted comps source with sale price, sale date, property identity, and property characteristics.
+The blocker is still comparable sales. Before we claim production-grade valuation, we need a permitted comps source with sale price, sale date, property identity, and basic property characteristics.

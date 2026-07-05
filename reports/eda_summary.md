@@ -1,10 +1,10 @@
-# Project Lattice Data Handoff EDA Summary
+# Project Lattice EDA Summary
 
-Generated from downloaded files in `data/raw` and metadata in `data/metadata`.
+I used the files in `data/raw` and `data/metadata` to check what we can actually build on.
 
-## Executive Verdict
+## My Read
 
-- The handoff is strong enough for data-source review and first-pass EDA.
+- This repo is strong enough for data-source review and first-pass EDA.
 - Public/contextual layers are available: parcels, zoning/planning, schools, permits, Census boundaries, flood risk, wildfire risk, and OSM POIs.
 - The material gap remains comparable sales: no verified free bulk source is included.
 - Full spatial joins require GeoPandas, DuckDB Spatial, QGIS, or PostGIS; this EDA inspects schemas, record counts, fields, and samples.
@@ -54,12 +54,12 @@ Generated from downloaded files in `data/raw` and metadata in `data/metadata`.
 ## EDA Takeaways
 
 1. **San Ramon/Contra Costa story path is feasible for the graph base.** Contra Costa publishes parcel, zoning, land-use, city-limit, and urban-limit-line shapefiles.
-2. **Risk layers are real and source-backed.** FEMA NFHL and CAL FIRE FHSZ services are queryable; the handoff includes Contra Costa bbox extracts.
+2. **Risk layers are real and source-backed.** FEMA NFHL and CAL FIRE FHSZ services are queryable; this repo includes Contra Costa bbox extracts.
 3. **School metadata is downloadable.** CDE public school/district files are included, but school-quality scoring should be derived carefully from public performance data rather than proprietary ratings.
 4. **SF is still the easier data-first demo.** The SF permit extract has over one million records and good structured fields; in this repository it is stored as selected-column split CSV parts.
 5. **Comparable sales is still the critical path.** Without sale price/date/property attributes, Lattice can explain context and risk but cannot honestly claim production-grade valuation.
 
-## Recommended Next EDA
+## What I Would Do Next
 
 1. Install geospatial tooling: `pip install geopandas pyogrio shapely duckdb duckdb-engine` or use QGIS/PostGIS.
 2. Read Contra Costa parcels and city limits, filter parcels to San Ramon, and compute parcel count plus address/APN completeness.

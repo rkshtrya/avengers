@@ -1,6 +1,6 @@
 # Project Lattice Domain EDA Findings
 
-This report is product-oriented: it checks whether the downloaded sources can support Project Lattice's knowledge graph, explainability layer, and valuation path.
+I wrote this as the product-facing EDA readout: not just what files exist, but whether they support the graph, explanation layer, and valuation path we want.
 
 ## Sufficiency Matrix
 
@@ -230,10 +230,10 @@ Top leisure values:
 | `outdoor_seating` | 19 |
 | `fitness_station` | 17 |
 
-## Recommended Handoff Decisions
+## Decisions I Recommend
 
 1. Keep San Ramon/Contra Costa as the explainability/knowledge-graph target, because the public spatial context is good.
-2. Use San Francisco permits as the data-rich demo path if the team needs a fast proof that Lattice can ingest and explain real property-related events.
+2. Use San Francisco permits as the data-rich demo path if we need a fast proof that Lattice can ingest and explain real property-related events.
 3. Do not start model training until a legal comparable-sales source is secured; use the existing package for feature engineering, joins, and graph design first.
 4. Next technical step: build a `property_features` table from parcels joined to city limits, zoning, land use, risk, Census geography, schools, and OSM POIs.
-5. Next business/data step: decide whether to buy/license comps, partner for MLS access, or seed a small manually verified sale set for prototype valuation only.
+5. Next business/data step: decide whether we buy/license comps, partner for MLS access, or seed a small manually verified sale set for prototype valuation only.
